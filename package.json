@@ -1,0 +1,23 @@
+{
+  "name": "music-routes-data",
+  "version": "0.0.0",
+  "description": "What musicians played on what tracks",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Trott/music-routes-data.git"
+  },
+  "keywords": [
+    "music"
+  ],
+  "author": "Rich Trott <rtrott@gmail.com> (https://github.com/Trott)",
+  "license": "CC-BY-SA 4.0",
+  "bugs": {
+    "url": "https://github.com/Trott/music-routes-data/issues"
+  },
+  "contributors": [
+    "Trott"
+  ]
+}
