@@ -1,6914 +1,6914 @@
 [
   {
     "id":"1",
-    "name":"Elvis Presley"
+    "names":["Elvis Presley"]
   },
   {
     "id":"2",
-    "name":"The Beatles"
+    "names":["The Beatles"]
   },
   {
     "id":"9",
-    "name":"The Slow Poisoners"
+    "names":["The Slow Poisoners"]
   },
   {
     "id":"10",
-    "name":"Glasstown"
+    "names":["Glasstown"]
   },
   {
     "id":"11",
-    "name":"Heatmiser"
+    "names":["Heatmiser"]
   },
   {
     "id":"12",
-    "name":"Quasi"
+    "names":["Quasi"]
   },
   {
     "id":"13",
-    "name":"Sleater-Kinney"
+    "names":["Sleater-Kinney"]
   },
   {
     "id":"14",
-    "name":"The Band"
+    "names":["The Band"]
   },
   {
     "id":"15",
-    "name":"Soul Coughing"
+    "names":["Soul Coughing"]
   },
   {
     "id":"16",
-    "name":"USA For Africa"
+    "names":["USA For Africa"]
   },
   {
     "id":"17",
-    "name":"Palace Family Steak House"
+    "names":["Palace Family Steak House"]
   },
   {
     "id":"18",
-    "name":"Built To Spill"
+    "names":["Built To Spill"]
   },
   {
     "id":"19",
-    "name":"Band Aid"
+    "names":["Band Aid"]
   },
   {
     "id":"20",
-    "name":"Hear 'n Aid"
+    "names":["Hear 'n Aid"]
   },
   {
     "id":"21",
-    "name":"William Shatner"
+    "names":["William Shatner"]
   },
   {
     "id":"22",
-    "name":"Mike Doughty"
+    "names":["Mike Doughty"]
   },
   {
     "id":"23",
-    "name":"Creeper Lagoon"
+    "names":["Creeper Lagoon"]
   },
   {
     "id":"24",
-    "name":"Talking Heads"
+    "names":["Talking Heads"]
   },
   {
     "id":"25",
-    "name":"U2"
+    "names":["U2"]
   },
   {
     "id":"26",
-    "name":"Funkadelic"
+    "names":["Funkadelic"]
   },
   {
     "id":"27",
-    "name":"George Clinton"
+    "names":["George Clinton"]
   },
   {
     "id":"28",
-    "name":"Queen"
+    "names":["Queen"]
   },
   {
     "id":"29",
-    "name":"Jandek"
+    "names":["Jandek"]
   },
   {
     "id":"30",
-    "name":"Bonny \"Prince\" Billy"
+    "names":["Bonny \"Prince\" Billy"]
   },
   {
     "id":"31",
-    "name":"Johnny Cash"
+    "names":["Johnny Cash"]
   },
   {
     "id":"32",
-    "name":"The Traveling Wilburys"
+    "names":["The Traveling Wilburys"]
   },
   {
     "id":"33",
-    "name":"Diana Ross"
+    "names":["Diana Ross"]
   },
   {
     "id":"34",
-    "name":"America"
+    "names":["America"]
   },
   {
     "id":"35",
-    "name":"Barnes & Barnes"
+    "names":["Barnes & Barnes"]
   },
   {
     "id":"36",
-    "name":"Crispin Glover"
+    "names":["Crispin Glover"]
   },
   {
     "id":"37",
-    "name":"The Delmore Brothers"
+    "names":["The Delmore Brothers"]
   },
   {
     "id":"38",
-    "name":"Sesame Street"
+    "names":["Sesame Street"]
   },
   {
     "id":"39",
-    "name":"Loretta Lynn"
+    "names":["Loretta Lynn"]
   },
   {
     "id":"40",
-    "name":"Merle Travis"
+    "names":["Merle Travis"]
   },
   {
     "id":"41",
-    "name":"Brown's Ferry Four"
+    "names":["Brown's Ferry Four"]
   },
   {
     "id":"42",
-    "name":"Vinnie Vincent Invasion"
+    "names":["Vinnie Vincent Invasion"]
   },
   {
     "id":"43",
-    "name":"Journey"
+    "names":["Journey"]
   },
   {
     "id":"44",
-    "name":"John Lennon"
+    "names":["John Lennon"]
   },
   {
     "id":"45",
-    "name":"Pink Floyd"
+    "names":["Pink Floyd"]
   },
   {
     "id":"46",
-    "name":"Elvis Costello"
+    "names":["Elvis Costello"]
   },
   {
     "id":"47",
-    "name":"Charlie Louvin"
+    "names":["Charlie Louvin"]
   },
   {
     "id":"48",
-    "name":"The Louvin Brothers"
+    "names":["The Louvin Brothers"]
   },
   {
     "id":"49",
-    "name":"Alison Kraus"
+    "names":["Alison Kraus"]
   },
   {
     "id":"50",
-    "name":"Led Zeppelin"
+    "names":["Led Zeppelin"]
   },
   {
     "id":"51",
-    "name":"Jimmy Page"
+    "names":["Jimmy Page"]
   },
   {
     "id":"52",
-    "name":"Brian May"
+    "names":["Brian May"]
   },
   {
     "id":"53",
-    "name":"Rainbow"
+    "names":["Rainbow"]
   },
   {
     "id":"54",
-    "name":"Paul Davis"
+    "names":["Paul Davis"]
   },
   {
     "id":"55",
-    "name":"Yngwie Malmsteen"
+    "names":["Yngwie Malmsteen"]
   },
   {
     "id":"56",
-    "name":"Steve Miller Band"
+    "names":["Steve Miller Band"]
   },
   {
     "id":"57",
-    "name":"Anal Cunt"
+    "names":["Anal Cunt"]
   },
   {
     "id":"58",
-    "name":"Tony Iommi"
+    "names":["Tony Iommi"]
   },
   {
     "id":"59",
-    "name":"King Crimson"
+    "names":["King Crimson"]
   },
   {
     "id":"60",
-    "name":"R.E.M."
+    "names":["R.E.M."]
   },
   {
     "id":"61",
-    "name":"Joni Mitchell"
+    "names":["Joni Mitchell"]
   },
   {
     "id":"62",
-    "name":"Hindu Love Gods"
+    "names":["Hindu Love Gods"]
   },
   {
     "id":"63",
-    "name":"Warren Zevon"
+    "names":["Warren Zevon"]
   },
   {
     "id":"64",
-    "name":"Public Enemy"
+    "names":["Public Enemy"]
   },
   {
     "id":"65",
-    "name":"Fleetwood Mac"
+    "names":["Fleetwood Mac"]
   },
   {
     "id":"66",
-    "name":"Anthrax"
+    "names":["Anthrax"]
   },
   {
     "id":"67",
-    "name":"Chuck D"
+    "names":["Chuck D"]
   },
   {
     "id":"68",
-    "name":"Siouxsie & The Banshees"
+    "names":["Siouxsie & The Banshees"]
   },
   {
     "id":"69",
-    "name":"Cogasm"
+    "names":["Cogasm"]
   },
   {
     "id":"70",
-    "name":"Tin Machine"
+    "names":["Tin Machine"]
   },
   {
     "id":"71",
-    "name":"Randy Newman"
+    "names":["Randy Newman"]
   },
   {
     "id":"72",
-    "name":"Gram Parsons"
+    "names":["Gram Parsons"]
   },
   {
     "id":"73",
-    "name":"Dan Fogelberg"
+    "names":["Dan Fogelberg"]
   },
   {
     "id":"74",
-    "name":"Bruford"
+    "names":["Bruford"]
   },
   {
     "id":"75",
-    "name":"Bruce Springsteen"
+    "names":["Bruce Springsteen"]
   },
   {
     "id":"76",
-    "name":"Dire Straits"
+    "names":["Dire Straits"]
   },
   {
     "id":"77",
-    "name":"Parliament"
+    "names":["Parliament"]
   },
   {
     "id":"78",
-    "name":"The Spells"
+    "names":["The Spells"]
   },
   {
     "id":"79",
-    "name":"Helium"
+    "names":["Helium"]
   },
   {
     "id":"80",
-    "name":"Polvo"
+    "names":["Polvo"]
   },
   {
     "id":"81",
-    "name":"Ozzy Osbourne"
+    "names":["Ozzy Osbourne"]
   },
   {
     "id":"82",
-    "name":"Toe Fat"
+    "names":["Toe Fat"]
   },
   {
     "id":"83",
-    "name":"Roxy Music"
+    "names":["Roxy Music"]
   },
   {
     "id":"84",
-    "name":"Colonel Claypool's Bucket Of Bernie Brains"
+    "names":["Colonel Claypool's Bucket Of Bernie Brains"]
   },
   {
     "id":"85",
-    "name":"Saxophone Summit"
+    "names":["Saxophone Summit"]
   },
   {
     "id":"86",
-    "name":"The Flying Burrito Brothers"
+    "names":["The Flying Burrito Brothers"]
   },
   {
     "id":"87",
-    "name":"Neil Young"
+    "names":["Neil Young"]
   },
   {
     "id":"88",
-    "name":"Crime"
+    "names":["Crime"]
   },
   {
     "id":"89",
-    "name":"Bill Cosby"
+    "names":["Bill Cosby"]
   },
   {
     "id":"90",
-    "name":"Glen Campbell"
+    "names":["Glen Campbell"]
   },
   {
     "id":"91",
-    "name":"Tanya Tucker"
+    "names":["Tanya Tucker"]
   },
   {
     "id":"92",
-    "name":"Sid Luscious and the Pants"
+    "names":["Sid Luscious and the Pants"]
   },
   {
     "id":"93",
-    "name":"Radiohead"
+    "names":["Radiohead"]
   },
   {
     "id":"94",
-    "name":"The Venus In Furs"
+    "names":["The Venus In Furs"]
   },
   {
     "id":"95",
-    "name":"Jewel"
+    "names":["Jewel"]
   },
   {
     "id":"96",
-    "name":"Red Hot Chili Peppers"
+    "names":["Red Hot Chili Peppers"]
   },
   {
     "id":"97",
-    "name":"Bob Dylan"
+    "names":["Bob Dylan"]
   },
   {
     "id":"98",
-    "name":"Brian Eno"
+    "names":["Brian Eno"]
   },
   {
     "id":"99",
-    "name":"Brenda Lee"
+    "names":["Brenda Lee"]
   },
   {
     "id":"100",
-    "name":"Dolly Parton"
+    "names":["Dolly Parton"]
   },
   {
     "id":"101",
-    "name":"Linda Ronstadt"
+    "names":["Linda Ronstadt"]
   },
   {
     "id":"102",
-    "name":"Dolly Parton, Loretta Lynn & Tammy Wynette"
+    "names":["Dolly Parton, Loretta Lynn & Tammy Wynette"]
   },
   {
     "id":"103",
-    "name":"James Ingram"
+    "names":["James Ingram"]
   },
   {
     "id":"104",
-    "name":"Scarlett Johansson"
+    "names":["Scarlett Johansson"]
   },
   {
     "id":"105",
-    "name":"Sinéad O'Connor"
+    "names":["Sinéad O'Connor"]
   },
   {
     "id":"106",
-    "name":"The Chieftains"
+    "names":["The Chieftains"]
   },
   {
     "id":"107",
-    "name":"This Mortal Coil"
+    "names":["This Mortal Coil"]
   },
   {
     "id":"108",
-    "name":"Cocteau Twins"
+    "names":["Cocteau Twins"]
   },
   {
     "id":"109",
-    "name":"Peter Gabriel"
+    "names":["Peter Gabriel"]
   },
   {
     "id":"110",
-    "name":"Paul McCartney"
+    "names":["Paul McCartney"]
   },
   {
     "id":"111",
-    "name":"Crosby, Stills and Nash"
+    "names":["Crosby, Stills and Nash"]
   },
   {
     "id":"112",
-    "name":"Eric Clapton"
+    "names":["Eric Clapton"]
   },
   {
     "id":"113",
-    "name":"Willie Nelson"
+    "names":["Willie Nelson"]
   },
   {
     "id":"114",
-    "name":"Deflator Mouse"
+    "names":["Deflator Mouse"]
   },
   {
     "id":"115",
-    "name":"Nirvana"
+    "names":["Nirvana"]
   },
   {
     "id":"116",
-    "name":"\"Weird Al\" Yankovic"
+    "names":["\"Weird Al\" Yankovic"]
   },
   {
     "id":"117",
-    "name":"Annie Lennox"
+    "names":["Annie Lennox"]
   },
   {
     "id":"118",
-    "name":"Madonna"
+    "names":["Madonna"]
   },
   {
     "id":"119",
-    "name":"Garth Brooks, Billy Dean, Faith Hill, Olivia Newton-John, Neal McCoy, Michael McDonald, Victoria Shaw, and Bryan White"
+    "names":["Garth Brooks, Billy Dean, Faith Hill, Olivia Newton-John, Neal McCoy, Michael McDonald, Victoria Shaw, and Bryan White"]
   },
   {
     "id":"120",
-    "name":"Steely Dan"
+    "names":["Steely Dan"]
   },
   {
     "id":"121",
-    "name":"John Strohm"
+    "names":["John Strohm"]
   },
   {
     "id":"122",
-    "name":"The Lemonheads"
+    "names":["The Lemonheads"]
   },
   {
     "id":"123",
-    "name":"Starship"
+    "names":["Starship"]
   },
   {
     "id":"124",
-    "name":"Quiet Riot"
+    "names":["Quiet Riot"]
   },
   {
     "id":"125",
-    "name":"Green Day"
+    "names":["Green Day"]
   },
   {
     "id":"126",
-    "name":"Mike Watt"
+    "names":["Mike Watt"]
   },
   {
     "id":"127",
-    "name":"David Bowie"
+    "names":["David Bowie"]
   },
   {
     "id":"129",
-    "name":"Chad Wackerman"
+    "names":["Chad Wackerman"]
   },
   {
     "id":"130",
-    "name":"Elton John"
+    "names":["Elton John"]
   },
   {
     "id":"131",
-    "name":"Frank Zappa"
+    "names":["Frank Zappa"]
   },
   {
     "id":"132",
-    "name":"Passengers"
+    "names":["Passengers"]
   },
   {
     "id":"133",
-    "name":"Ben Harper and the Innocent Criminals"
+    "names":["Ben Harper and the Innocent Criminals"]
   },
   {
     "id":"134",
-    "name":"Adam Ant"
+    "names":["Adam Ant"]
   },
   {
     "id":"135",
-    "name":"Robert Drasnin"
+    "names":["Robert Drasnin"]
   },
   {
     "id":"136",
-    "name":"Paul Anka"
+    "names":["Paul Anka"]
   },
   {
     "id":"137",
-    "name":"Too Much Joy"
+    "names":["Too Much Joy"]
   },
   {
     "id":"138",
-    "name":"Joe Strummer"
+    "names":["Joe Strummer"]
   },
   {
     "id":"139",
-    "name":"Duran Duran"
+    "names":["Duran Duran"]
   },
   {
     "id":"140",
-    "name":"Robert Palmer"
+    "names":["Robert Palmer"]
   },
   {
     "id":"141",
-    "name":"Thomas Dolby"
+    "names":["Thomas Dolby"]
   },
   {
     "id":"142",
-    "name":"Anu"
+    "names":["Anu"]
   },
   {
     "id":"143",
-    "name":"Left Orbit Temple"
+    "names":["Left Orbit Temple"]
   },
   {
     "id":"144",
-    "name":"KMFDM"
+    "names":["KMFDM"]
   },
   {
     "id":"145",
-    "name":"Robert Fripp, Trey Gunn & Bill Rieflin"
+    "names":["Robert Fripp, Trey Gunn & Bill Rieflin"]
   },
   {
     "id":"146",
-    "name":"Michael Jackson"
+    "names":["Michael Jackson"]
   },
   {
     "id":"147",
-    "name":"Van Halen"
+    "names":["Van Halen"]
   },
   {
     "id":"148",
-    "name":"Luciano Pavarotti"
+    "names":["Luciano Pavarotti"]
   },
   {
     "id":"149",
-    "name":"Talk Talk"
+    "names":["Talk Talk"]
   },
   {
     "id":"150",
-    "name":"Blind Faith"
+    "names":["Blind Faith"]
   },
   {
     "id":"151",
-    "name":"Foreigner"
+    "names":["Foreigner"]
   },
   {
     "id":"152",
-    "name":"The Firm"
+    "names":["The Firm"]
   },
   {
     "id":"153",
-    "name":"AC/DC"
+    "names":["AC/DC"]
   },
   {
     "id":"154",
-    "name":"Def Leppard"
+    "names":["Def Leppard"]
   },
   {
     "id":"155",
-    "name":"The Modern Lovers"
+    "names":["The Modern Lovers"]
   },
   {
     "id":"156",
-    "name":"The Cars"
+    "names":["The Cars"]
   },
   {
     "id":"157",
-    "name":"Shania Twain & Alison Kraus"
+    "names":["Shania Twain & Alison Kraus"]
   },
   {
     "id":"158",
-    "name":"Nada Surf"
+    "names":["Nada Surf"]
   },
   {
     "id":"159",
-    "name":"Kiss"
+    "names":["Kiss"]
   },
   {
     "id":"160",
-    "name":"Carly Simon"
+    "names":["Carly Simon"]
   },
   {
     "id":"161",
-    "name":"The Size Queens"
+    "names":["The Size Queens"]
   },
   {
     "id":"162",
-    "name":"Sheryl Crow"
+    "names":["Sheryl Crow"]
   },
   {
     "id":"163",
-    "name":"Miles Davis"
+    "names":["Miles Davis"]
   },
   {
     "id":"164",
-    "name":"Idaho"
+    "names":["Idaho"]
   },
   {
     "id":"165",
-    "name":"Beck"
+    "names":["Beck"]
   },
   {
     "id":"166",
-    "name":"Chick Corea"
+    "names":["Chick Corea"]
   },
   {
     "id":"167",
-    "name":"Albert Ayler"
+    "names":["Albert Ayler"]
   },
   {
     "id":"168",
-    "name":"Wolfmother"
+    "names":["Wolfmother"]
   },
   {
     "id":"169",
-    "name":"Santana"
+    "names":["Santana"]
   },
   {
     "id":"170",
-    "name":"Cat Stevens"
+    "names":["Cat Stevens"]
   },
   {
     "id":"171",
-    "name":"Snoop Dogg"
+    "names":["Snoop Dogg"]
   },
   {
     "id":"172",
-    "name":"Yo-Yo Ma"
+    "names":["Yo-Yo Ma"]
   },
   {
     "id":"174",
-    "name":"Lulu"
+    "names":["Lulu"]
   },
   {
     "id":"175",
-    "name":"Patsy Cline"
+    "names":["Patsy Cline"]
   },
   {
     "id":"176",
-    "name":"Barenaked Ladies"
+    "names":["Barenaked Ladies"]
   },
   {
     "id":"177",
-    "name":"Édith Piaf"
+    "names":["Édith Piaf"]
   },
   {
     "id":"178",
-    "name":"Jacques Pills"
+    "names":["Jacques Pills"]
   },
   {
     "id":"179",
-    "name":"Django Reinhardt"
+    "names":["Django Reinhardt"]
   },
   {
     "id":"180",
-    "name":"Paul Simon"
+    "names":["Paul Simon"]
   },
   {
     "id":"181",
-    "name":"Pink Martini"
+    "names":["Pink Martini"]
   },
   {
     "id":"182",
-    "name":"Jimmy Scott"
+    "names":["Jimmy Scott"]
   },
   {
     "id":"183",
-    "name":"Pepe & the Bottle Blondes"
+    "names":["Pepe & the Bottle Blondes"]
   },
   {
     "id":"184",
-    "name":"XTC"
+    "names":["XTC"]
   },
   {
     "id":"185",
-    "name":"Oranger"
+    "names":["Oranger"]
   },
   {
     "id":"186",
-    "name":"The Mother Hips"
+    "names":["The Mother Hips"]
   },
   {
     "id":"187",
-    "name":"Sensations"
+    "names":["Sensations"]
   },
   {
     "id":"188",
-    "name":"Sean Hayes"
+    "names":["Sean Hayes"]
   },
   {
     "id":"189",
-    "name":"Captain Beefheart"
+    "names":["Captain Beefheart"]
   },
   {
     "id":"190",
-    "name":"Jeff Buckley"
+    "names":["Jeff Buckley"]
   },
   {
     "id":"191",
-    "name":"Joe Farrell"
+    "names":["Joe Farrell"]
   },
   {
     "id":"192",
-    "name":"Michael Longo"
+    "names":["Michael Longo"]
   },
   {
     "id":"193",
-    "name":"Jerry LaCroix"
+    "names":["Jerry LaCroix"]
   },
   {
     "id":"194",
-    "name":"Alice Cooper"
+    "names":["Alice Cooper"]
   },
   {
     "id":"195",
-    "name":"Pauline Wilson"
+    "names":["Pauline Wilson"]
   },
   {
     "id":"196",
-    "name":"The Muppets"
+    "names":["The Muppets"]
   },
   {
     "id":"197",
-    "name":"Mötley Crüe"
+    "names":["Mötley Crüe"]
   },
   {
     "id":"198",
-    "name":"Metallica"
+    "names":["Metallica"]
   },
   {
     "id":"199",
-    "name":"Megadeth"
+    "names":["Megadeth"]
   },
   {
     "id":"200",
-    "name":"Bruce Willis"
+    "names":["Bruce Willis"]
   },
   {
     "id":"201",
-    "name":"Yes"
+    "names":["Yes"]
   },
   {
     "id":"202",
-    "name":"Black Sabbath"
+    "names":["Black Sabbath"]
   },
   {
     "id":"203",
-    "name":"GG Allin"
+    "names":["GG Allin"]
   },
   {
     "id":"204",
-    "name":"Kenny G"
+    "names":["Kenny G"]
   },
   {
     "id":"205",
-    "name":"Kenny Loggins"
+    "names":["Kenny Loggins"]
   },
   {
     "id":"206",
-    "name":"Slayer"
+    "names":["Slayer"]
   },
   {
     "id":"207",
-    "name":"The Beastie Boys"
+    "names":["The Beastie Boys"]
   },
   {
     "id":"208",
-    "name":"Pantera"
+    "names":["Pantera"]
   },
   {
     "id":"209",
-    "name":"Dethklok"
+    "names":["Dethklok"]
   },
   {
     "id":"210",
-    "name":"Bread"
+    "names":["Bread"]
   },
   {
     "id":"211",
-    "name":"Simon & Garfunkel"
+    "names":["Simon & Garfunkel"]
   },
   {
     "id":"212",
-    "name":"The Beach Boys"
+    "names":["The Beach Boys"]
   },
   {
     "id":"213",
-    "name":"Bill Withers"
+    "names":["Bill Withers"]
   },
   {
     "id":"214",
-    "name":"Smokey Robinson"
+    "names":["Smokey Robinson"]
   },
   {
     "id":"215",
-    "name":"Peaches & Herb"
+    "names":["Peaches & Herb"]
   },
   {
     "id":"216",
-    "name":"Janis Joplin"
+    "names":["Janis Joplin"]
   },
   {
     "id":"217",
-    "name":"The Doors"
+    "names":["The Doors"]
   },
   {
     "id":"218",
-    "name":"The Aquabats"
+    "names":["The Aquabats"]
   },
   {
     "id":"219",
-    "name":"Blink-182"
+    "names":["Blink-182"]
   },
   {
     "id":"220",
-    "name":"Y Kant Tori Read"
+    "names":["Y Kant Tori Read"]
   },
   {
     "id":"221",
-    "name":"Guns N' Roses"
+    "name":["Guns N' Roses"]
   },
   {
     "id":"222",
-    "name":"Dwight Yoakam"
+    "names":["Dwight Yoakam"]
   },
   {
     "id":"223",
-    "name":"The Petty Tyrants"
+    "names":["The Petty Tyrants"]
   },
   {
     "id":"224",
-    "name":"Skinny Puppy"
+    "names":["Skinny Puppy"]
   },
   {
     "id":"225",
-    "name":"Morrissey"
+    "names":["Morrissey"]
   },
   {
     "id":"226",
-    "name":"Ministry"
+    "names":["Ministry"]
   },
   {
     "id":"227",
-    "name":"Genesis"
+    "names":["Genesis"]
   },
   {
     "id":"228",
-    "name":"Battleship"
+    "names":["Battleship"]
   },
   {
     "id":"230",
-    "name":"Austin Lucas"
+    "names":["Austin Lucas"]
   },
   {
     "id":"231",
-    "name":"Brett Larner"
+    "names":["Brett Larner"]
   },
   {
     "id":"232",
-    "name":"Camper Van Beethoven"
+    "names":["Camper Van Beethoven"]
   },
   {
     "id":"233",
-    "name":"Cracker"
+    "names":["Cracker"]
   },
   {
     "id":"234",
-    "name":"Minuteflag"
+    "names":["Minuteflag"]
   },
   {
     "id":"235",
-    "name":"Black Flag"
+    "names":["Black Flag"]
   },
   {
     "id":"236",
-    "name":"Magazine"
+    "names":["Magazine"]
   },
   {
     "id":"237",
-    "name":"The Twilight Singers"
+    "names":["The Twilight Singers"]
   },
   {
     "id":"238",
-    "name":"The Afghan Whigs"
+    "names":["The Afghan Whigs"]
   },
   {
     "id":"239",
-    "name":"Cheech and Chong"
+    "names":["Cheech and Chong"]
   },
   {
     "id":"240",
-    "name":"Sonic Youth"
+    "names":["Sonic Youth"]
   },
   {
     "id":"241",
-    "name":"M. Ward"
+    "names":["M. Ward"]
   },
   {
     "id":"242",
-    "name":"Neko Case"
+    "names":["Neko Case"]
   },
   {
     "id":"243",
-    "name":"Ringo Starr"
+    "names":["Ringo Starr"]
   },
   {
     "id":"244",
-    "name":"Wilco"
+    "names":["Wilco"]
   },
   {
     "id":"245",
-    "name":"The Eels"
+    "names":["The Eels"]
   },
   {
     "id":"246",
-    "name":"Tricky"
+    "names":["Tricky"]
   },
   {
     "id":"247",
-    "name":"Cream"
+    "names":["Cream"]
   },
   {
     "id":"248",
-    "name":"Sammy Hagar"
+    "names":["Sammy Hagar"]
   },
   {
     "id":"249",
-    "name":"The Pixies"
+    "names":["The Pixies"]
   },
   {
     "id":"250",
-    "name":"Control-R"
+    "names":["Control-R"]
   },
   {
     "id":"251",
-    "name":"Frank Sinatra"
+    "names":["Frank Sinatra"]
   },
   {
     "id":"252",
-    "name":"Chef & Meat Loaf"
+    "names":["Chef & Meat Loaf"]
   },
   {
     "id":"253",
-    "name":"The Mar-Keys"
+    "names":["The Mar-Keys"]
   },
   {
     "id":"254",
-    "name":"Levon Helm"
+    "names":["Levon Helm"]
   },
   {
     "id":"255",
-    "name":"Meat Loaf"
+    "names":["Meat Loaf"]
   },
   {
     "id":"256",
-    "name":"T. Rex"
+    "names":["T. Rex"]
   },
   {
     "id":"257",
-    "name":"Peaches"
+    "names":["Peaches"]
   },
   {
     "id":"258",
-    "name":"Iggy Pop"
+    "names":["Iggy Pop"]
   },
   {
     "id":"259",
-    "name":"Strawberry Shortcake"
+    "names":["Strawberry Shortcake"]
   },
   {
     "id":"260",
-    "name":"Stephen Malkmus"
+    "names":["Stephen Malkmus"]
   },
   {
     "id":"261",
-    "name":"Pavement"
+    "names":["Pavement"]
   },
   {
     "id":"262",
-    "name":"Moby"
+    "names":["Moby"]
   },
   {
     "id":"263",
-    "name":"No Doubt"
+    "names":["No Doubt"]
   },
   {
     "id":"264",
-    "name":"Massive Attack"
+    "names":["Massive Attack"]
   },
   {
     "id":"265",
-    "name":"Queens Of The Stone Age"
+    "names":["Queens Of The Stone Age"]
   },
   {
     "id":"266",
-    "name":"The Strokes"
+    "names":["The Strokes"]
   },
   {
     "id":"267",
-    "name":"Jefferson Airplane"
+    "names":["Jefferson Airplane"]
   },
   {
     "id":"268",
-    "name":"Jefferson Starship"
+    "names":["Jefferson Starship"]
   },
   {
     "id":"269",
-    "name":"Fred Sherry"
+    "names":["Fred Sherry"]
   },
   {
     "id":"270",
-    "name":"Run-D.M.C."
+    "name":["Run-D.M.C."]
   },
   {
     "id":"271",
-    "name":"Aerosmith"
+    "names":["Aerosmith"]
   },
   {
     "id":"272",
-    "name":"Paul Shortino & Jimmy Crespo"
+    "names":["Paul Shortino & Jimmy Crespo"]
   },
   {
     "id":"273",
-    "name":"Freddie Slack"
+    "names":["Freddie Slack"]
   },
   {
     "id":"274",
-    "name":"Duke Ellington"
+    "names":["Duke Ellington"]
   },
   {
     "id":"275",
-    "name":"Dizzy Gillespie"
+    "names":["Dizzy Gillespie"]
   },
   {
     "id":"276",
-    "name":"Red Norvo"
+    "names":["Red Norvo"]
   },
   {
     "id":"277",
-    "name":"Martin Denny"
+    "names":["Martin Denny"]
   },
   {
     "id":"278",
-    "name":"Arthur Lyman"
+    "names":["Arthur Lyman"]
   },
   {
     "id":"279",
-    "name":"Soft Machine"
+    "names":["Soft Machine"]
   },
   {
     "id":"281",
-    "name":"Mike Oldfield"
+    "names":["Mike Oldfield"]
   },
   {
     "id":"282",
-    "name":"Doo Rag"
+    "names":["Doo Rag"]
   },
   {
     "id":"283",
-    "name":"Jon Spencer Blues Explosion"
+    "names":["Jon Spencer Blues Explosion"]
   },
   {
     "id":"285",
-    "name":"The Who"
+    "names":["The Who"]
   },
   {
     "id":"286",
-    "name":"The Rolling Stones"
+    "names":["The Rolling Stones"]
   },
   {
     "id":"287",
-    "name":"Return To Forever"
+    "names":["Return To Forever"]
   },
   {
     "id":"288",
-    "name":"Isaac Hayes"
+    "names":["Isaac Hayes"]
   },
   {
     "id":"289",
-    "name":"Deep Purple"
+    "names":["Deep Purple"]
   },
   {
     "id":"290",
-    "name":"Alice In Chains"
+    "names":["Alice In Chains"]
   },
   {
     "id":"291",
-    "name":"Slash's Snakepit"
+    "names":["Slash's Snakepit"]
   },
   {
     "id":"292",
-    "name":"Soundgarden"
+    "names":["Soundgarden"]
   },
   {
     "id":"293",
-    "name":"Dokken"
+    "names":["Dokken"]
   },
   {
     "id":"294",
-    "name":"The Mob"
+    "names":["The Mob"]
   },
   {
     "id":"295",
-    "name":"Tourniquet"
+    "names":["Tourniquet"]
   },
   {
     "id":"296",
-    "name":"Trouble"
+    "names":["Trouble"]
   },
   {
     "id":"297",
-    "name":"Zoetrope"
+    "names":["Zoetrope"]
   },
   {
     "id":"298",
-    "name":"The Mentors"
+    "names":["The Mentors"]
   },
   {
     "id":"299",
-    "name":"Mike Thompson"
+    "names":["Mike Thompson"]
   },
   {
     "id":"300",
-    "name":"Michael Parks"
+    "names":["Michael Parks"]
   },
   {
     "id":"301",
-    "name":"Yma Sumac"
+    "names":["Yma Sumac"]
   },
   {
     "id":"302",
-    "name":"The Waco Brothers"
+    "names":["The Waco Brothers"]
   },
   {
     "id":"303",
-    "name":"Jesus Jones"
+    "names":["Jesus Jones"]
   },
   {
     "id":"304",
-    "name":"The Smokin' Mojo Filters"
+    "names":["The Smokin' Mojo Filters"]
   },
   {
     "id":"305",
-    "name":"Oasis"
+    "names":["Oasis"]
   },
   {
     "id":"306",
-    "name":"Cake"
+    "names":["Cake"]
   },
   {
     "id":"307",
-    "name":"Quincy Jones"
+    "names":["Quincy Jones"]
   },
   {
     "id":"308",
-    "name":"Barry White"
+    "names":["Barry White"]
   },
   {
     "id":"309",
-    "name":"The Ramonetures"
+    "names":["The Ramonetures"]
   },
   {
     "id":"310",
-    "name":"The Phantom Surfers"
+    "names":["The Phantom Surfers"]
   },
   {
     "id":"311",
-    "name":"The Mummies"
+    "names":["The Mummies"]
   },
   {
     "id":"312",
-    "name":"Homie"
+    "names":["Homie"]
   },
   {
     "id":"313",
-    "name":"Weezer"
+    "names":["Weezer"]
   },
   {
     "id":"314",
-    "name":"The Police"
+    "names":["The Police"]
   },
   {
     "id":"315",
-    "name":"Osaka Popstar"
+    "names":["Osaka Popstar"]
   },
   {
     "id":"316",
-    "name":"The Ramones"
+    "names":["The Ramones"]
   },
   {
     "id":"317",
-    "name":"The Carpenters"
+    "names":["The Carpenters"]
   },
   {
     "id":"318",
-    "name":"The Grateful Dead"
+    "names":["The Grateful Dead"]
   },
   {
     "id":"319",
-    "name":"Revolting Cocks"
+    "names":["Revolting Cocks"]
   },
   {
     "id":"320",
-    "name":"The Dead Kennedys"
+    "names":["The Dead Kennedys"]
   },
   {
     "id":"321",
-    "name":"Leonard Cohen"
+    "names":["Leonard Cohen"]
   },
   {
     "id":"322",
-    "name":"NOFX"
+    "names":["NOFX"]
   },
   {
     "id":"323",
-    "name":"Me First and the Gimme Gimmes"
+    "names":["Me First and the Gimme Gimmes"]
   },
   {
     "id":"324",
-    "name":"The Foo Fighters"
+    "names":["The Foo Fighters"]
   },
   {
     "id":"325",
-    "name":"Britney Spears"
+    "names":["Britney Spears"]
   },
   {
     "id":"326",
-    "name":"GWAR"
+    "names":["GWAR"]
   },
   {
     "id":"327",
-    "name":"Rigor Mortis"
+    "names":["Rigor Mortis"]
   },
   {
     "id":"328",
-    "name":"Only Crime"
+    "names":["Only Crime"]
   },
   {
     "id":"329",
-    "name":"Tiny Tim"
+    "names":["Tiny Tim"]
   },
   {
     "id":"331",
-    "name":"Iron Maiden"
+    "names":["Iron Maiden"]
   },
   {
     "id":"332",
-    "name":"The White Stripes"
+    "names":["The White Stripes"]
   },
   {
     "id":"333",
-    "name":"Testament"
+    "names":["Testament"]
   },
   {
     "id":"334",
-    "name":"Death"
+    "names":["Death"]
   },
   {
     "id":"335",
-    "name":"Six Feet Under"
+    "names":["Six Feet Under"]
   },
   {
     "id":"336",
-    "name":"Cannibal Corpse"
+    "names":["Cannibal Corpse"]
   },
   {
     "id":"337",
-    "name":"Christina Aguilera"
+    "names":["Christina Aguilera"]
   },
   {
     "id":"338",
-    "name":"Nas"
+    "names":["Nas"]
   },
   {
     "id":"339",
-    "name":"Kardinal Offishall"
+    "names":["Kardinal Offishall"]
   },
   {
     "id":"340",
-    "name":"Abdominal"
+    "names":["Abdominal"]
   },
   {
     "id":"341",
-    "name":"Robbie Robertson"
+    "names":["Robbie Robertson"]
   },
   {
     "id":"342",
-    "name":"Ray Charles"
+    "names":["Ray Charles"]
   },
   {
     "id":"343",
-    "name":"Darker My Love"
+    "names":["Darker My Love"]
   },
   {
     "id":"344",
-    "name":"KGC"
+    "names":["KGC"]
   },
   {
     "id":"345",
-    "name":"Curve"
+    "names":["Curve"]
   },
   {
     "id":"346",
-    "name":"The Bee Gees"
+    "names":["The Bee Gees"]
   },
   {
     "id":"347",
-    "name":"Danzig"
+    "names":["Danzig"]
   },
   {
     "id":"348",
-    "name":"Dr. Teeth and the Electric Mayhem"
+    "names":["Dr. Teeth and the Electric Mayhem"]
   },
   {
     "id":"349",
-    "name":"Princess Superstar"
+    "names":["Princess Superstar"]
   },
   {
     "id":"350",
-    "name":"Dr. Octagon"
+    "names":["Dr. Octagon"]
   },
   {
     "id":"351",
-    "name":"Gorillaz"
+    "names":["Gorillaz"]
   },
   {
     "id":"352",
-    "name":"The Monkees"
+    "names":["The Monkees"]
   },
   {
     "id":"353",
-    "name":"Anita Baker"
+    "names":["Anita Baker"]
   },
   {
     "id":"354",
-    "name":"Tori Amos"
+    "names":["Tori Amos"]
   },
   {
     "id":"355",
-    "name":"The Dead Boys"
+    "names":["The Dead Boys"]
   },
   {
     "id":"356",
-    "name":"Northern Lights"
+    "names":["Northern Lights"]
   },
   {
     "id":"357",
-    "name":"Rush"
+    "names":["Rush"]
   },
   {
     "id":"358",
-    "name":"Geddy Lee"
+    "names":["Geddy Lee"]
   },
   {
     "id":"359",
-    "name":"Love"
+    "names":["Love"]
   },
   {
     "id":"360",
-    "name":"Don Felder"
+    "names":["Don Felder"]
   },
   {
     "id":"361",
-    "name":"The Kinks"
+    "names":["The Kinks"]
   },
   {
     "id":"362",
-    "name":"Juicy Lucy"
+    "names":["Juicy Lucy"]
   },
   {
     "id":"363",
-    "name":"John Denver"
+    "names":["John Denver"]
   },
   {
     "id":"364",
-    "name":"Cheap Trick"
+    "names":["Cheap Trick"]
   },
   {
     "id":"365",
-    "name":"Dionne Warwick"
+    "names":["Dionne Warwick"]
   },
   {
     "id":"366",
-    "name":"Buzzcocks"
+    "names":["Buzzcocks"]
   },
   {
     "id":"367",
-    "name":"Dinosaur Jr"
+    "names":["Dinosaur Jr"]
   },
   {
     "id":"368",
-    "name":"Skip Spence"
+    "names":["Skip Spence"]
   },
   {
     "id":"369",
-    "name":"Michael Bolton"
+    "names":["Michael Bolton"]
   },
   {
     "id":"370",
-    "name":"Cesária Évora"
+    "names":["Cesária Évora"]
   },
   {
     "id":"371",
-    "name":"Portishead"
+    "names":["Portishead"]
   },
   {
     "id":"372",
-    "name":"Prince"
+    "names":["Prince"]
   },
   {
     "id":"373",
-    "name":"Los Lobos"
+    "names":["Los Lobos"]
   },
   {
     "id":"374",
-    "name":"Latin Playboys"
+    "names":["Latin Playboys"]
   },
   {
     "id":"375",
-    "name":"Stevie Nicks"
+    "names":["Stevie Nicks"]
   },
   {
     "id":"376",
-    "name":"Tom Waits"
+    "names":["Tom Waits"]
   },
   {
     "id":"377",
-    "name":"Julian Casablancas, Santogold, & Pharrell Williams"
+    "names":["Julian Casablancas, Santogold, & Pharrell Williams"]
   },
   {
     "id":"378",
-    "name":"Marilyn Manson"
+    "names":["Marilyn Manson"]
   },
   {
     "id":"379",
-    "name":"Indigo Girls"
+    "names":["Indigo Girls"]
   },
   {
     "id":"380",
-    "name":"Rick Astley"
+    "names":["Rick Astley"]
   },
   {
     "id":"381",
-    "name":"Eno Moebius Roedelius"
+    "names":["Eno Moebius Roedelius"]
   },
   {
     "id":"382",
-    "name":"Harmonia"
+    "names":["Harmonia"]
   },
   {
     "id":"383",
-    "name":"Neu!"
+    "names":["Neu!"]
   },
   {
     "id":"384",
-    "name":"Kraftwerk"
+    "names":["Kraftwerk"]
   },
   {
     "id":"385",
-    "name":"American Music Club"
+    "names":["American Music Club"]
   },
   {
     "id":"386",
-    "name":"Swans"
+    "names":["Swans"]
   },
   {
     "id":"387",
-    "name":"LCD Soundsystem"
+    "names":["LCD Soundsystem"]
   },
   {
     "id":"388",
-    "name":"The Jinx Clambake Explosion"
+    "names":["The Jinx Clambake Explosion"]
   },
   {
     "id":"389",
-    "name":"Hitch"
+    "names":["Hitch"]
   },
   {
     "id":"390",
-    "name":"Phrenik"
+    "names":["Phrenik"]
   },
   {
     "id":"391",
-    "name":"Jerry Reed"
+    "names":["Jerry Reed"]
   },
   {
     "id":"392",
-    "name":"Granfaloon Bus"
+    "names":["Granfaloon Bus"]
   },
   {
     "id":"393",
-    "name":"Secret Chiefs 3"
+    "names":["Secret Chiefs 3"]
   },
   {
     "id":"394",
-    "name":"The Heads"
+    "names":["The Heads"]
   },
   {
     "id":"395",
-    "name":"The Fall"
+    "names":["The Fall"]
   },
   {
     "id":"396",
-    "name":"Kenny Rogers"
+    "names":["Kenny Rogers"]
   },
   {
     "id":"397",
-    "name":"Monks Of Doom"
+    "names":["Monks Of Doom"]
   },
   {
     "id":"398",
-    "name":"Peter Murphy"
+    "names":["Peter Murphy"]
   },
   {
     "id":"399",
-    "name":"Bauhaus"
+    "names":["Bauhaus"]
   },
   {
     "id":"400",
-    "name":"Love and Rockets"
+    "names":["Love and Rockets"]
   },
   {
     "id":"401",
-    "name":"The Sex Pistols"
+    "names":["The Sex Pistols"]
   },
   {
     "id":"402",
-    "name":"Omarion"
+    "names":["Omarion"]
   },
   {
     "id":"403",
-    "name":"B2K"
+    "names":["B2K"]
   },
   {
     "id":"404",
-    "name":"Puff Daddy"
+    "names":["Puff Daddy"]
   },
   {
     "id":"405",
-    "name":"The Dirty Mac"
+    "names":["The Dirty Mac"]
   },
   {
     "id":"406",
-    "name":"The Jimi Hendrix Experience"
+    "names":["The Jimi Hendrix Experience"]
   },
   {
     "id":"407",
-    "name":"The Greedies"
+    "names":["The Greedies"]
   },
   {
     "id":"408",
-    "name":"Karen Carpenter"
+    "names":["Karen Carpenter"]
   },
   {
     "id":"409",
-    "name":"Peter Cetera"
+    "names":["Peter Cetera"]
   },
   {
     "id":"410",
-    "name":"Ulf Lundell"
+    "names":["Ulf Lundell"]
   },
   {
     "id":"411",
-    "name":"John Williams"
+    "names":["John Williams"]
   },
   {
     "id":"412",
-    "name":"Etta James"
+    "names":["Etta James"]
   },
   {
     "id":"413",
-    "name":"B.B. King"
+    "names":["B.B. King"]
   },
   {
     "id":"414",
-    "name":"Billie Holiday"
+    "names":["Billie Holiday"]
   },
   {
     "id":"415",
-    "name":"Lynyrd Skynyrd"
+    "names":["Lynyrd Skynyrd"]
   },
   {
     "id":"416",
-    "name":".38 Special"
+    "names":[".38 Special"]
   },
   {
     "id":"417",
-    "name":"Brigitte Bardot"
+    "names":["Brigitte Bardot"]
   },
   {
     "id":"418",
-    "name":"Serge Gainsbourg"
+    "names":["Serge Gainsbourg"]
   },
   {
     "id":"419",
-    "name":"Feist"
+    "names":["Feist"]
   },
   {
     "id":"420",
-    "name":"Jane Birkin"
+    "names":["Jane Birkin"]
   },
   {
     "id":"421",
-    "name":"Chuck Berry"
+    "names":["Chuck Berry"]
   },
   {
     "id":"422",
-    "name":"The Moog Cookbook"
+    "names":["The Moog Cookbook"]
   },
   {
     "id":"423",
-    "name":"Lightnin' Hopkins"
+    "names":["Lightnin' Hopkins"]
   },
   {
     "id":"424",
-    "name":"Dick Dale"
+    "names":["Dick Dale"]
   },
   {
     "id":"425",
-    "name":"The Velvet Underground"
+    "names":["The Velvet Underground"]
   },
   {
     "id":"426",
-    "name":"Ella Fitzgerald, Count Basie & Joe Williams"
+    "names":["Ella Fitzgerald, Count Basie & Joe Williams"]
   },
   {
     "id":"427",
-    "name":"Josie And The Pussycats"
+    "names":["Josie And The Pussycats"]
   },
   {
     "id":"428",
-    "name":"Matthew Sweet"
+    "names":["Matthew Sweet"]
   },
   {
     "id":"429",
-    "name":"Laurie Anderson"
+    "names":["Laurie Anderson"]
   },
   {
     "id":"430",
-    "name":"Ride"
+    "names":["Ride"]
   },
   {
     "id":"431",
-    "name":"LL Cool J"
+    "names":["LL Cool J"]
   },
   {
     "id":"432",
-    "name":"The Misfits"
+    "names":["The Misfits"]
   },
   {
     "id":"434",
-    "name":"Maria Muldaur"
+    "names":["Maria Muldaur"]
   },
   {
     "id":"435",
-    "name":"Earth, Wind & Fire"
+    "names":["Earth, Wind & Fire"]
   },
   {
     "id":"436",
-    "name":"Philip Bailey"
+    "names":["Philip Bailey"]
   },
   {
     "id":"437",
-    "name":"The West Coast Rap All-Stars"
+    "names":["The West Coast Rap All-Stars"]
   },
   {
     "id":"438",
-    "name":"Digital Underground"
+    "names":["Digital Underground"]
   },
   {
     "id":"439",
-    "name":"The Eagles"
+    "names":["The Eagles"]
   },
   {
     "id":"440",
-    "name":"RuPaul vs. Gitta"
+    "names":["RuPaul vs. Gitta"]
   },
   {
     "id":"441",
-    "name":"Falco Meets Brigitte Nielsen"
+    "names":["Falco Meets Brigitte Nielsen"]
   },
   {
     "id":"442",
-    "name":"Nine Inch Nails"
+    "names":["Nine Inch Nails"]
   },
   {
     "id":"443",
-    "name":"Smashing Pumpkins"
+    "names":["Smashing Pumpkins"]
   },
   {
     "id":"444",
-    "name":"Kleerup"
+    "names":["Kleerup"]
   },
   {
     "id":"445",
-    "name":"Rage Against The Machine"
+    "names":["Rage Against The Machine"]
   },
   {
     "id":"446",
-    "name":"Inside Out"
+    "names":["Inside Out"]
   },
   {
     "id":"447",
-    "name":"108"
+    "names":["108"]
   },
   {
     "id":"448",
-    "name":"Yo La Tengo"
+    "names":["Yo La Tengo"]
   },
   {
     "id":"449",
-    "name":"The 6ths"
+    "names":["The 6ths"]
   },
   {
     "id":"450",
-    "name":"The Magnetic Fields"
+    "names":["The Magnetic Fields"]
   },
   {
     "id":"451",
-    "name":"Jason Mraz"
+    "names":["Jason Mraz"]
   },
   {
     "id":"452",
-    "name":"Devendra Banhart"
+    "names":["Devendra Banhart"]
   },
   {
     "id":"453",
-    "name":"Styx"
+    "names":["Styx"]
   },
   {
     "id":"454",
-    "name":"Damn Yankees"
+    "names":["Damn Yankees"]
   },
   {
     "id":"455",
-    "name":"Bad English"
+    "names":["Bad English"]
   },
   {
     "id":"456",
-    "name":"ABBA"
+    "names":["ABBA"]
   },
   {
     "id":"457",
-    "name":"Bob Mould"
+    "names":["Bob Mould"]
   },
   {
     "id":"458",
-    "name":"Eric Bibb"
+    "names":["Eric Bibb"]
   },
   {
     "id":"459",
-    "name":"Belle & Sebastian"
+    "names":["Belle & Sebastian"]
   },
   {
     "id":"460",
-    "name":"Looper"
+    "names":["Looper"]
   },
   {
     "id":"461",
-    "name":"Tyrannosaurus Rex"
+    "names":["Tyrannosaurus Rex"]
   },
   {
     "id":"462",
-    "name":"Deviants IXVI"
+    "names":["Deviants IXVI"]
   },
   {
     "id":"463",
-    "name":"The Deviants"
+    "names":["The Deviants"]
   },
   {
     "id":"464",
-    "name":"Tiny Grimes"
+    "names":["Tiny Grimes"]
   },
   {
     "id":"465",
-    "name":"Charlie Parker"
+    "names":["Charlie Parker"]
   },
   {
     "id":"466",
-    "name":"ZZ Top"
+    "names":["ZZ Top"]
   },
   {
     "id":"467",
-    "name":"The The"
+    "names":["The The"]
   },
   {
     "id":"468",
-    "name":"Johnny Marr & The Healers"
+    "names":["Johnny Marr & The Healers"]
   },
   {
     "id":"469",
-    "name":"Electronic"
+    "names":["Electronic"]
   },
   {
     "id":"470",
-    "name":"Joy Division"
+    "names":["Joy Division"]
   },
   {
     "id":"471",
-    "name":"TV On The Radio"
+    "names":["TV On The Radio"]
   },
   {
     "id":"472",
-    "name":"Chris Jagger's Atcha!"
+    "names":["Chris Jagger's Atcha!"]
   },
   {
     "id":"473",
-    "name":"North American Hallowe'en Prevention Initiative"
+    "names":["North American Hallowe'en Prevention Initiative"]
   },
   {
     "id":"474",
-    "name":"Arcade Fire"
+    "names":["Arcade Fire"]
   },
   {
     "id":"475",
-    "name":"Sparks"
+    "names":["Sparks"]
   },
   {
     "id":"476",
-    "name":"Devo"
+    "names":["Devo"]
   },
   {
     "id":"477",
-    "name":"Jimmy Buffett"
+    "names":["Jimmy Buffett"]
   },
   {
     "id":"478",
-    "name":"Tommy Tutone"
+    "names":["Tommy Tutone"]
   },
   {
     "id":"479",
-    "name":"They Might Be Giants"
+    "names":["They Might Be Giants"]
   },
   {
     "id":"480",
-    "name":"The Replacements"
+    "names":["The Replacements"]
   },
   {
     "id":"481",
-    "name":"The Stooges"
+    "names":["The Stooges"]
   },
   {
     "id":"482",
-    "name":"Dntel"
+    "names":["Dntel"]
   },
   {
     "id":"483",
-    "name":"The Aislers Set"
+    "names":["The Aislers Set"]
   },
   {
     "id":"484",
-    "name":"Motörhead"
+    "names":["Motörhead"]
   },
   {
     "id":"485",
-    "name":"Whitesnake"
+    "names":["Whitesnake"]
   },
   {
     "id":"486",
-    "name":"Suzanne Vega"
+    "names":["Suzanne Vega"]
   },
   {
     "id":"487",
-    "name":"Eartha Kitt"
+    "names":["Eartha Kitt"]
   },
   {
     "id":"488",
-    "name":"Lyle Lovett"
+    "names":["Lyle Lovett"]
   },
   {
     "id":"489",
-    "name":"Manfred Mann"
+    "names":["Manfred Mann"]
   },
   {
     "id":"490",
-    "name":"Pigface"
+    "names":["Pigface"]
   },
   {
     "id":"491",
-    "name":"Jumbo Shrimp"
+    "names":["Jumbo Shrimp"]
   },
   {
     "id":"492",
-    "name":"Translator"
+    "names":["Translator"]
   },
   {
     "id":"493",
-    "name":"Map Of Wyoming"
+    "names":["Map Of Wyoming"]
   },
   {
     "id":"494",
-    "name":"Pearl Jam"
+    "names":["Pearl Jam"]
   },
   {
     "id":"495",
-    "name":"Faces"
+    "names":["Faces"]
   },
   {
     "id":"496",
-    "name":"Peter Frampton"
+    "names":["Peter Frampton"]
   },
   {
     "id":"497",
-    "name":"Small Faces"
+    "names":["Small Faces"]
   },
   {
     "id":"498",
-    "name":"Humble Pie"
+    "names":["Humble Pie"]
   },
   {
     "id":"499",
-    "name":"Gerry Rafferty"
+    "names":["Gerry Rafferty"]
   },
   {
     "id":"500",
-    "name":"Harry Nilsson"
+    "names":["Harry Nilsson"]
   },
   {
     "id":"501",
-    "name":"Bob Ostertag"
+    "names":["Bob Ostertag"]
   },
   {
     "id":"502",
-    "name":"Faith No More"
+    "names":["Faith No More"]
   },
   {
     "id":"503",
-    "name":"Bongwater"
+    "names":["Bongwater"]
   },
   {
     "id":"504",
-    "name":"Phantom Tollbooth"
+    "names":["Phantom Tollbooth"]
   },
   {
     "id":"505",
-    "name":"Guided By Voices"
+    "names":["Guided By Voices"]
   },
   {
     "id":"506",
-    "name":"Electric Light Orchestra"
+    "name":["Electric Light Orchestra","ELO"]
   },
   {
     "id":"507",
-    "name":"Donna Summer"
+    "names":["Donna Summer"]
   },
   {
     "id":"508",
-    "name":"Bright Eyes"
+    "names":["Bright Eyes"]
   },
   {
     "id":"509",
-    "name":"The Beautiful South"
+    "names":["The Beautiful South"]
   },
   {
     "id":"510",
-    "name":"Brian Wilson"
+    "names":["Brian Wilson"]
   },
   {
     "id":"511",
-    "name":"The Germs"
+    "names":["The Germs"]
   },
   {
     "id":"512",
-    "name":"Towering Inferno"
+    "names":["Towering Inferno"]
   },
   {
     "id":"513",
-    "name":"OMC"
+    "names":["OMC"]
   },
   {
     "id":"514",
-    "name":"Doc Watson"
+    "names":["Doc Watson"]
   },
   {
     "id":"515",
-    "name":"Steve Martin"
+    "names":["Steve Martin"]
   },
   {
     "id":"516",
-    "name":"The Nitty Gritty Dirt Band"
+    "names":["The Nitty Gritty Dirt Band"]
   },
   {
     "id":"517",
-    "name":"Scandal"
+    "names":["Scandal"]
   },
   {
     "id":"518",
-    "name":"The Secret Police"
+    "names":["The Secret Police"]
   },
   {
     "id":"519",
-    "name":"Herbie Hancock"
+    "names":["Herbie Hancock"]
   },
   {
     "id":"520",
-    "name":"Lee Oskar"
+    "names":["Lee Oskar"]
   },
   {
     "id":"521",
-    "name":"Bon Jovi"
+    "names":["Bon Jovi"]
   },
   {
     "id":"522",
-    "name":"Rick James"
+    "names":["Rick James"]
   },
   {
     "id":"523",
-    "name":"Depeche Mode"
+    "names":["Depeche Mode"]
   },
   {
     "id":"524",
-    "name":"Joan Osborne"
+    "names":["Joan Osborne"]
   },
   {
     "id":"525",
-    "name":"The Mekons"
+    "names":["The Mekons"]
   },
   {
     "id":"526",
-    "name":"Cher"
+    "names":["Cher"]
   },
   {
     "id":"527",
-    "name":"Jack And Jill"
+    "names":["Jack And Jill"]
   },
   {
     "id":"528",
-    "name":"The Guess Who"
+    "names":["The Guess Who"]
   },
   {
     "id":"529",
-    "name":"Tom Petty"
+    "names":["Tom Petty"]
   },
   {
     "id":"530",
-    "name":"Steve Wynn"
+    "names":["Steve Wynn"]
   },
   {
     "id":"531",
-    "name":"X"
+    "names":["X"]
   },
   {
     "id":"532",
-    "name":"Lou Reed"
+    "names":["Lou Reed"]
   },
   {
     "id":"533",
-    "name":"The Suspects"
+    "names":["The Suspects"]
   },
   {
     "id":"534",
-    "name":"Milk Cult"
+    "names":["Milk Cult"]
   },
   {
     "id":"535",
-    "name":"Replicator"
+    "names":["Replicator"]
   },
   {
     "id":"536",
-    "name":"Dizrhythmia"
+    "names":["Dizrhythmia"]
   },
   {
     "id":"537",
-    "name":"Porcupine Tree"
+    "names":["Porcupine Tree"]
   },
   {
     "id":"538",
-    "name":"Blondie"
+    "names":["Blondie"]
   },
   {
     "id":"539",
-    "name":"Christopher Cross"
+    "names":["Christopher Cross"]
   },
   {
     "id":"540",
-    "name":"The Pogues"
+    "names":["The Pogues"]
   },
   {
     "id":"541",
-    "name":"The Jesus And Mary Chain"
+    "names":["The Jesus And Mary Chain"]
   },
   {
     "id":"542",
-    "name":"Icepick"
+    "names":["Icepick"]
   },
   {
     "id":"543",
-    "name":"Agnostic Front"
+    "names":["Agnostic Front"]
   },
   {
     "id":"544",
-    "name":"H2O"
+    "names":["H2O"]
   },
   {
     "id":"545",
-    "name":"Little Village"
+    "names":["Little Village"]
   },
   {
     "id":"546",
-    "name":"Dogbreath"
+    "names":["Dogbreath"]
   },
   {
     "id":"547",
-    "name":"The Knitters"
+    "names":["The Knitters"]
   },
   {
     "id":"548",
-    "name":"Half Japanese"
+    "names":["Half Japanese"]
   },
   {
     "id":"549",
-    "name":"Asia"
+    "names":["Asia"]
   },
   {
     "id":"551",
-    "name":"Sir Mix-A-Lot"
+    "names":["Sir Mix-A-Lot"]
   },
   {
     "id":"552",
-    "name":"Mudhoney & Sir Mix-A-Lot"
+    "names":["Mudhoney & Sir Mix-A-Lot"]
   },
   {
     "id":"553",
-    "name":"KC & The Sunshine Band"
+    "names":["KC & The Sunshine Band"]
   },
   {
     "id":"554",
-    "name":"Teri DeSario"
+    "names":["Teri DeSario"]
   },
   {
     "id":"555",
-    "name":"Kathleen Edwards"
+    "names":["Kathleen Edwards"]
   },
   {
     "id":"556",
-    "name":"John Doe"
+    "names":["John Doe"]
   },
   {
     "id":"557",
-    "name":"Dramarama"
+    "names":["Dramarama"]
   },
   {
     "id":"558",
-    "name":"Uriah Heep"
+    "names":["Uriah Heep"]
   },
   {
     "id":"559",
-    "name":"The Sweet"
+    "names":["The Sweet"]
   },
   {
     "id":"560",
-    "name":"John Prine"
+    "names":["John Prine"]
   },
   {
     "id":"561",
-    "name":"The Joe Perry Project"
+    "names":["The Joe Perry Project"]
   },
   {
     "id":"562",
-    "name":"Robert Plant"
+    "names":["Robert Plant"]
   },
   {
     "id":"563",
-    "name":"Coverdale/Page"
+    "names":["Coverdale/Page"]
   },
   {
     "id":"564",
-    "name":"Pink"
+    "names":["Pink"]
   },
   {
     "id":"565",
-    "name":"Blue Murder"
+    "names":["Blue Murder"]
   },
   {
     "id":"566",
-    "name":"The Cramps"
+    "names":["The Cramps"]
   },
   {
     "id":"567",
-    "name":"Nick Cave"
+    "names":["Nick Cave"]
   },
   {
     "id":"568",
-    "name":"The Gun Club"
+    "names":["The Gun Club"]
   },
   {
     "id":"569",
-    "name":"The Church"
+    "names":["The Church"]
   },
   {
     "id":"570",
-    "name":"Buck Owens"
+    "names":["Buck Owens"]
   },
   {
     "id":"571",
-    "name":"Sia"
+    "names":["Sia"]
   },
   {
     "id":"572",
-    "name":"Alicia Keys & Jack White"
+    "names":["Alicia Keys & Jack White"]
   },
   {
     "id":"573",
-    "name":"Bing Crosby"
+    "names":["Bing Crosby"]
   },
   {
     "id":"574",
-    "name":"The Von Bondies"
+    "names":["The Von Bondies"]
   },
   {
     "id":"575",
-    "name":"Slumber Party"
+    "names":["Slumber Party"]
   },
   {
     "id":"576",
-    "name":"Universal Indians"
+    "names":["Universal Indians"]
   },
   {
     "id":"577",
-    "name":"Machine Yardz"
+    "names":["Machine Yardz"]
   },
   {
     "id":"578",
-    "name":"Mêlée"
+    "names":["Mêlée"]
   },
   {
     "id":"579",
-    "name":"The Stephen Gauci Quartet"
+    "names":["The Stephen Gauci Quartet"]
   },
   {
     "id":"580",
-    "name":"The Rob Brown-Lou Grassi Quartet"
+    "names":["The Rob Brown-Lou Grassi Quartet"]
   },
   {
     "id":"581",
-    "name":"The Rob Brown Trio"
+    "names":["The Rob Brown Trio"]
   },
   {
     "id":"582",
-    "name":"The Tony Williams Lifetime"
+    "names":["The Tony Williams Lifetime"]
   },
   {
     "id":"583",
-    "name":"New Kids On The Block"
+    "names":["New Kids On The Block"]
   },
   {
     "id":"585",
-    "name":"Billy Ray Cyrus"
+    "names":["Billy Ray Cyrus"]
   },
   {
     "id":"586",
-    "name":"Hannah Montana"
+    "names":["Hannah Montana"]
   },
   {
     "id":"587",
-    "name":"Miley Cyrus & Billy Ray Cyrus"
+    "names":["Miley Cyrus & Billy Ray Cyrus"]
   },
   {
     "id":"588",
-    "name":"The Game"
+    "names":["The Game"]
   },
   {
     "id":"589",
-    "name":"Kyuss"
+    "names":["Kyuss"]
   },
   {
     "id":"590",
-    "name":"Tony Bennett"
+    "names":["Tony Bennett"]
   },
   {
     "id":"591",
-    "name":"Aimee Mann"
+    "names":["Aimee Mann"]
   },
   {
     "id":"592",
-    "name":"Manfred Mann's Earth Band"
+    "name":["Manfred Mann's Earth Band"]
   },
   {
     "id":"593",
-    "name":"Big In Japan"
+    "names":["Big In Japan"]
   },
   {
     "id":"594",
-    "name":"The Teardrop Explodes"
+    "names":["The Teardrop Explodes"]
   },
   {
     "id":"595",
-    "name":"Starland Vocal Band"
+    "names":["Starland Vocal Band"]
   },
   {
     "id":"596",
-    "name":"Bad Religion"
+    "names":["Bad Religion"]
   },
   {
     "id":"597",
-    "name":"Millencolin"
+    "names":["Millencolin"]
   },
   {
     "id":"598",
-    "name":"The (International) Noise Conspiracy"
+    "names":["The (International) Noise Conspiracy"]
   },
   {
     "id":"599",
-    "name":"Refused"
+    "names":["Refused"]
   },
   {
     "id":"600",
-    "name":"No Fun At All"
+    "names":["No Fun At All"]
   },
   {
     "id":"604",
-    "name":"Legacy Of Sound"
+    "names":["Legacy Of Sound"]
   },
   {
     "id":"605",
-    "name":"Ricky Martin"
+    "names":["Ricky Martin"]
   },
   {
     "id":"606",
-    "name":"Calexico / Iron & Wine"
+    "names":["Calexico / Iron & Wine"]
   },
   {
     "id":"608",
-    "name":"Calexico"
+    "names":["Calexico"]
   },
   {
     "id":"609",
-    "name":"Iron And Wine"
+    "names":["Iron And Wine"]
   },
   {
     "id":"610",
-    "name":"Band Aid 20"
+    "names":["Band Aid 20"]
   },
   {
     "id":"611",
-    "name":"Coldplay"
+    "names":["Coldplay"]
   },
   {
     "id":"612",
-    "name":"Joe Satriani"
+    "names":["Joe Satriani"]
   },
   {
     "id":"614",
-    "name":"David Crosby"
+    "names":["David Crosby"]
   },
   {
     "id":"615",
-    "name":"Magnus Uggla Band"
+    "names":["Magnus Uggla Band"]
   },
   {
     "id":"616",
-    "name":"'Til Tuesday"
+    "names":["'Til Tuesday"]
   },
   {
     "id":"617",
-    "name":"Kanye West"
+    "names":["Kanye West"]
   },
   {
     "id":"618",
-    "name":"My Morning Jacket"
+    "names":["My Morning Jacket"]
   },
   {
     "id":"619",
-    "name":"Alice Mudgarden"
+    "names":["Alice Mudgarden"]
   },
   {
     "id":"620",
-    "name":"50 Cent"
+    "names":["50 Cent"]
   },
   {
     "id":"621",
-    "name":"Wynton Marsalis"
+    "names":["Wynton Marsalis"]
   },
   {
     "id":"622",
-    "name":"Stan Getz"
+    "names":["Stan Getz"]
   },
   {
     "id":"623",
-    "name":"Narsquijack"
+    "names":["Narsquijack"]
   },
   {
     "id":"624",
-    "name":"The Leaders Trio"
+    "names":["The Leaders Trio"]
   },
   {
     "id":"625",
-    "name":"Slide Hampton"
+    "names":["Slide Hampton"]
   },
   {
     "id":"626",
-    "name":"Minor Threat"
+    "names":["Minor Threat"]
   },
   {
     "id":"627",
-    "name":"Egg Hunt"
+    "names":["Egg Hunt"]
   },
   {
     "id":"628",
-    "name":"Samhain"
+    "names":["Samhain"]
   },
   {
     "id":"629",
-    "name":"The Melvins"
+    "names":["The Melvins"]
   },
   {
     "id":"630",
-    "name":"High On Fire"
+    "names":["High On Fire"]
   },
   {
     "id":"631",
-    "name":"Sleep"
+    "names":["Sleep"]
   },
   {
     "id":"632",
-    "name":"Wylde Ratttz"
+    "names":["Wylde Ratttz"]
   },
   {
     "id":"633",
-    "name":"The Clash"
+    "names":["The Clash"]
   },
   {
     "id":"634",
-    "name":"The Mamas and the Papas"
+    "names":["The Mamas and the Papas"]
   },
   {
     "id":"635",
-    "name":"John Frusciante"
+    "names":["John Frusciante"]
   },
   {
     "id":"636",
-    "name":"The Mars Volta"
+    "names":["The Mars Volta"]
   },
   {
     "id":"637",
-    "name":"Joe Cocker"
+    "names":["Joe Cocker"]
   },
   {
     "id":"638",
-    "name":"Kano"
+    "names":["Kano"]
   },
   {
     "id":"641",
-    "name":"Muse & The Streets"
+    "names":["Muse & The Streets"]
   },
   {
     "id":"642",
-    "name":"Muse"
+    "names":["Muse"]
   },
   {
     "id":"643",
-    "name":"Rick Wakeman"
+    "names":["Rick Wakeman"]
   },
   {
     "id":"644",
-    "name":"Ayreon"
+    "names":["Ayreon"]
   },
   {
     "id":"645",
-    "name":"Boston"
+    "names":["Boston"]
   },
   {
     "id":"646",
-    "name":"Kansas"
+    "names":["Kansas"]
   },
   {
     "id":"647",
-    "name":"Derek Sherinian"
+    "names":["Derek Sherinian"]
   },
   {
     "id":"648",
-    "name":"Dream Theater"
+    "names":["Dream Theater"]
   },
   {
     "id":"649",
-    "name":"Linkin Park"
+    "names":["Linkin Park"]
   },
   {
     "id":"650",
-    "name":"Tenacious D"
+    "names":["Tenacious D"]
   },
   {
     "id":"652",
-    "name":"Coheed And Cambria"
+    "names":["Coheed And Cambria"]
   },
   {
     "id":"653",
-    "name":"Modest Mouse"
+    "names":["Modest Mouse"]
   },
   {
     "id":"654",
-    "name":"Mr. Bungle"
+    "names":["Mr. Bungle"]
   },
   {
     "id":"655",
-    "name":"Primus"
+    "names":["Primus"]
   },
   {
     "id":"656",
-    "name":"Eyes Adrift"
+    "names":["Eyes Adrift"]
   },
   {
     "id":"657",
-    "name":"Sublime"
+    "names":["Sublime"]
   },
   {
     "id":"658",
-    "name":"Fall Out Boy"
+    "names":["Fall Out Boy"]
   },
   {
     "id":"659",
-    "name":"Panic At The Disco"
+    "names":["Panic At The Disco"]
   },
   {
     "id":"660",
-    "name":"The Academy Is..."
+    "names":["The Academy Is..."]
   },
   {
     "id":"661",
-    "name":"My Chemical Romance"
+    "names":["My Chemical Romance"]
   },
   {
     "id":"662",
-    "name":"The Killers"
+    "names":["The Killers"]
   },
   {
     "id":"663",
-    "name":"The Knack"
+    "names":["The Knack"]
   },
   {
     "id":"664",
-    "name":"Dave Matthews Band"
+    "names":["Dave Matthews Band"]
   },
   {
     "id":"665",
-    "name":"Alanis Morissette"
+    "names":["Alanis Morissette"]
   },
   {
     "id":"666",
-    "name":"Velvet Revolver"
+    "names":["Velvet Revolver"]
   },
   {
     "id":"667",
-    "name":"Limp Bizkit"
+    "names":["Limp Bizkit"]
   },
   {
     "id":"668",
-    "name":"Ben Harper"
+    "names":["Ben Harper"]
   },
   {
     "id":"669",
-    "name":"Ronnie Wood"
+    "names":["Ronnie Wood"]
   },
   {
     "id":"670",
-    "name":"Scotty Moore"
+    "names":["Scotty Moore"]
   },
   {
     "id":"671",
-    "name":"Scotty Moore & D.J. Fontana"
+    "names":["Scotty Moore & D.J. Fontana"]
   },
   {
     "id":"672",
-    "name":"Petra Haden"
+    "names":["Petra Haden"]
   },
   {
     "id":"673",
-    "name":"Danger Danger"
+    "names":["Danger Danger"]
   },
   {
     "id":"674",
-    "name":"Camel"
+    "names":["Camel"]
   },
   {
     "id":"675",
-    "name":"Gong"
+    "names":["Gong"]
   },
   {
     "id":"676",
-    "name":"Strontium 90"
+    "names":["Strontium 90"]
   },
   {
     "id":"677",
-    "name":"BT"
+    "names":["BT"]
   },
   {
     "id":"678",
-    "name":"that dog."
+    "names":["that dog."]
   },
   {
     "id":"679",
-    "name":"Spain"
+    "names":["Spain"]
   },
   {
     "id":"680",
-    "name":"The Rentals"
+    "names":["The Rentals"]
   },
   {
     "id":"681",
-    "name":"An Observer"
+    "names":["An Observer"]
   },
   {
     "id":"682",
-    "name":"Headset"
+    "names":["Headset"]
   },
   {
     "id":"683",
-    "name":"Anubian Lights"
+    "names":["Anubian Lights"]
   },
   {
     "id":"684",
-    "name":"Farflung"
+    "names":["Farflung"]
   },
   {
     "id":"685",
-    "name":"Damo Suzuki's Network"
+    "names":["Damo Suzuki's Network"]
   },
   {
     "id":"686",
-    "name":"Pressurehed"
+    "names":["Pressurehed"]
   },
   {
     "id":"687",
-    "name":"Hawkwind"
+    "names":["Hawkwind"]
   },
   {
     "id":"688",
-    "name":"E*Lux"
+    "names":["E*Lux"]
   },
   {
     "id":"689",
-    "name":"Sade"
+    "names":["Sade"]
   },
   {
     "id":"690",
-    "name":"Working Week"
+    "names":["Working Week"]
   },
   {
     "id":"691",
-    "name":"Kylie Minogue"
+    "names":["Kylie Minogue"]
   },
   {
     "id":"692",
-    "name":"Rob Zombie"
+    "names":["Rob Zombie"]
   },
   {
     "id":"693",
-    "name":"Pat Boone"
+    "names":["Pat Boone"]
   },
   {
     "id":"694",
-    "name":"The Zombies"
+    "names":["The Zombies"]
   },
   {
     "id":"695",
-    "name":"Argent"
+    "names":["Argent"]
   },
   {
     "id":"696",
-    "name":"Shirley Bassey"
+    "names":["Shirley Bassey"]
   },
   {
     "id":"697",
-    "name":"Propellerheads"
+    "names":["Propellerheads"]
   },
   {
     "id":"698",
-    "name":"The Grid"
+    "names":["The Grid"]
   },
   {
     "id":"699",
-    "name":"Emiliana Torrini"
+    "names":["Emiliana Torrini"]
   },
   {
     "id":"700",
-    "name":"Eminem"
+    "names":["Eminem"]
   },
   {
     "id":"701",
-    "name":"Sheila E."
+    "names":["Sheila E."]
   },
   {
     "id":"702",
-    "name":"Sonny Rollins"
+    "names":["Sonny Rollins"]
   },
   {
     "id":"703",
-    "name":"Schon & Hammer"
+    "names":["Schon & Hammer"]
   },
   {
     "id":"704",
-    "name":"White Zombie"
+    "names":["White Zombie"]
   },
   {
     "id":"705",
-    "name":"The Floaters"
+    "names":["The Floaters"]
   },
   {
     "id":"706",
-    "name":"The Jazz Composer's Orchestra"
+    "names":["The Jazz Composer's Orchestra"]
   },
   {
     "id":"707",
-    "name":"Billy Cobham"
+    "names":["Billy Cobham"]
   },
   {
     "id":"708",
-    "name":"Carla Bley"
+    "names":["Carla Bley"]
   },
   {
     "id":"709",
-    "name":"Dave Brubeck"
+    "names":["Dave Brubeck"]
   },
   {
     "id":"710",
-    "name":"Electric Banana Band"
+    "names":["Electric Banana Band"]
   },
   {
     "id":"711",
-    "name":"Little Richard"
+    "names":["Little Richard"]
   },
   {
     "id":"712",
-    "name":"The Blasters"
+    "names":["The Blasters"]
   },
   {
     "id":"713",
-    "name":"Ronnie Milsap"
+    "names":["Ronnie Milsap"]
   },
   {
     "id":"714",
-    "name":"Al Green"
+    "names":["Al Green"]
   },
   {
     "id":"715",
-    "name":"Marvin Gaye"
+    "names":["Marvin Gaye"]
   },
   {
     "id":"716",
-    "name":"Kirk Lightsey"
+    "names":["Kirk Lightsey"]
   },
   {
     "id":"717",
-    "name":"The Bacon Brothers"
+    "names":["The Bacon Brothers"]
   },
   {
     "id":"718",
-    "name":"Spearhead"
+    "names":["Spearhead"]
   },
   {
     "id":"719",
-    "name":"Ben Folds"
+    "names":["Ben Folds"]
   },
   {
     "id":"720",
-    "name":"Taylor Swift"
+    "names":["Taylor Swift"]
   },
   {
     "id":"721",
-    "name":"The Real Kids"
+    "names":["The Real Kids"]
   },
   {
     "id":"722",
-    "name":"Night Ranger"
+    "names":["Night Ranger"]
   },
   {
     "id":"723",
-    "name":"Hall & Oates"
+    "names":["Hall & Oates"]
   },
   {
     "id":"724",
-    "name":"Lightnin' Rod"
+    "names":["Lightnin' Rod"]
   },
   {
     "id":"725",
-    "name":"Aretha Franklin"
+    "names":["Aretha Franklin"]
   },
   {
     "id":"726",
-    "name":"Grover Washington, Jr."
+    "names":["Grover Washington, Jr."]
   },
   {
     "id":"727",
-    "name":"Eva Cassidy"
+    "names":["Eva Cassidy"]
   },
   {
     "id":"728",
-    "name":"Oysterhead"
+    "names":["Oysterhead"]
   },
   {
     "id":"729",
-    "name":"Phish"
+    "names":["Phish"]
   },
   {
     "id":"730",
-    "name":"Blue Öyster Cult"
+    "names":["Blue Öyster Cult"]
   },
   {
     "id":"731",
-    "name":"James Brown"
+    "names":["James Brown"]
   },
   {
     "id":"732",
-    "name":"Eddie Murphy"
+    "names":["Eddie Murphy"]
   },
   {
     "id":"733",
-    "name":"Chickenfoot"
+    "names":["Chickenfoot"]
   },
   {
     "id":"734",
-    "name":"Tinted Windows"
+    "names":["Tinted Windows"]
   },
   {
     "id":"735",
-    "name":"Hanson"
+    "names":["Hanson"]
   },
   {
     "id":"736",
-    "name":"Chicago"
+    "names":["Chicago"]
   },
   {
     "id":"737",
-    "name":"Throbbing Gristle"
+    "names":["Throbbing Gristle"]
   },
   {
     "id":"738",
-    "name":"Milli Vanilli"
+    "names":["Milli Vanilli"]
   },
   {
     "id":"739",
-    "name":"Negativland"
+    "names":["Negativland"]
   },
   {
     "id":"740",
-    "name":"Crazy Town"
+    "names":["Crazy Town"]
   },
   {
     "id":"741",
-    "name":"45 Grave"
+    "names":["45 Grave"]
   },
   {
     "id":"742",
-    "name":"Circle"
+    "names":["Circle"]
   },
   {
     "id":"743",
-    "name":"Luke Vibert & BJ Cole"
+    "names":["Luke Vibert & BJ Cole"]
   },
   {
     "id":"744",
-    "name":"Squarepusher"
+    "names":["Squarepusher"]
   },
   {
     "id":"745",
-    "name":"NoMeansNo"
+    "names":["NoMeansNo"]
   },
   {
     "id":"746",
-    "name":"Jello Biafra"
+    "names":["Jello Biafra"]
   },
   {
     "id":"747",
-    "name":"Loggins and Messina"
+    "names":["Loggins and Messina"]
   },
   {
     "id":"748",
-    "name":"Allen Ginsberg"
+    "names":["Allen Ginsberg"]
   },
   {
     "id":"749",
-    "name":"The Jazz Butcher"
+    "names":["The Jazz Butcher"]
   },
   {
     "id":"750",
-    "name":"Sun Kil Moon"
+    "names":["Sun Kil Moon"]
   },
   {
     "id":"751",
-    "name":"Red House Painters"
+    "names":["Red House Painters"]
   },
   {
     "id":"752",
-    "name":"Evangelista"
+    "names":["Evangelista"]
   },
   {
     "id":"753",
-    "name":"Godspeed You! Black Emperor"
+    "names":["Godspeed You! Black Emperor"]
   },
   {
     "id":"754",
-    "name":"Shiloh"
+    "names":["Shiloh"]
   },
   {
     "id":"755",
-    "name":"Jeff Dahl Group"
+    "names":["Jeff Dahl Group"]
   },
   {
     "id":"756",
-    "name":"Christian Death"
+    "names":["Christian Death"]
   },
   {
     "id":"757",
-    "name":"Dali's Car"
+    "names":["Dali's Car"]
   },
   {
     "id":"758",
-    "name":"Japan"
+    "names":["Japan"]
   },
   {
     "id":"759",
-    "name":"Berlin"
+    "names":["Berlin"]
   },
   {
     "id":"760",
-    "name":"Black Lips"
+    "names":["Black Lips"]
   },
   {
     "id":"761",
-    "name":"The King Khan & BBQ Show"
+    "names":["The King Khan & BBQ Show"]
   },
   {
     "id":"762",
-    "name":"The Deadly Snakes"
+    "names":["The Deadly Snakes"]
   },
   {
     "id":"763",
-    "name":"'68 Comeback"
+    "names":["'68 Comeback"]
   },
   {
     "id":"764",
-    "name":"Gibson Bros."
+    "names":["Gibson Bros."]
   },
   {
     "id":"765",
-    "name":"Black Dice"
+    "names":["Black Dice"]
   },
   {
     "id":"766",
-    "name":"Lightning Bolt"
+    "names":["Lightning Bolt"]
   },
   {
     "id":"767",
-    "name":"Mindflayer"
+    "names":["Mindflayer"]
   },
   {
     "id":"768",
-    "name":"Krap"
+    "names":["Krap"]
   },
   {
     "id":"769",
-    "name":"Men's Recovery Project"
+    "names":["Men's Recovery Project"]
   },
   {
     "id":"770",
-    "name":"Psychic TV"
+    "names":["Psychic TV"]
   },
   {
     "id":"771",
-    "name":"Moby Grape"
+    "names":["Moby Grape"]
   },
   {
     "id":"772",
-    "name":"Tesla"
+    "names":["Tesla"]
   },
   {
     "id":"773",
-    "name":"Soulmotor"
+    "names":["Soulmotor"]
   },
   {
     "id":"774",
-    "name":"UFO"
+    "names":["UFO"]
   },
   {
     "id":"775",
-    "name":"Savoy Brown"
+    "names":["Savoy Brown"]
   },
   {
     "id":"776",
-    "name":"Coil"
+    "names":["Coil"]
   },
   {
     "id":"777",
-    "name":"Alternative TV"
+    "names":["Alternative TV"]
   },
   {
     "id":"778",
-    "name":"Wishbone Ash"
+    "names":["Wishbone Ash"]
   },
   {
     "id":"779",
-    "name":"Emily Bezar"
+    "names":["Emily Bezar"]
   },
   {
     "id":"780",
-    "name":"Toto"
+    "names":["Toto"]
   },
   {
     "id":"781",
-    "name":"Echo and the Bunnymen"
+    "names":["Echo and the Bunnymen"]
   },
   {
     "id":"782",
-    "name":"Julian Cope"
+    "names":["Julian Cope"]
   },
   {
     "id":"783",
-    "name":"Emerson, Lake & Palmer"
+    "names":["Emerson, Lake & Palmer"]
   },
   {
     "id":"784",
-    "name":"The Smiths"
+    "names":["The Smiths"]
   },
   {
     "id":"785",
-    "name":"ASAP"
+    "names":["ASAP"]
   },
   {
     "id":"786",
-    "name":"Uncle Tupelo"
+    "names":["Uncle Tupelo"]
   },
   {
     "id":"787",
-    "name":"Dr. Hook"
+    "names":["Dr. Hook"]
   },
   {
     "id":"788",
-    "name":"George Jones"
+    "names":["George Jones"]
   },
   {
     "id":"789",
-    "name":"Belly"
+    "names":["Belly"]
   },
   {
     "id":"790",
-    "name":"L7"
+    "names":["L7"]
   },
   {
     "id":"791",
-    "name":"Jawbreaker"
+    "names":["Jawbreaker"]
   },
   {
     "id":"792",
-    "name":"Mogwai"
+    "names":["Mogwai"]
   },
   {
     "id":"793",
-    "name":"The Reindeer Section"
+    "names":["The Reindeer Section"]
   },
   {
     "id":"794",
-    "name":"The Amphetameanies"
+    "names":["The Amphetameanies"]
   },
   {
     "id":"795",
-    "name":"Franz Ferdinand"
+    "names":["Franz Ferdinand"]
   },
   {
     "id":"796",
-    "name":"Jets To Brazil"
+    "names":["Jets To Brazil"]
   },
   {
     "id":"797",
-    "name":"The Van Pelt"
+    "names":["The Van Pelt"]
   },
   {
     "id":"798",
-    "name":"Pro Forma"
+    "names":["Pro Forma"]
   },
   {
     "id":"799",
-    "name":"Counting Crows"
+    "names":["Counting Crows"]
   },
   {
     "id":"800",
-    "name":"Pere Ubu"
+    "names":["Pere Ubu"]
   },
   {
     "id":"801",
-    "name":"The Saints"
+    "names":["The Saints"]
   },
   {
     "id":"802",
-    "name":"King"
+    "names":["King"]
   },
   {
     "id":"803",
-    "name":"Die Toten Hosen"
+    "names":["Die Toten Hosen"]
   },
   {
     "id":"804",
-    "name":"Rocket From The Tombs"
+    "names":["Rocket From The Tombs"]
   },
   {
     "id":"805",
-    "name":"David Hasselhoff"
+    "names":["David Hasselhoff"]
   },
   {
     "id":"806",
-    "name":"Public Image Ltd."
+    "name":["Public Image Ltd.","PiL"]
   },
   {
     "id":"807",
-    "name":"The Tear Garden"
+    "names":["The Tear Garden"]
   },
   {
     "id":"808",
-    "name":"Mimir"
+    "names":["Mimir"]
   },
   {
     "id":"809",
-    "name":"Mirror"
+    "names":["Mirror"]
   },
   {
     "id":"810",
-    "name":"Telstar Ponies"
+    "names":["Telstar Ponies"]
   },
   {
     "id":"811",
-    "name":"Lita Ford"
+    "names":["Lita Ford"]
   },
   {
     "id":"812",
-    "name":"Twisted Sister"
+    "names":["Twisted Sister"]
   },
   {
     "id":"813",
-    "name":"The Runaways"
+    "names":["The Runaways"]
   },
   {
     "id":"814",
-    "name":"Louis Prima"
+    "names":["Louis Prima"]
   },
   {
     "id":"815",
-    "name":"Laura Nyro"
+    "names":["Laura Nyro"]
   },
   {
     "id":"816",
-    "name":"Jessica Simpson"
+    "names":["Jessica Simpson"]
   },
   {
     "id":"817",
-    "name":"Henry's Dress"
+    "names":["Henry's Dress"]
   },
   {
     "id":"818",
-    "name":"The Coachwhips"
+    "names":["The Coachwhips"]
   },
   {
     "id":"819",
-    "name":"Handsome Boy Modeling School"
+    "names":["Handsome Boy Modeling School"]
   },
   {
     "id":"820",
-    "name":"Cat Power"
+    "names":["Cat Power"]
   },
   {
     "id":"821",
-    "name":"David Lee Roth"
+    "names":["David Lee Roth"]
   },
   {
     "id":"822",
-    "name":"Two"
+    "names":["Two"]
   },
   {
     "id":"823",
-    "name":"Landed"
+    "names":["Landed"]
   },
   {
     "id":"824",
-    "name":"The Obsessed"
+    "names":["The Obsessed"]
   },
   {
     "id":"825",
-    "name":"Bullring Brummies"
+    "names":["Bullring Brummies"]
   },
   {
     "id":"826",
-    "name":"The Allman Brothers Band"
+    "names":["The Allman Brothers Band"]
   },
   {
     "id":"827",
-    "name":"Derek & the Dominos"
+    "names":["Derek & the Dominos"]
   },
   {
     "id":"828",
-    "name":"Lloyd Cole"
+    "names":["Lloyd Cole"]
   },
   {
     "id":"829",
-    "name":"The Bluebells"
+    "names":["The Bluebells"]
   },
   {
     "id":"830",
-    "name":"Adult Net"
+    "names":["Adult Net"]
   },
   {
     "id":"831",
-    "name":"The Holez"
+    "names":["The Holez"]
   },
   {
     "id":"832",
-    "name":"Hole"
+    "names":["Hole"]
   },
   {
     "id":"833",
-    "name":"Amy Winehouse"
+    "names":["Amy Winehouse"]
   },
   {
     "id":"834",
-    "name":"Five For Fighting"
+    "names":["Five For Fighting"]
   },
   {
     "id":"835",
-    "name":"Nina Simone"
+    "names":["Nina Simone"]
   },
   {
     "id":"836",
-    "name":"Salt-N-Pepa"
+    "name":["Salt-N-Pepa"]
   },
   {
     "id":"837",
-    "name":"John Entwistle"
+    "names":["John Entwistle"]
   },
   {
     "id":"838",
-    "name":"Lost Sounds"
+    "names":["Lost Sounds"]
   },
   {
     "id":"839",
-    "name":"Knaughty Knights"
+    "names":["Knaughty Knights"]
   },
   {
     "id":"840",
-    "name":"Tav Falco's Panther Burns"
+    "names":["Tav Falco's Panther Burns"]
   },
   {
     "id":"841",
-    "name":"Centipede"
+    "names":["Centipede"]
   },
   {
     "id":"842",
-    "name":"Arlo Guthrie"
+    "names":["Arlo Guthrie"]
   },
   {
     "id":"843",
-    "name":"Mavis Staples"
+    "names":["Mavis Staples"]
   },
   {
     "id":"844",
-    "name":"Cows"
+    "names":["Cows"]
   },
   {
     "id":"845",
-    "name":"Dig That Body Up, It's Alive"
+    "names":["Dig That Body Up, It's Alive"]
   },
   {
     "id":"846",
-    "name":"Child Abuse"
+    "names":["Child Abuse"]
   },
   {
     "id":"847",
-    "name":"Cockfight"
+    "names":["Cockfight"]
   },
   {
     "id":"848",
-    "name":"Wings"
+    "names":["Wings"]
   },
   {
     "id":"849",
-    "name":"P. Diddy"
+    "names":["P. Diddy"]
   },
   {
     "id":"850",
-    "name":"Dick Hyman"
+    "names":["Dick Hyman"]
   },
   {
     "id":"851",
-    "name":"The Milt Hinton and Osie Johnson Quartet"
+    "names":["The Milt Hinton and Osie Johnson Quartet"]
   },
   {
     "id":"852",
-    "name":"Benny Goodman"
+    "names":["Benny Goodman"]
   },
   {
     "id":"853",
-    "name":"Nine Pound Hammer"
+    "names":["Nine Pound Hammer"]
   },
   {
     "id":"854",
-    "name":"Nashville Pussy"
+    "names":["Nashville Pussy"]
   },
   {
     "id":"855",
-    "name":"Jennifer Lopez"
+    "names":["Jennifer Lopez"]
   },
   {
     "id":"856",
-    "name":"Nervous Eaters"
+    "names":["Nervous Eaters"]
   },
   {
     "id":"857",
-    "name":"Eric Idle"
+    "names":["Eric Idle"]
   },
   {
     "id":"858",
-    "name":"Candy"
+    "names":["Candy"]
   },
   {
     "id":"859",
-    "name":"Electric Angels"
+    "names":["Electric Angels"]
   },
   {
     "id":"860",
-    "name":"Steve Hackett"
+    "names":["Steve Hackett"]
   },
   {
     "id":"861",
-    "name":"Scott Kinsey"
+    "names":["Scott Kinsey"]
   },
   {
     "id":"862",
-    "name":"Manfred Mann Chapter Three"
+    "names":["Manfred Mann Chapter Three"]
   },
   {
     "id":"863",
-    "name":"Filthy McNasty"
+    "names":["Filthy McNasty"]
   },
   {
     "id":"864",
-    "name":"Night"
+    "names":["Night"]
   },
   {
     "id":"865",
-    "name":"Live Skull"
+    "names":["Live Skull"]
   },
   {
     "id":"866",
-    "name":"Come"
+    "names":["Come"]
   },
   {
     "id":"867",
-    "name":"Chavez"
+    "names":["Chavez"]
   },
   {
     "id":"868",
-    "name":"Jack Bruce"
+    "names":["Jack Bruce"]
   },
   {
     "id":"869",
-    "name":"Cactus"
+    "names":["Cactus"]
   },
   {
     "id":"870",
-    "name":"Jack Johnson"
+    "names":["Jack Johnson"]
   },
   {
     "id":"871",
-    "name":"Material"
+    "names":["Material"]
   },
   {
     "id":"872",
-    "name":"The English Beat"
+    "names":["The English Beat"]
   },
   {
     "id":"873",
-    "name":"Coconut Records"
+    "names":["Coconut Records"]
   },
   {
     "id":"874",
-    "name":"Phantom Planet"
+    "names":["Phantom Planet"]
   },
   {
     "id":"875",
-    "name":"Dando Lee Petersson Schwartzman"
+    "names":["Dando Lee Petersson Schwartzman"]
   },
   {
     "id":"876",
-    "name":"Pailhead"
+    "names":["Pailhead"]
   },
   {
     "id":"877",
-    "name":"PJ Harvey"
+    "names":["PJ Harvey"]
   },
   {
     "id":"878",
-    "name":"Ataxia"
+    "names":["Ataxia"]
   },
   {
     "id":"879",
-    "name":"Fugazi"
+    "names":["Fugazi"]
   },
   {
     "id":"880",
-    "name":"Dangerous Toys"
+    "names":["Dangerous Toys"]
   },
   {
     "id":"881",
-    "name":"Cygnus and the Sea Monsters"
+    "names":["Cygnus and the Sea Monsters"]
   },
   {
     "id":"882",
-    "name":"Racer X"
+    "names":["Racer X"]
   },
   {
     "id":"883",
-    "name":"Bang Tango"
+    "names":["Bang Tango"]
   },
   {
     "id":"884",
-    "name":"The Newlydeads"
+    "names":["The Newlydeads"]
   },
   {
     "id":"885",
-    "name":"Faster Pussycat"
+    "names":["Faster Pussycat"]
   },
   {
     "id":"886",
-    "name":"Flotsam And Jetsam"
+    "names":["Flotsam And Jetsam"]
   },
   {
     "id":"887",
-    "name":"Prong"
+    "names":["Prong"]
   },
   {
     "id":"888",
-    "name":"L.A. Guns"
+    "names":["L.A. Guns"]
   },
   {
     "id":"889",
-    "name":"Poison"
+    "names":["Poison"]
   },
   {
     "id":"890",
-    "name":"Fleet Foxes"
+    "names":["Fleet Foxes"]
   },
   {
     "id":"891",
-    "name":"Rocky Votolato"
+    "names":["Rocky Votolato"]
   },
   {
     "id":"892",
-    "name":"Scientific"
+    "names":["Scientific"]
   },
   {
     "id":"893",
-    "name":"J. Tillman"
+    "names":["J. Tillman"]
   },
   {
     "id":"894",
-    "name":"Izabelle"
+    "names":["Izabelle"]
   },
   {
     "id":"895",
-    "name":"The Blood Brothers"
+    "names":["The Blood Brothers"]
   },
   {
     "id":"896",
-    "name":"Shift"
+    "names":["Shift"]
   },
   {
     "id":"897",
-    "name":"Sharks Keep Moving"
+    "names":["Sharks Keep Moving"]
   },
   {
     "id":"898",
-    "name":"Soiled Doves"
+    "names":["Soiled Doves"]
   },
   {
     "id":"899",
-    "name":"The Gossip"
+    "names":["The Gossip"]
   },
   {
     "id":"900",
-    "name":"Beirut"
+    "names":["Beirut"]
   },
   {
     "id":"902",
-    "name":"Drive Like Jehu"
+    "names":["Drive Like Jehu"]
   },
   {
     "id":"903",
-    "name":"West Coast Modern Day Punk Rock Orchestra"
+    "names":["West Coast Modern Day Punk Rock Orchestra"]
   },
   {
     "id":"904",
-    "name":"Richard Marx"
+    "names":["Richard Marx"]
   },
   {
     "id":"905",
-    "name":"Espionage"
+    "names":["Espionage"]
   },
   {
     "id":"906",
-    "name":"Europe"
+    "names":["Europe"]
   },
   {
     "id":"907",
-    "name":"Lady Gaga"
+    "names":["Lady Gaga"]
   },
   {
     "id":"908",
-    "name":"Paris Hilton"
+    "names":["Paris Hilton"]
   },
   {
     "id":"909",
-    "name":"Dan Wilson"
+    "names":["Dan Wilson"]
   },
   {
     "id":"910",
-    "name":"Nickel Creek"
+    "names":["Nickel Creek"]
   },
   {
     "id":"911",
-    "name":"Divinyls"
+    "names":["Divinyls"]
   },
   {
     "id":"912",
-    "name":"Doris Day"
+    "names":["Doris Day"]
   },
   {
     "id":"913",
-    "name":"Spike Jones"
+    "names":["Spike Jones"]
   },
   {
     "id":"914",
-    "name":"Bix Beiderbecke"
+    "names":["Bix Beiderbecke"]
   },
   {
     "id":"915",
-    "name":"Bessie Smith"
+    "names":["Bessie Smith"]
   },
   {
     "id":"916",
-    "name":"Steve Winwood"
+    "names":["Steve Winwood"]
   },
   {
     "id":"917",
-    "name":"Bob Marley"
+    "names":["Bob Marley"]
   },
   {
     "id":"918",
-    "name":"2Pac"
+    "names":["2Pac"]
   },
   {
     "id":"919",
-    "name":"Jonas Brothers"
+    "names":["Jonas Brothers"]
   },
   {
     "id":"920",
-    "name":"Jim Croce"
+    "names":["Jim Croce"]
   },
   {
     "id":"921",
-    "name":"The Supremes"
+    "names":["The Supremes"]
   },
   {
     "id":"922",
-    "name":"Mary J. Blige"
+    "names":["Mary J. Blige"]
   },
   {
     "id":"923",
-    "name":"Béla Fleck"
+    "names":["Béla Fleck"]
   },
   {
     "id":"924",
-    "name":"Harry Connick, Jr."
+    "names":["Harry Connick, Jr."]
   },
   {
     "id":"925",
-    "name":"Arlo Guthrie & Pete Seeger"
+    "names":["Arlo Guthrie & Pete Seeger"]
   },
   {
     "id":"926",
-    "name":"Scissor Sisters"
+    "names":["Scissor Sisters"]
   },
   {
     "id":"927",
-    "name":"Rihanna"
+    "names":["Rihanna"]
   },
   {
     "id":"928",
-    "name":"Fela Kuti"
+    "names":["Fela Kuti"]
   },
   {
     "id":"929",
-    "name":"Dieselhed"
+    "names":["Dieselhed"]
   },
   {
     "id":"930",
-    "name":"Dengue Fever"
+    "names":["Dengue Fever"]
   },
   {
     "id":"931",
-    "name":"Silver Jews"
+    "names":["Silver Jews"]
   },
   {
     "id":"932",
-    "name":"Continuous Peasant"
+    "names":["Continuous Peasant"]
   },
   {
     "id":"933",
-    "name":"Daft Punk"
+    "names":["Daft Punk"]
   },
   {
     "id":"934",
-    "name":"Sister Souljah"
+    "names":["Sister Souljah"]
   },
   {
     "id":"935",
-    "name":"Brian Glaze"
+    "names":["Brian Glaze"]
   },
   {
     "id":"936",
-    "name":"Toad The Wet Sprocket"
+    "names":["Toad The Wet Sprocket"]
   },
   {
     "id":"937",
-    "name":"Glen Phillips"
+    "names":["Glen Phillips"]
   },
   {
     "id":"938",
-    "name":"Joan Baez"
+    "names":["Joan Baez"]
   },
   {
     "id":"939",
-    "name":"The Coup"
+    "names":["The Coup"]
   },
   {
     "id":"940",
-    "name":"The Fugs"
+    "names":["The Fugs"]
   },
   {
     "id":"941",
-    "name":"Sara Bareilles"
+    "names":["Sara Bareilles"]
   },
   {
     "id":"942",
-    "name":"MC5"
+    "names":["MC5"]
   },
   {
     "id":"943",
-    "name":"Elephant's Memory"
+    "names":["Elephant's Memory"]
   },
   {
     "id":"944",
-    "name":"Stevie Wonder"
+    "names":["Stevie Wonder"]
   },
   {
     "id":"945",
-    "name":"En Vogue"
+    "names":["En Vogue"]
   },
   {
     "id":"946",
-    "name":"Heltah Skeltah"
+    "names":["Heltah Skeltah"]
   },
   {
     "id":"947",
-    "name":"Flo Rida"
+    "names":["Flo Rida"]
   },
   {
     "id":"948",
-    "name":"Judas Priest"
+    "names":["Judas Priest"]
   },
   {
     "id":"949",
-    "name":"311"
+    "names":["311"]
   },
   {
     "id":"950",
-    "name":"Louis Armstrong"
+    "names":["Louis Armstrong"]
   },
   {
     "id":"951",
-    "name":"Rufus Wainwright"
+    "names":["Rufus Wainwright"]
   },
   {
     "id":"952",
-    "name":"Wu-Tang Clan"
+    "names":["Wu-Tang Clan"]
   },
   {
     "id":"953",
-    "name":"The New York Dolls"
+    "names":["The New York Dolls"]
   },
   {
     "id":"954",
-    "name":"Heartbreakers"
+    "names":["Heartbreakers"]
   },
   {
     "id":"955",
-    "name":"Dim Stars"
+    "names":["Dim Stars"]
   },
   {
     "id":"956",
-    "name":"Heather Nova"
+    "names":["Heather Nova"]
   },
   {
     "id":"957",
-    "name":"Starsailor"
+    "names":["Starsailor"]
   },
   {
     "id":"958",
-    "name":"Ane Brun"
+    "names":["Ane Brun"]
   },
   {
     "id":"959",
-    "name":"Mitchell Froom"
+    "names":["Mitchell Froom"]
   },
   {
     "id":"960",
-    "name":"Backstreet Boys"
+    "names":["Backstreet Boys"]
   },
   {
     "id":"961",
-    "name":"Napalm Death"
+    "names":["Napalm Death"]
   },
   {
     "id":"962",
-    "name":"Boyz II Men"
+    "names":["Boyz II Men"]
   },
   {
     "id":"963",
-    "name":"Mariah Carey"
+    "names":["Mariah Carey"]
   },
   {
     "id":"964",
-    "name":"Butthole Surfers"
+    "names":["Butthole Surfers"]
   },
   {
     "id":"965",
-    "name":"Jay-Z"
+    "names":["Jay-Z"]
   },
   {
     "id":"966",
-    "name":"Chamillionaire"
+    "names":["Chamillionaire"]
   },
   {
     "id":"967",
-    "name":"Zucchero & B.B. King"
+    "names":["Zucchero & B.B. King"]
   },
   {
     "id":"968",
-    "name":"Minutemen"
+    "names":["Minutemen"]
   },
   {
     "id":"969",
-    "name":"Bob Seger"
+    "names":["Bob Seger"]
   },
   {
     "id":"970",
-    "name":"Mick Fleetwood"
+    "names":["Mick Fleetwood"]
   },
   {
     "id":"971",
-    "name":"Hüsker Dü"
+    "names":["Hüsker Dü"]
   },
   {
     "id":"972",
-    "name":"Malevolent Creation"
+    "names":["Malevolent Creation"]
   },
   {
     "id":"973",
-    "name":"Rilo Kiley"
+    "names":["Rilo Kiley"]
   },
   {
     "id":"974",
-    "name":"The New Pornographers"
+    "names":["The New Pornographers"]
   },
   {
     "id":"975",
-    "name":"Antenna"
+    "names":["Antenna"]
   },
   {
     "id":"976",
-    "name":"Rogue Wave"
+    "names":["Rogue Wave"]
   },
   {
     "id":"977",
-    "name":"Carrie Underwood"
+    "names":["Carrie Underwood"]
   },
   {
     "id":"978",
-    "name":"Anna Ternheim"
+    "names":["Anna Ternheim"]
   },
   {
     "id":"979",
-    "name":"Guillemots"
+    "names":["Guillemots"]
   },
   {
     "id":"980",
-    "name":"Merle Haggard & George Jones"
+    "names":["Merle Haggard & George Jones"]
   },
   {
     "id":"981",
-    "name":"Merle Haggard & Willie Nelson"
+    "names":["Merle Haggard & Willie Nelson"]
   },
   {
     "id":"982",
-    "name":"Merle Haggard"
+    "names":["Merle Haggard"]
   },
   {
     "id":"983",
-    "name":"Otis Redding"
+    "names":["Otis Redding"]
   },
   {
     "id":"984",
-    "name":"Lauryn Hill"
+    "names":["Lauryn Hill"]
   },
   {
     "id":"985",
-    "name":"Kelly Clarkson"
+    "names":["Kelly Clarkson"]
   },
   {
     "id":"986",
-    "name":"Reba McEntire"
+    "names":["Reba McEntire"]
   },
   {
     "id":"987",
-    "name":"Justin Guarini"
+    "names":["Justin Guarini"]
   },
   {
     "id":"988",
-    "name":"Rock Star Supernova"
+    "names":["Rock Star Supernova"]
   },
   {
     "id":"989",
-    "name":"Lenny Kravitz"
+    "names":["Lenny Kravitz"]
   },
   {
     "id":"990",
-    "name":"Spinal Tap"
+    "names":["Spinal Tap"]
   },
   {
     "id":"991",
-    "name":"Slash"
+    "names":["Slash"]
   },
   {
     "id":"992",
-    "name":"Billy Sherwood"
+    "names":["Billy Sherwood"]
   },
   {
     "id":"993",
-    "name":"Buddy Holly"
+    "names":["Buddy Holly"]
   },
   {
     "id":"994",
-    "name":"The Crickets"
+    "names":["The Crickets"]
   },
   {
     "id":"995",
-    "name":"Avril Lavigne"
+    "names":["Avril Lavigne"]
   },
   {
     "id":"996",
-    "name":"Sum 41"
+    "names":["Sum 41"]
   },
   {
     "id":"997",
-    "name":"Andrea Bocelli"
+    "names":["Andrea Bocelli"]
   },
   {
     "id":"998",
-    "name":"The Raconteurs"
+    "names":["The Raconteurs"]
   },
   {
     "id":"999",
-    "name":"Disturbed"
+    "names":["Disturbed"]
   },
   {
     "id":"1000",
-    "name":"David Draiman"
+    "names":["David Draiman"]
   },
   {
     "id":"1001",
-    "name":"Bo Diddley"
+    "names":["Bo Diddley"]
   },
   {
     "id":"1002",
-    "name":"Bo Diddley & Chuck Berry"
+    "names":["Bo Diddley & Chuck Berry"]
   },
   {
     "id":"1003",
-    "name":"Bo Diddley, Muddy Waters & Little Walter"
+    "names":["Bo Diddley, Muddy Waters & Little Walter"]
   },
   {
     "id":"1004",
-    "name":"Howlin' Wolf, Muddy Waters & Bo Diddley"
+    "names":["Howlin' Wolf, Muddy Waters & Bo Diddley"]
   },
   {
     "id":"1005",
-    "name":"Ron Wood & Bo Diddley"
+    "names":["Ron Wood & Bo Diddley"]
   },
   {
     "id":"1006",
-    "name":"Buena Vista Social Club"
+    "names":["Buena Vista Social Club"]
   },
   {
     "id":"1007",
-    "name":"Thomas Bangalter"
+    "names":["Thomas Bangalter"]
   },
   {
     "id":"1008",
-    "name":"Romanthony"
+    "names":["Romanthony"]
   },
   {
     "id":"1009",
-    "name":"Carla Bruni"
+    "names":["Carla Bruni"]
   },
   {
     "id":"1010",
-    "name":"Stuart A. Staples"
+    "names":["Stuart A. Staples"]
   },
   {
     "id":"1011",
-    "name":"K3"
+    "names":["K3"]
   },
   {
     "id":"1012",
-    "name":"Guus Meeuwis & Vagant"
+    "names":["Guus Meeuwis & Vagant"]
   },
   {
     "id":"1013",
-    "name":"Shivaree"
+    "names":["Shivaree"]
   },
   {
     "id":"1014",
-    "name":"Bettie Serveert"
+    "names":["Bettie Serveert"]
   },
   {
     "id":"1015",
-    "name":"The Shins"
+    "names":["The Shins"]
   },
   {
     "id":"1016",
-    "name":"Gap Mangione"
+    "names":["Gap Mangione"]
   },
   {
     "id":"1017",
-    "name":"Finale"
+    "names":["Finale"]
   },
   {
     "id":"1018",
-    "name":"The Blackbyrds"
+    "names":["The Blackbyrds"]
   },
   {
     "id":"1019",
-    "name":"The Residents"
+    "names":["The Residents"]
   },
   {
     "id":"1020",
-    "name":"Debbie Gibson"
+    "names":["Debbie Gibson"]
   },
   {
     "id":"1021",
-    "name":"The Decemberists"
+    "names":["The Decemberists"]
   },
   {
     "id":"1022",
-    "name":"a-ha"
+    "names":["a-ha"]
   },
   {
     "id":"1023",
-    "name":"The Psychedelic Furs"
+    "names":["The Psychedelic Furs"]
   },
   {
     "id":"1024",
-    "name":"Scott Walker"
+    "names":["Scott Walker"]
   },
   {
     "id":"1025",
-    "name":"Yanni"
+    "names":["Yanni"]
   },
   {
     "id":"1026",
-    "name":"Laura Pausini"
+    "names":["Laura Pausini"]
   },
   {
     "id":"1027",
-    "name":"James Blunt"
+    "names":["James Blunt"]
   },
   {
     "id":"1028",
-    "name":"Mandy Moore"
+    "names":["Mandy Moore"]
   },
   {
     "id":"1029",
-    "name":"Supertramp"
+    "names":["Supertramp"]
   },
   {
     "id":"1030",
-    "name":"Roger Hodgson"
+    "names":["Roger Hodgson"]
   },
   {
     "id":"1031",
-    "name":"The Ventures"
+    "names":["The Ventures"]
   },
   {
     "id":"1032",
-    "name":"Cristina Branco"
+    "names":["Cristina Branco"]
   },
   {
     "id":"1033",
-    "name":"Sting & Mariza"
+    "names":["Sting & Mariza"]
   },
   {
     "id":"1034",
-    "name":"Amy Macdonald"
+    "names":["Amy Macdonald"]
   },
   {
     "id":"1035",
-    "name":"Sir Lord Von Raven"
+    "names":["Sir Lord Von Raven"]
   },
   {
     "id":"1036",
-    "name":"Beth Hart"
+    "names":["Beth Hart"]
   },
   {
     "id":"1037",
-    "name":"Born"
+    "names":["Born"]
   },
   {
     "id":"1038",
-    "name":"Les Paul"
+    "names":["Les Paul"]
   },
   {
     "id":"1039",
-    "name":"Marilyn Monroe"
+    "names":["Marilyn Monroe"]
   },
   {
     "id":"1040",
-    "name":"Angus and Julia Stone"
+    "names":["Angus and Julia Stone"]
   },
   {
     "id":"1041",
-    "name":"Thompson Twins"
+    "names":["Thompson Twins"]
   },
   {
     "id":"1042",
-    "name":"Jonathan Elias"
+    "names":["Jonathan Elias"]
   },
   {
     "id":"1043",
-    "name":"Grace Jones"
+    "names":["Grace Jones"]
   },
   {
     "id":"1044",
-    "name":"George Harrison"
+    "names":["George Harrison"]
   },
   {
     "id":"1045",
-    "name":"Feeder"
+    "names":["Feeder"]
   },
   {
     "id":"1046",
-    "name":"Shadowgraphic City"
+    "names":["Shadowgraphic City"]
   },
   {
     "id":"1047",
-    "name":"Evil Superstars"
+    "names":["Evil Superstars"]
   },
   {
     "id":"1048",
-    "name":"Eagles Of Death Metal"
+    "names":["Eagles Of Death Metal"]
   },
   {
     "id":"1049",
-    "name":"Escape The Fate"
+    "names":["Escape The Fate"]
   },
   {
     "id":"1050",
-    "name":"Buckcherry"
+    "names":["Buckcherry"]
   },
   {
     "id":"1051",
-    "name":"Izzy Stradlin"
+    "names":["Izzy Stradlin"]
   },
   {
     "id":"1052",
-    "name":"Fully Loaded"
+    "names":["Fully Loaded"]
   },
   {
     "id":"1053",
-    "name":"Brown & Cole"
+    "names":["Brown & Cole"]
   },
   {
     "id":"1054",
-    "name":"MJ Cole"
+    "names":["MJ Cole"]
   },
   {
     "id":"1055",
-    "name":"Jill Scott"
+    "names":["Jill Scott"]
   },
   {
     "id":"1056",
-    "name":"John Mellencamp"
+    "names":["John Mellencamp"]
   },
   {
     "id":"1057",
-    "name":"Meshell Ndegeocello"
+    "names":["Meshell Ndegeocello"]
   },
   {
     "id":"1058",
-    "name":"Basement Jaxx"
+    "names":["Basement Jaxx"]
   },
   {
     "id":"1059",
-    "name":"Blind Boys Of Alabama"
+    "names":["Blind Boys Of Alabama"]
   },
   {
     "id":"1060",
-    "name":"Zap Mama"
+    "names":["Zap Mama"]
   },
   {
     "id":"1061",
-    "name":"The Funk Brothers"
+    "names":["The Funk Brothers"]
   },
   {
     "id":"1062",
-    "name":"Kashif"
+    "names":["Kashif"]
   },
   {
     "id":"1063",
-    "name":"Barry Manilow"
+    "names":["Barry Manilow"]
   },
   {
     "id":"1064",
-    "name":"Exposé"
+    "names":["Exposé"]
   },
   {
     "id":"1065",
-    "name":"When In Rome"
+    "names":["When In Rome"]
   },
   {
     "id":"1066",
-    "name":"King Diamond"
+    "names":["King Diamond"]
   },
   {
     "id":"1067",
-    "name":"Archers Of Loaf"
+    "names":["Archers Of Loaf"]
   },
   {
     "id":"1068",
-    "name":"Hotel Lights"
+    "names":["Hotel Lights"]
   },
   {
     "id":"1069",
-    "name":"Ben Folds Five"
+    "names":["Ben Folds Five"]
   },
   {
     "id":"1070",
-    "name":"Gorgoroth"
+    "names":["Gorgoroth"]
   },
   {
     "id":"1071",
-    "name":"Satyricon"
+    "names":["Satyricon"]
   },
   {
     "id":"1072",
-    "name":"Eibon"
+    "names":["Eibon"]
   },
   {
     "id":"1073",
-    "name":"Toots and the Maytals"
+    "names":["Toots and the Maytals"]
   },
   {
     "id":"1074",
-    "name":"Sleepyhead"
+    "names":["Sleepyhead"]
   },
   {
     "id":"1075",
-    "name":"Rapeman"
+    "names":["Rapeman"]
   },
   {
     "id":"1076",
-    "name":"The Jesus Lizard"
+    "names":["The Jesus Lizard"]
   },
   {
     "id":"1077",
-    "name":"Shellac"
+    "names":["Shellac"]
   },
   {
     "id":"1078",
-    "name":"The Kinetics"
+    "names":["The Kinetics"]
   },
   {
     "id":"1079",
-    "name":"Eric Shea & Bart Davenport"
+    "names":["Eric Shea & Bart Davenport"]
   },
   {
     "id":"1080",
-    "name":"Tumor Circus"
+    "names":["Tumor Circus"]
   },
   {
     "id":"1081",
-    "name":"Eric Dolphy"
+    "names":["Eric Dolphy"]
   },
   {
     "id":"1082",
-    "name":"Men At Work"
+    "names":["Men At Work"]
   },
   {
     "id":"1083",
-    "name":"The Power Station"
+    "names":["The Power Station"]
   },
   {
     "id":"1084",
-    "name":"Chic"
+    "names":["Chic"]
   },
   {
     "id":"1085",
-    "name":"Sarah Vaughan"
+    "names":["Sarah Vaughan"]
   },
   {
     "id":"1086",
-    "name":"moe."
+    "names":["moe."]
   },
   {
     "id":"1087",
-    "name":"Hedley"
+    "names":["Hedley"]
   },
   {
     "id":"1088",
-    "name":"Pet Shop Boys"
+    "names":["Pet Shop Boys"]
   },
   {
     "id":"1089",
-    "name":"Sebadoh"
+    "names":["Sebadoh"]
   },
   {
     "id":"1090",
-    "name":"Maria Mena"
+    "names":["Maria Mena"]
   },
   {
     "id":"1091",
-    "name":"Whimsical"
+    "names":["Whimsical"]
   },
   {
     "id":"1092",
-    "name":"The Postal Service"
+    "names":["The Postal Service"]
   },
   {
     "id":"1093",
-    "name":"Death Cab For Cutie"
+    "names":["Death Cab For Cutie"]
   },
   {
     "id":"1094",
-    "name":"Tracker"
+    "names":["Tracker"]
   },
   {
     "id":"1095",
-    "name":"The Divas"
+    "names":["The Divas"]
   },
   {
     "id":"1096",
-    "name":"The Lonely Island"
+    "names":["The Lonely Island"]
   },
   {
     "id":"1097",
-    "name":"Katy Perry"
+    "names":["Katy Perry"]
   },
   {
     "id":"1098",
-    "name":"Fiction Family"
+    "names":["Fiction Family"]
   },
   {
     "id":"1099",
-    "name":"Sparklehorse"
+    "names":["Sparklehorse"]
   },
   {
     "id":"1100",
-    "name":"Danger Mouse & Sparklehorse"
+    "names":["Danger Mouse & Sparklehorse"]
   },
   {
     "id":"1101",
-    "name":"World Party"
+    "names":["World Party"]
   },
   {
     "id":"1102",
-    "name":"Bill Monroe"
+    "names":["Bill Monroe"]
   },
   {
     "id":"1103",
-    "name":"Interpol"
+    "names":["Interpol"]
   },
   {
     "id":"1104",
-    "name":"Magnetic Morning"
+    "names":["Magnetic Morning"]
   },
   {
     "id":"1105",
-    "name":"Toshack Highway"
+    "names":["Toshack Highway"]
   },
   {
     "id":"1106",
-    "name":"Scouting For Girls"
+    "names":["Scouting For Girls"]
   },
   {
     "id":"1107",
-    "name":"Yellowcard"
+    "names":["Yellowcard"]
   },
   {
     "id":"1108",
-    "name":"Black Eyed Peas"
+    "names":["Black Eyed Peas"]
   },
   {
     "id":"1109",
-    "name":"Pete Townshend"
+    "names":["Pete Townshend"]
   },
   {
     "id":"1110",
-    "name":"Ben Kweller"
+    "names":["Ben Kweller"]
   },
   {
     "id":"1111",
-    "name":"Descendents"
+    "names":["Descendents"]
   },
   {
     "id":"1112",
-    "name":"Switchfoot"
+    "names":["Switchfoot"]
   },
   {
     "id":"1113",
-    "name":"Marc Almond"
+    "names":["Marc Almond"]
   },
   {
     "id":"1114",
-    "name":"Loreena McKennitt"
+    "names":["Loreena McKennitt"]
   },
   {
     "id":"1115",
-    "name":"The Klezmatics"
+    "names":["The Klezmatics"]
   },
   {
     "id":"1116",
-    "name":"Moxy Früvous"
+    "names":["Moxy Früvous"]
   },
   {
     "id":"1117",
-    "name":"Tiësto"
+    "names":["Tiësto"]
   },
   {
     "id":"1118",
-    "name":"Satan"
+    "names":["Satan"]
   },
   {
     "id":"1119",
-    "name":"Blitzkrieg"
+    "names":["Blitzkrieg"]
   },
   {
     "id":"1120",
-    "name":"Dead Easy"
+    "names":["Dead Easy"]
   },
   {
     "id":"1121",
-    "name":"Skyclad"
+    "names":["Skyclad"]
   },
   {
     "id":"1122",
-    "name":"3 Colours Red"
+    "names":["3 Colours Red"]
   },
   {
     "id":"1123",
-    "name":"Grand Theft Audio"
+    "names":["Grand Theft Audio"]
   },
   {
     "id":"1124",
-    "name":"The Wildhearts"
+    "names":["The Wildhearts"]
   },
   {
     "id":"1125",
-    "name":"Super$hit 666"
+    "names":["Super$hit 666"]
   },
   {
     "id":"1126",
-    "name":"Entombed"
+    "names":["Entombed"]
   },
   {
     "id":"1127",
-    "name":"Dismember"
+    "names":["Dismember"]
   },
   {
     "id":"1128",
-    "name":"Mercyful Fate"
+    "names":["Mercyful Fate"]
   },
   {
     "id":"1129",
-    "name":"The Smithereens"
+    "names":["The Smithereens"]
   },
   {
     "id":"1131",
-    "name":"Goldfrapp"
+    "names":["Goldfrapp"]
   },
   {
     "id":"1132",
-    "name":"Stroke 9"
+    "names":["Stroke 9"]
   },
   {
     "id":"1133",
-    "name":"Katherine Jenkins"
+    "names":["Katherine Jenkins"]
   },
   {
     "id":"1134",
-    "name":"George Russell"
+    "names":["George Russell"]
   },
   {
     "id":"1135",
-    "name":"Setting Sun"
+    "names":["Setting Sun"]
   },
   {
     "id":"1136",
-    "name":"Mindfunk"
+    "names":["Mindfunk"]
   },
   {
     "id":"1137",
-    "name":"The Other Ones"
+    "names":["The Other Ones"]
   },
   {
     "id":"1138",
-    "name":"The String Cheese Incident"
+    "names":["The String Cheese Incident"]
   },
   {
     "id":"1139",
-    "name":"Oscar Peterson & Stéphane Grappelli"
+    "names":["Oscar Peterson & Stéphane Grappelli"]
   },
   {
     "id":"1140",
-    "name":"Andreas Vollenweider"
+    "names":["Andreas Vollenweider"]
   },
   {
     "id":"1141",
-    "name":"Paula Abdul"
+    "names":["Paula Abdul"]
   },
   {
     "id":"1142",
-    "name":"2 Live Crew"
+    "names":["2 Live Crew"]
   },
   {
     "id":"1143",
-    "name":"New Edition"
+    "names":["New Edition"]
   },
   {
     "id":"1144",
-    "name":"Vanilla Ice"
+    "names":["Vanilla Ice"]
   },
   {
     "id":"1145",
-    "name":"Dweezil Zappa"
+    "names":["Dweezil Zappa"]
   },
   {
     "id":"1146",
-    "name":"The Time"
+    "names":["The Time"]
   },
   {
     "id":"1147",
-    "name":"The Sundays"
+    "names":["The Sundays"]
   },
   {
     "id":"1148",
-    "name":"Stevie Ray Vaughan"
+    "names":["Stevie Ray Vaughan"]
   },
   {
     "id":"1149",
-    "name":"The Cure"
+    "names":["The Cure"]
   },
   {
     "id":"1150",
-    "name":"Swervedriver"
+    "names":["Swervedriver"]
   },
   {
     "id":"1151",
-    "name":"Count Basie"
+    "names":["Count Basie"]
   },
   {
     "id":"1152",
-    "name":"Mr. Mister"
+    "names":["Mr. Mister"]
   },
   {
     "id":"1153",
-    "name":"Rick Springfield"
+    "names":["Rick Springfield"]
   },
   {
     "id":"1154",
-    "name":"Thelonious Monk"
+    "names":["Thelonious Monk"]
   },
   {
     "id":"1155",
-    "name":"The J. Geils Band"
+    "names":["The J. Geils Band"]
   },
   {
     "id":"1156",
-    "name":"The Doobie Brothers"
+    "names":["The Doobie Brothers"]
   },
   {
     "id":"1157",
-    "name":"The Brothers Johnson"
+    "names":["The Brothers Johnson"]
   },
   {
     "id":"1158",
-    "name":"Squeeze"
+    "names":["Squeeze"]
   },
   {
     "id":"1159",
-    "name":"Taylor Dayne"
+    "names":["Taylor Dayne"]
   },
   {
     "id":"1160",
-    "name":"The Trolleyvox"
+    "names":["The Trolleyvox"]
   },
   {
     "id":"1161",
-    "name":"Baby Flamehead"
+    "names":["Baby Flamehead"]
   },
   {
     "id":"1162",
-    "name":"The Shimmers"
+    "names":["The Shimmers"]
   },
   {
     "id":"1163",
-    "name":"The Dead Milkmen"
+    "names":["The Dead Milkmen"]
   },
   {
     "id":"1164",
-    "name":"The Bonzo Dog Doo-Dah Band"
+    "names":["The Bonzo Dog Doo-Dah Band"]
   },
   {
     "id":"1165",
-    "name":"The Crystal Method"
+    "names":["The Crystal Method"]
   },
   {
     "id":"1166",
-    "name":"LMFAO"
+    "names":["LMFAO"]
   },
   {
     "id":"1167",
-    "name":"Ween"
+    "names":["Ween"]
   },
   {
     "id":"1168",
-    "name":"Joel Godfrey Primer"
+    "names":["Joel Godfrey Primer"]
   },
   {
     "id":"1169",
-    "name":"Grandaddy"
+    "names":["Grandaddy"]
   },
   {
     "id":"1170",
-    "name":"Cute Is What We Aim For"
+    "names":["Cute Is What We Aim For"]
   },
   {
     "id":"1171",
-    "name":"All Time Low"
+    "names":["All Time Low"]
   },
   {
     "id":"1172",
-    "name":"The Meters"
+    "names":["The Meters"]
   },
   {
     "id":"1173",
-    "name":"Dashboard Confessional"
+    "names":["Dashboard Confessional"]
   },
   {
     "id":"1174",
-    "name":"The Promise Ring"
+    "names":["The Promise Ring"]
   },
   {
     "id":"1175",
-    "name":"Secondhand Serenade"
+    "names":["Secondhand Serenade"]
   },
   {
     "id":"1176",
-    "name":"Nick Clemons"
+    "names":["Nick Clemons"]
   },
   {
     "id":"1177",
-    "name":"Shirley Jones & Pert Kelton"
+    "names":["Shirley Jones & Pert Kelton"]
   },
   {
     "id":"1178",
-    "name":"Shirley Jones & The Buffalo Bills"
+    "names":["Shirley Jones & The Buffalo Bills"]
   },
   {
     "id":"1179",
-    "name":"Shirley Jones & Robert Preston"
+    "names":["Shirley Jones & Robert Preston"]
   },
   {
     "id":"1180",
-    "name":"Lyle Lanley & Cast"
+    "names":["Lyle Lanley & Cast"]
   },
   {
     "id":"1182",
-    "name":"Amália Rodrigues"
+    "names":["Amália Rodrigues"]
   },
   {
     "id":"1183",
-    "name":"Dinosaur Jr. & Del Tha Funkee Homosapien"
+    "names":["Dinosaur Jr. & Del Tha Funkee Homosapien"]
   },
   {
     "id":"1184",
-    "name":"Ice-T"
+    "names":["Ice-T"]
   },
   {
     "id":"1185",
-    "name":"Carmen Sevilla & Paco Rabal"
+    "names":["Carmen Sevilla & Paco Rabal"]
   },
   {
     "id":"1186",
-    "name":"dada"
+    "names":["dada"]
   },
   {
     "id":"1187",
-    "name":"Goran Bregovic"
+    "names":["Goran Bregovic"]
   },
   {
     "id":"1188",
-    "name":"Arctic Monkeys"
+    "names":["Arctic Monkeys"]
   },
   {
     "id":"1189",
-    "name":"The Dead Weather"
+    "names":["The Dead Weather"]
   },
   {
     "id":"1190",
-    "name":"Rain Tree Crow"
+    "names":["Rain Tree Crow"]
   },
   {
     "id":"1191",
-    "name":"David Sylvian"
+    "names":["David Sylvian"]
   },
   {
     "id":"1192",
-    "name":"Crystal Gayle"
+    "names":["Crystal Gayle"]
   },
   {
     "id":"1193",
-    "name":"Robert Mandell and His Orchestra"
+    "names":["Robert Mandell and His Orchestra"]
   },
   {
     "id":"1194",
-    "name":"Peter Nero"
+    "names":["Peter Nero"]
   },
   {
     "id":"1195",
-    "name":"Dani Siciliano"
+    "names":["Dani Siciliano"]
   },
   {
     "id":"1196",
-    "name":"Ghostigital"
+    "names":["Ghostigital"]
   },
   {
     "id":"1197",
-    "name":"The Sugarcubes"
+    "names":["The Sugarcubes"]
   },
   {
     "id":"1198",
-    "name":"Dicks"
+    "names":["Dicks"]
   },
   {
     "id":"1199",
-    "name":"Imperial Teen"
+    "names":["Imperial Teen"]
   },
   {
     "id":"1200",
-    "name":"Probot"
+    "names":["Probot"]
   },
   {
     "id":"1201",
-    "name":"Gary Floyd and The Buddha Brothers"
+    "names":["Gary Floyd and The Buddha Brothers"]
   },
   {
     "id":"1202",
-    "name":"The Dictators"
+    "names":["The Dictators"]
   },
   {
     "id":"1203",
-    "name":"Manowar"
+    "names":["Manowar"]
   },
   {
     "id":"1204",
-    "name":"Scorpions"
+    "names":["Scorpions"]
   },
   {
     "id":"1205",
-    "name":"Olivia Newton-John"
+    "names":["Olivia Newton-John"]
   },
   {
     "id":"1206",
-    "name":"LeAnn Rimes & Delta Goodrem"
+    "names":["LeAnn Rimes & Delta Goodrem"]
   },
   {
     "id":"1207",
-    "name":"Muhal Richard Abrams"
+    "names":["Muhal Richard Abrams"]
   },
   {
     "id":"1208",
-    "name":"Black Kali Ma"
+    "names":["Black Kali Ma"]
   },
   {
     "id":"1209",
-    "name":"Pete Yorn & Scarlett Johansson"
+    "names":["Pete Yorn & Scarlett Johansson"]
   },
   {
     "id":"1210",
-    "name":"Liz Phair"
+    "names":["Liz Phair"]
   },
   {
     "id":"1211",
-    "name":"Pete Yorn"
+    "names":["Pete Yorn"]
   },
   {
     "id":"1212",
-    "name":"Beulah"
+    "names":["Beulah"]
   },
   {
     "id":"1213",
-    "name":"Inner Circle"
+    "names":["Inner Circle"]
   },
   {
     "id":"1214",
-    "name":"Bow Wow Wow"
+    "names":["Bow Wow Wow"]
   },
   {
     "id":"1215",
-    "name":"Bow Wow"
+    "name":["Bow Wow","Lil' Bow Wow"]
   },
   {
     "id":"1216",
-    "name":"Mazzy Star"
+    "names":["Mazzy Star"]
   },
   {
     "id":"1217",
-    "name":"Rainy Day"
+    "names":["Rainy Day"]
   },
   {
     "id":"1218",
-    "name":"Crazy Horse"
+    "names":["Crazy Horse"]
   },
   {
     "id":"1219",
-    "name":"Perry Como"
+    "names":["Perry Como"]
   },
   {
     "id":"1220",
-    "name":"Prefab Sprout"
+    "names":["Prefab Sprout"]
   },
   {
     "id":"1221",
-    "name":"Jon Appleton & Don Cherry"
+    "names":["Jon Appleton & Don Cherry"]
   },
   {
     "id":"1222",
-    "name":"Kool & The Gang"
+    "names":["Kool & The Gang"]
   },
   {
     "id":"1223",
-    "name":"Love And Money"
+    "names":["Love And Money"]
   },
   {
     "id":"1224",
-    "name":"Nine Horses"
+    "names":["Nine Horses"]
   },
   {
     "id":"1225",
-    "name":"Michael Bublé"
+    "names":["Michael Bublé"]
   },
   {
     "id":"1226",
-    "name":"All About Eve"
+    "names":["All About Eve"]
   },
   {
     "id":"1227",
-    "name":"The Jackson 5"
+    "names":["The Jackson 5"]
   },
   {
     "id":"1228",
-    "name":"Vanessa Hudgens"
+    "names":["Vanessa Hudgens"]
   },
   {
     "id":"1229",
-    "name":"The Flaming Lips"
+    "names":["The Flaming Lips"]
   },
   {
     "id":"1230",
-    "name":"Tommy Shaw"
+    "names":["Tommy Shaw"]
   },
   {
     "id":"1231",
-    "name":"Bullet"
+    "names":["Bullet"]
   },
   {
     "id":"1232",
-    "name":"Breaking Benjamin"
+    "names":["Breaking Benjamin"]
   },
   {
     "id":"1233",
-    "name":"Jethro Tull"
+    "names":["Jethro Tull"]
   },
   {
     "id":"1234",
-    "name":"The Cult"
+    "names":["The Cult"]
   },
   {
     "id":"1235",
-    "name":"Strife"
+    "names":["Strife"]
   },
   {
     "id":"1236",
-    "name":"Amendment Eighteen"
+    "names":["Amendment Eighteen"]
   },
   {
     "id":"1237",
-    "name":"Ratt"
+    "names":["Ratt"]
   },
   {
     "id":"1238",
-    "name":"Grizzly Bear"
+    "names":["Grizzly Bear"]
   },
   {
     "id":"1239",
-    "name":"Air Supply"
+    "names":["Air Supply"]
   },
   {
     "id":"1240",
-    "name":"Snow Patrol"
+    "names":["Snow Patrol"]
   },
   {
     "id":"1241",
-    "name":"Uncle Kracker"
+    "names":["Uncle Kracker"]
   },
   {
     "id":"1242",
-    "name":"Kenny Chesney"
+    "names":["Kenny Chesney"]
   },
   {
     "id":"1243",
-    "name":"Golden Smog"
+    "names":["Golden Smog"]
   },
   {
     "id":"1244",
-    "name":"Canned Heat"
+    "names":["Canned Heat"]
   },
   {
     "id":"1245",
-    "name":"Brother Jack McDuff"
+    "names":["Brother Jack McDuff"]
   },
   {
     "id":"1246",
-    "name":"Kenny Burrell & John Coltrane"
+    "names":["Kenny Burrell & John Coltrane"]
   },
   {
     "id":"1247",
-    "name":"Paul Chambers"
+    "names":["Paul Chambers"]
   },
   {
     "id":"1248",
-    "name":"Jim Chapin"
+    "names":["Jim Chapin"]
   },
   {
     "id":"1249",
-    "name":"George Wallington"
+    "names":["George Wallington"]
   },
   {
     "id":"1250",
-    "name":"Raymond Scott"
+    "names":["Raymond Scott"]
   },
   {
     "id":"1251",
-    "name":"Primal Scream"
+    "names":["Primal Scream"]
   },
   {
     "id":"1252",
-    "name":"Alvin and the Chipmunks"
+    "names":["Alvin and the Chipmunks"]
   },
   {
     "id":"1253",
-    "name":"The Stone Roses"
+    "names":["The Stone Roses"]
   },
   {
     "id":"1254",
-    "name":"Roy Orbison"
+    "names":["Roy Orbison"]
   },
   {
     "id":"1255",
-    "name":"Art Garfunkel"
+    "names":["Art Garfunkel"]
   },
   {
     "id":"1256",
-    "name":"Michelle Branch"
+    "names":["Michelle Branch"]
   },
   {
     "id":"1257",
-    "name":"Them Crooked Vultures"
+    "names":["Them Crooked Vultures"]
   },
   {
     "id":"1258",
-    "name":"Herb Alpert"
+    "names":["Herb Alpert"]
   },
   {
     "id":"1259",
-    "name":"Gary Numan"
+    "names":["Gary Numan"]
   },
   {
     "id":"1260",
-    "name":"N.W.A."
+    "names":["N.W.A."]
   },
   {
     "id":"1261",
-    "name":"The Black Keys"
+    "names":["The Black Keys"]
   },
   {
     "id":"1262",
-    "name":"Animal Collective"
+    "names":["Animal Collective"]
   },
   {
     "id":"1263",
-    "name":"Terrestrial Tones"
+    "names":["Terrestrial Tones"]
   },
   {
     "id":"1264",
-    "name":"Tool"
+    "names":["Tool"]
   },
   {
     "id":"1265",
-    "name":"Mark Slaughter"
+    "names":["Mark Slaughter"]
   },
   {
     "id":"1266",
-    "name":"Dee Snider"
+    "names":["Dee Snider"]
   },
   {
     "id":"1267",
-    "name":"Herman Ze German"
+    "names":["Herman Ze German"]
   },
   {
     "id":"1268",
-    "name":"Funk, Inc."
+    "names":["Funk, Inc."]
   },
   {
     "id":"1269",
-    "name":"Will Smith"
+    "names":["Will Smith"]
   },
   {
     "id":"1270",
-    "name":"Carole King"
+    "names":["Carole King"]
   },
   {
     "id":"1271",
-    "name":"Big Audio Dynamite"
+    "names":["Big Audio Dynamite"]
   },
   {
     "id":"1272",
-    "name":"Montrose"
+    "names":["Montrose"]
   },
   {
     "id":"1273",
-    "name":"Chiefs Of Relief"
+    "names":["Chiefs Of Relief"]
   },
   {
     "id":"1274",
-    "name":"Just Stand Up To Cancer"
+    "names":["Just Stand Up To Cancer"]
   },
   {
     "id":"1275",
-    "name":"Keely Smith"
+    "names":["Keely Smith"]
   },
   {
     "id":"1276",
-    "name":"Gil Evans"
+    "names":["Gil Evans"]
   },
   {
     "id":"1277",
-    "name":"Didier Levallet Octet"
+    "names":["Didier Levallet Octet"]
   },
   {
     "id":"1278",
-    "name":"Keith Tippett's Ark"
+    "names":["Keith Tippett's Ark"]
   },
   {
     "id":"1279",
-    "name":"Keef Hartley Band"
+    "names":["Keef Hartley Band"]
   },
   {
     "id":"1280",
-    "name":"King Missile"
+    "names":["King Missile"]
   },
   {
     "id":"1281",
-    "name":"The Ex"
+    "names":["The Ex"]
   },
   {
     "id":"1282",
-    "name":"Puzzled Panthers"
+    "names":["Puzzled Panthers"]
   },
   {
     "id":"1283",
-    "name":"Twisted Roots"
+    "names":["Twisted Roots"]
   },
   {
     "id":"1284",
-    "name":"Jay Sean"
+    "names":["Jay Sean"]
   },
   {
     "id":"1285",
-    "name":"Chet Baker"
+    "names":["Chet Baker"]
   },
   {
     "id":"1286",
-    "name":"Eddie Vedder"
+    "names":["Eddie Vedder"]
   },
   {
     "id":"1287",
-    "name":"Mike McCready"
+    "names":["Mike McCready"]
   },
   {
     "id":"1288",
-    "name":"Tracy Chapman"
+    "names":["Tracy Chapman"]
   },
   {
     "id":"1289",
-    "name":"June Carter Cash"
+    "names":["June Carter Cash"]
   },
   {
     "id":"1290",
-    "name":"Kris Kristofferson"
+    "names":["Kris Kristofferson"]
   },
   {
     "id":"1291",
-    "name":"Johnny Winter"
+    "names":["Johnny Winter"]
   },
   {
     "id":"1292",
-    "name":"Richie Havens"
+    "names":["Richie Havens"]
   },
   {
     "id":"1293",
-    "name":"The Clancy Brothers"
+    "names":["The Clancy Brothers"]
   },
   {
     "id":"1294",
-    "name":"Mary Chapin Carpenter"
+    "names":["Mary Chapin Carpenter"]
   },
   {
     "id":"1295",
-    "name":"Roseanne Cash"
+    "names":["Roseanne Cash"]
   },
   {
     "id":"1296",
-    "name":"Shawn Colvin"
+    "names":["Shawn Colvin"]
   },
   {
     "id":"1297",
-    "name":"Chrissie Hynde"
+    "names":["Chrissie Hynde"]
   },
   {
     "id":"1298",
-    "name":"The O'Jays"
+    "names":["The O'Jays"]
   },
   {
     "id":"1299",
-    "name":"Roger McGuinn"
+    "names":["Roger McGuinn"]
   },
   {
     "id":"1300",
-    "name":"Fucked Up"
+    "names":["Fucked Up"]
   },
   {
     "id":"1301",
-    "name":"Billy Corgan"
+    "names":["Billy Corgan"]
   },
   {
     "id":"1302",
-    "name":"Drake"
+    "names":["Drake"]
   },
   {
     "id":"1303",
-    "name":"Beyoncé"
+    "names":["Beyoncé"]
   },
   {
     "id":"1304",
-    "name":"Missy Elliott"
+    "names":["Missy Elliott"]
   },
   {
     "id":"1305",
-    "name":"Eddie Money"
+    "names":["Eddie Money"]
   },
   {
     "id":"1306",
-    "name":"Bruce Hornsby"
+    "names":["Bruce Hornsby"]
   },
   {
     "id":"1307",
-    "name":"John Zorn"
+    "names":["John Zorn"]
   },
   {
     "id":"1308",
-    "name":"Diamanda Galás"
+    "names":["Diamanda Galás"]
   },
   {
     "id":"1309",
-    "name":"Artists Against AIDS Worldwide"
+    "names":["Artists Against AIDS Worldwide"]
   },
   {
     "id":"1310",
-    "name":"Earth"
+    "names":["Earth"]
   },
   {
     "id":"1311",
-    "name":"Dick Schory"
+    "names":["Dick Schory"]
   },
   {
     "id":"1312",
-    "name":"John Coltrane"
+    "names":["John Coltrane"]
   },
   {
     "id":"1313",
-    "name":"Burton Greene Quintet"
+    "names":["Burton Greene Quintet"]
   },
   {
     "id":"1314",
-    "name":"Buffalo Springfield"
+    "names":["Buffalo Springfield"]
   },
   {
     "id":"1315",
-    "name":"The Ronettes"
+    "names":["The Ronettes"]
   },
   {
     "id":"1316",
-    "name":"Paul Shaffer"
+    "names":["Paul Shaffer"]
   },
   {
     "id":"1317",
-    "name":"John Martyn"
+    "names":["John Martyn"]
   },
   {
     "id":"1318",
-    "name":"Peter, Paul And Mary"
+    "names":["Peter, Paul And Mary"]
   },
   {
     "id":"1320",
-    "name":"Jack Rose"
+    "names":["Jack Rose"]
   },
   {
     "id":"1321",
-    "name":"The Byrds"
+    "names":["The Byrds"]
   },
   {
     "id":"1322",
-    "name":"Will Young"
+    "names":["Will Young"]
   },
   {
     "id":"1323",
-    "name":"Sugababes"
+    "names":["Sugababes"]
   },
   {
     "id":"1324",
-    "name":"Girls Aloud"
+    "names":["Girls Aloud"]
   },
   {
     "id":"1325",
-    "name":"Jim Carroll"
+    "names":["Jim Carroll"]
   },
   {
     "id":"1326",
-    "name":"The Birthday Party"
+    "names":["The Birthday Party"]
   },
   {
     "id":"1327",
-    "name":"Lydia Lunch"
+    "names":["Lydia Lunch"]
   },
   {
     "id":"1328",
-    "name":"Rowland S. Howard"
+    "names":["Rowland S. Howard"]
   },
   {
     "id":"1329",
-    "name":"Nikki Sudden"
+    "names":["Nikki Sudden"]
   },
   {
     "id":"1330",
-    "name":"Avenged Sevenfold"
+    "names":["Avenged Sevenfold"]
   },
   {
     "id":"1331",
-    "name":"Creed"
+    "names":["Creed"]
   },
   {
     "id":"1332",
-    "name":"Bell Biv Devoe"
+    "names":["Bell Biv Devoe"]
   },
   {
     "id":"1333",
-    "name":"Billy Joel"
+    "names":["Billy Joel"]
   },
   {
     "id":"1334",
-    "name":"Kings of Leon"
+    "names":["Kings of Leon"]
   },
   {
     "id":"1335",
-    "name":"Wayne Newton"
+    "names":["Wayne Newton"]
   },
   {
     "id":"1336",
-    "name":"Roger Waters"
+    "names":["Roger Waters"]
   },
   {
     "id":"1337",
-    "name":"Goldfinger"
+    "names":["Goldfinger"]
   },
   {
     "id":"1338",
-    "name":"Electric Love Hogs"
+    "names":["Electric Love Hogs"]
   },
   {
     "id":"1339",
-    "name":"Michael Blair"
+    "names":["Michael Blair"]
   },
   {
     "id":"1340",
-    "name":"Henry Threadgill"
+    "names":["Henry Threadgill"]
   },
   {
     "id":"1341",
-    "name":"Greg Cohen"
+    "names":["Greg Cohen"]
   },
   {
     "id":"1342",
-    "name":"Vernon Reid"
+    "names":["Vernon Reid"]
   },
   {
     "id":"1343",
-    "name":"Bill Frisell"
+    "names":["Bill Frisell"]
   },
   {
     "id":"1344",
-    "name":"Henry Rollins"
+    "names":["Henry Rollins"]
   },
   {
     "id":"1345",
-    "name":"The Uptown Horns"
+    "names":["The Uptown Horns"]
   },
   {
     "id":"1346",
-    "name":"Charlie Watts"
+    "names":["Charlie Watts"]
   },
   {
     "id":"1347",
-    "name":"Chuck D"
+    "names":["Chuck D"]
   },
   {
     "id":"1348",
-    "name":"Hal Willner"
+    "names":["Hal Willner"]
   },
   {
     "id":"1349",
-    "name":"Bobby Previte"
+    "names":["Bobby Previte"]
   },
   {
     "id":"1350",
-    "name":"Hubert Selby, Jr."
+    "names":["Hubert Selby, Jr."]
   },
   {
     "id":"1351",
-    "name":"Keith Richards"
+    "names":["Keith Richards"]
   },
   {
     "id":"1352",
-    "name":"Dr. John"
+    "names":["Dr. John"]
   },
   {
     "id":"1353",
-    "name":"Marie Osmond"
+    "names":["Marie Osmond"]
   },
   {
     "id":"1354",
-    "name":"Donny Osmond"
+    "names":["Donny Osmond"]
   },
   {
     "id":"1355",
-    "name":"Justin Bieber"
+    "names":["Justin Bieber"]
   },
   {
     "id":"1356",
-    "name":"Ludacris"
+    "names":["Ludacris"]
   },
   {
     "id":"1357",
-    "name":"Barbra Streisand"
+    "names":["Barbra Streisand"]
   },
   {
     "id":"1358",
-    "name":"Artists For Haiti"
+    "names":["Artists For Haiti"]
   },
   {
     "id":"1359",
-    "name":"The Waterboys"
+    "names":["The Waterboys"]
   },
   {
     "id":"1360",
-    "name":"Timbaland"
+    "names":["Timbaland"]
   },
   {
     "id":"1361",
-    "name":"The Babys"
+    "names":["The Babys"]
   },
   {
     "id":"1362",
-    "name":"Peter Primamore"
+    "names":["Peter Primamore"]
   },
   {
     "id":"1363",
-    "name":"Amanda Palmer"
+    "names":["Amanda Palmer"]
   },
   {
     "id":"1364",
-    "name":"St. Vincent"
+    "names":["St. Vincent"]
   },
   {
     "id":"1365",
-    "name":"Bon Iver"
+    "names":["Bon Iver"]
   },
   {
     "id":"1366",
-    "name":"Young Artists For Haiti"
+    "names":["Young Artists For Haiti"]
   },
   {
     "id":"1367",
-    "name":"K'naan"
+    "names":["K'naan"]
   },
   {
     "id":"1368",
-    "name":"Brad Mehldau"
+    "names":["Brad Mehldau"]
   },
   {
     "id":"1369",
-    "name":"Geno Washington and the Ram Jam Band"
+    "names":["Geno Washington and the Ram Jam Band"]
   },
   {
     "id":"1370",
-    "name":"Bell + Arc"
+    "names":["Bell + Arc"]
   },
   {
     "id":"1371",
-    "name":"Babe Ruth"
+    "names":["Babe Ruth"]
   },
   {
     "id":"1372",
-    "name":"Ace"
+    "names":["Ace"]
   },
   {
     "id":"1373",
-    "name":"Steve Howe"
+    "names":["Steve Howe"]
   },
   {
     "id":"1374",
-    "name":"Andy Fairweather-Low"
+    "names":["Andy Fairweather-Low"]
   },
   {
     "id":"1375",
-    "name":"Robert Fripp"
+    "names":["Robert Fripp"]
   },
   {
     "id":"1376",
-    "name":"Jackson Browne"
+    "names":["Jackson Browne"]
   },
   {
     "id":"1377",
-    "name":"Collective Soul"
+    "names":["Collective Soul"]
   },
   {
     "id":"1378",
-    "name":"Leona Lewis"
+    "names":["Leona Lewis"]
   },
   {
     "id":"1379",
-    "name":"Lifehouse"
+    "names":["Lifehouse"]
   },
   {
     "id":"1380",
-    "name":"Methods Of Mayhem"
+    "names":["Methods Of Mayhem"]
   },
   {
     "id":"1381",
-    "name":"Lemmy Kilmister"
+    "names":["Lemmy Kilmister"]
   },
   {
     "id":"1382",
-    "name":"The Soft Winds"
+    "names":["The Soft Winds"]
   },
   {
     "id":"1383",
-    "name":"Oscar Peterson"
+    "names":["Oscar Peterson"]
   },
   {
     "id":"1384",
-    "name":"Ella Fitzgerald"
+    "names":["Ella Fitzgerald"]
   },
   {
     "id":"1385",
-    "name":"Sonny Stitt"
+    "names":["Sonny Stitt"]
   },
   {
     "id":"1386",
-    "name":"Herb Ellis"
+    "names":["Herb Ellis"]
   },
   {
     "id":"1387",
-    "name":"Jimmy Giuffre"
+    "names":["Jimmy Giuffre"]
   },
   {
     "id":"1388",
-    "name":"Great Guitars"
+    "names":["Great Guitars"]
   },
   {
     "id":"1389",
-    "name":"Ray Brown"
+    "names":["Ray Brown"]
   },
   {
     "id":"1390",
-    "name":"Ross Tompkins"
+    "names":["Ross Tompkins"]
   },
   {
     "id":"1391",
-    "name":"Monty Alexander"
+    "names":["Monty Alexander"]
   },
   {
     "id":"1392",
-    "name":"Allan Holdsworth"
+    "names":["Allan Holdsworth"]
   },
   {
     "id":"1393",
-    "name":"Freedom Cruise"
+    "names":["Freedom Cruise"]
   },
   {
     "id":"1394",
-    "name":"Whitney Duncan"
+    "names":["Whitney Duncan"]
   },
   {
     "id":"1395",
-    "name":"Jimmy Wayne"
+    "names":["Jimmy Wayne"]
   },
   {
     "id":"1396",
-    "name":"Andrea Glass"
+    "names":["Andrea Glass"]
   },
   {
     "id":"1397",
-    "name":"Lucinda Williams"
+    "names":["Lucinda Williams"]
   },
   {
     "id":"1398",
-    "name":"The National"
+    "names":["The National"]
   },
   {
     "id":"1399",
-    "name":"The Wallflowers"
+    "names":["The Wallflowers"]
   },
   {
     "id":"1400",
-    "name":"David Byrne"
+    "names":["David Byrne"]
   },
   {
     "id":"1401",
-    "name":"Fatboy Slim"
+    "names":["Fatboy Slim"]
   },
   {
     "id":"1402",
-    "name":"Beth Custer"
+    "names":["Beth Custer"]
   },
   {
     "id":"1403",
-    "name":"ohGr"
+    "names":["ohGr"]
   },
   {
     "id":"1404",
-    "name":"Colby O'Donis"
+    "names":["Colby O'Donis"]
   },
   {
     "id":"1405",
-    "name":"Pat Martino"
+    "names":["Pat Martino"]
   },
   {
     "id":"1406",
-    "name":"Chico Hamilton"
+    "names":["Chico Hamilton"]
   },
   {
     "id":"1407",
-    "name":"Paramore"
+    "names":["Paramore"]
   },
   {
     "id":"1408",
-    "name":"Michael Schenker Group"
+    "names":["Michael Schenker Group"]
   },
   {
     "id":"1409",
-    "name":"The Sensational Alex Harvey Band"
+    "names":["The Sensational Alex Harvey Band"]
   },
   {
     "id":"1410",
-    "name":"Erasure"
+    "names":["Erasure"]
   },
   {
     "id":"1411",
-    "name":"Yazoo"
+    "name":["Yazoo","Yaz"]
   },
   {
     "id":"1412",
-    "name":"Friends For Change"
+    "names":["Friends For Change"]
   },
   {
     "id":"1413",
-    "name":"Jon Bon Jovi"
+    "names":["Jon Bon Jovi"]
   },
   {
     "id":"1414",
-    "name":"Jeff Beck"
+    "names":["Jeff Beck"]
   },
   {
     "id":"1415",
-    "name":"Josh Groban"
+    "names":["Josh Groban"]
   },
   {
     "id":"1416",
-    "name":"Imogen Heap"
+    "names":["Imogen Heap"]
   },
   {
     "id":"1417",
-    "name":"Frou Frou"
+    "names":["Frou Frou"]
   },
   {
     "id":"1418",
-    "name":"Lisa Lisa & Cult Jam"
+    "names":["Lisa Lisa & Cult Jam"]
   },
   {
     "id":"1419",
-    "name":"Lisa Lisa"
+    "names":["Lisa Lisa"]
   },
   {
     "id":"1420",
-    "name":"Patti LaBelle"
+    "names":["Patti LaBelle"]
   },
   {
     "id":"1421",
-    "name":"Lisa Loeb"
+    "names":["Lisa Loeb"]
   },
   {
     "id":"1422",
-    "name":"Henry Mancini"
+    "names":["Henry Mancini"]
   },
   {
     "id":"1423",
-    "name":"Paul Rodgers"
+    "names":["Paul Rodgers"]
   },
   {
     "id":"1424",
-    "name":"Redd Kross"
+    "names":["Redd Kross"]
   },
   {
     "id":"1425",
-    "name":"The Muffs"
+    "names":["The Muffs"]
   },
   {
     "id":"1426",
-    "name":"She & Him"
+    "names":["She & Him"]
   },
   {
     "id":"1427",
-    "name":"Dee Dee Ramone I.C.L.C."
+    "names":["Dee Dee Ramone I.C.L.C."]
   },
   {
     "id":"1428",
-    "name":"The Verve"
+    "names":["The Verve"]
   },
   {
     "id":"1429",
-    "name":"Transplants"
+    "names":["Transplants"]
   },
   {
     "id":"1430",
-    "name":"Frankie Goes To Hollywood"
+    "names":["Frankie Goes To Hollywood"]
   },
   {
     "id":"1431",
-    "name":"Musical Youth"
+    "names":["Musical Youth"]
   },
   {
     "id":"1432",
-    "name":"M.O.P."
+    "names":["M.O.P."]
   },
   {
     "id":"1433",
-    "name":"EPMD"
+    "names":["EPMD"]
   },
   {
     "id":"1434",
-    "name":"Gang Starr"
+    "names":["Gang Starr"]
   },
   {
     "id":"1435",
-    "name":"Naughty By Nature"
+    "names":["Naughty By Nature"]
   },
   {
     "id":"1436",
-    "name":"Lori Lieberman"
+    "names":["Lori Lieberman"]
   },
   {
     "id":"1437",
-    "name":"Agent Orange"
+    "names":["Agent Orange"]
   },
   {
     "id":"1438",
-    "name":"Bucks Fizz"
+    "names":["Bucks Fizz"]
   },
   {
     "id":"1439",
-    "name":"Chris Isaak"
+    "names":["Chris Isaak"]
   },
   {
     "id":"1440",
-    "name":"Michael Johnson"
+    "names":["Michael Johnson"]
   },
   {
     "id":"1441",
-    "name":"Emmylou Harris"
+    "names":["Emmylou Harris"]
   },
   {
     "id":"1442",
-    "name":"Peter Yarrow"
+    "names":["Peter Yarrow"]
   },
   {
     "id":"1443",
-    "name":"John Simon"
+    "names":["John Simon"]
   },
   {
     "id":"1444",
-    "name":"Rebel Meets Rebel"
+    "names":["Rebel Meets Rebel"]
   },
   {
     "id":"1445",
-    "name":"Sodom"
+    "names":["Sodom"]
   },
   {
     "id":"1446",
-    "name":"Kreator"
+    "names":["Kreator"]
   },
   {
     "id":"1447",
-    "name":"Whiplash"
+    "names":["Whiplash"]
   },
   {
     "id":"1448",
-    "name":"Into Another"
+    "names":["Into Another"]
   },
   {
     "id":"1449",
-    "name":"The New Rising Sons"
+    "names":["The New Rising Sons"]
   },
   {
     "id":"1450",
-    "name":"The Denison/Kimball Trio"
+    "names":["The Denison/Kimball Trio"]
   },
   {
     "id":"1451",
-    "name":"Tomahawk"
+    "names":["Tomahawk"]
   },
   {
     "id":"1452",
-    "name":"The Fantômas Melvins Big Band"
+    "names":["The Fantômas Melvins Big Band"]
   },
   {
     "id":"1453",
-    "name":"Stan Kenton"
+    "names":["Stan Kenton"]
   },
   {
     "id":"1454",
-    "name":"Violent Femmes"
+    "names":["Violent Femmes"]
   },
   {
     "id":"1455",
-    "name":"Alphaville"
+    "names":["Alphaville"]
   },
   {
     "id":"1456",
-    "name":"New Model Army"
+    "names":["New Model Army"]
   },
   {
     "id":"1457",
-    "name":"Fields Of The Nephilim"
+    "names":["Fields Of The Nephilim"]
   },
   {
     "id":"1458",
-    "name":"The Architects Of Disaster"
+    "names":["The Architects Of Disaster"]
   },
   {
     "id":"1459",
-    "name":"The Perfect Disaster"
+    "names":["The Perfect Disaster"]
   },
   {
     "id":"1460",
-    "name":"Honey Tongue"
+    "names":["Honey Tongue"]
   },
   {
     "id":"1461",
-    "name":"The Breeders"
+    "names":["The Breeders"]
   },
   {
     "id":"1462",
-    "name":"Frank Black"
+    "names":["Frank Black"]
   },
   {
     "id":"1463",
-    "name":"Jonas Hellborg"
+    "names":["Jonas Hellborg"]
   },
   {
     "id":"1464",
-    "name":"W.A.S.P."
+    "names":["W.A.S.P."]
   },
   {
     "id":"1465",
-    "name":"Five Finger Death Punch"
+    "names":["Five Finger Death Punch"]
   },
   {
     "id":"1466",
-    "name":"Children Of Bodom"
+    "names":["Children Of Bodom"]
   },
   {
     "id":"1467",
-    "name":"Sinergy"
+    "names":["Sinergy"]
   },
   {
     "id":"1468",
-    "name":"Christina Rosenvinge"
+    "names":["Christina Rosenvinge"]
   },
   {
     "id":"1469",
-    "name":"Vetusta Morla"
+    "names":["Vetusta Morla"]
   },
   {
     "id":"1470",
-    "name":"The Housemartins"
+    "names":["The Housemartins"]
   },
   {
     "id":"1471",
-    "name":"Chumbawamba"
+    "names":["Chumbawamba"]
   },
   {
     "id":"1472",
-    "name":"Chet Atkins"
+    "names":["Chet Atkins"]
   },
   {
     "id":"1473",
-    "name":"Allen Toussaint"
+    "names":["Allen Toussaint"]
   },
   {
     "id":"1474",
-    "name":"The B-52's"
+    "names":["The B-52's"]
   },
   {
     "id":"1475",
-    "name":"Witchery"
+    "names":["Witchery"]
   },
   {
     "id":"1476",
-    "name":"Opeth"
+    "names":["Opeth"]
   },
   {
     "id":"1477",
-    "name":"Alter Bridge"
+    "names":["Alter Bridge"]
   },
   {
     "id":"1478",
-    "name":"Vinnie Colaiuta"
+    "names":["Vinnie Colaiuta"]
   },
   {
     "id":"1479",
-    "name":"Tiffany"
+    "names":["Tiffany"]
   },
   {
     "id":"1480",
-    "name":"Aesop Rock"
+    "names":["Aesop Rock"]
   },
   {
     "id":"1481",
-    "name":"Mr. Lif"
+    "names":["Mr. Lif"]
   },
   {
     "id":"1482",
-    "name":"Waylon Jennings"
+    "names":["Waylon Jennings"]
   },
   {
     "id":"1483",
-    "name":"Hank Williams, Jr."
+    "names":["Hank Williams, Jr."]
   },
   {
     "id":"1484",
-    "name":"Paradise Lost"
+    "names":["Paradise Lost"]
   },
   {
     "id":"1485",
-    "name":"At The Gates"
+    "names":["At The Gates"]
   },
   {
     "id":"1486",
-    "name":"The Haunted"
+    "names":["The Haunted"]
   },
   {
     "id":"1487",
-    "name":"Theatre Of Tragedy"
+    "names":["Theatre Of Tragedy"]
   },
   {
     "id":"1488",
-    "name":"Therion"
+    "names":["Therion"]
   },
   {
     "id":"1489",
-    "name":"Living Colour"
+    "names":["Living Colour"]
   },
   {
     "id":"1490",
-    "name":"Bad Brains"
+    "names":["Bad Brains"]
   },
   {
     "id":"1491",
-    "name":"Long Beach Dub Allstars"
+    "names":["Long Beach Dub Allstars"]
   },
   {
     "id":"1492",
-    "name":"Slint"
+    "names":["Slint"]
   },
   {
     "id":"1493",
-    "name":"Tortoise"
+    "names":["Tortoise"]
   },
   {
     "id":"1494",
-    "name":"Zwan"
+    "names":["Zwan"]
   },
   {
     "id":"1495",
-    "name":"Sophia"
+    "names":["Sophia"]
   },
   {
     "id":"1496",
-    "name":"Buddy Guy"
+    "names":["Buddy Guy"]
   },
   {
     "id":"1497",
-    "name":"Marcus Miller"
+    "names":["Marcus Miller"]
   },
   {
     "id":"1498",
-    "name":"The Alan Parsons Project"
+    "names":["The Alan Parsons Project"]
   },
   {
     "id":"1499",
-    "name":"Kenny Chesney"
+    "names":["Kenny Chesney"]
   },
   {
     "id":"1500",
-    "name":"dEUS"
+    "names":["dEUS"]
   },
   {
     "id":"1501",
-    "name":"Grand Funk"
+    "names":["Grand Funk"]
   },
   {
     "id":"1502",
-    "name":"Rise Against"
+    "names":["Rise Against"]
   },
   {
     "id":"1503",
-    "name":"David Guetta"
+    "names":["David Guetta"]
   },
   {
     "id":"1504",
-    "name":"Warren DeMartini"
+    "names":["Warren DeMartini"]
   },
   {
     "id":"1505",
-    "name":"Manic Street Preachers"
+    "names":["Manic Street Preachers"]
   },
   {
     "id":"1506",
-    "name":"ALL"
+    "names":["ALL"]
   },
   {
     "id":"1507",
-    "name":"The Bonesaw Romance"
+    "names":["The Bonesaw Romance"]
   },
   {
     "id":"1508",
-    "name":"Kenneth Patchen"
+    "names":["Kenneth Patchen"]
   },
   {
     "id":"1509",
-    "name":"A-Frames"
+    "names":["A-Frames"]
   },
   {
     "id":"1510",
-    "name":"A.C. Newman"
+    "names":["A.C. Newman"]
   },
   {
     "id":"1511",
-    "name":"Aberdeen City"
+    "names":["Aberdeen City"]
   },
   {
     "id":"1512",
-    "name":"Action Figure Party"
+    "names":["Action Figure Party"]
   },
   {
     "id":"1513",
-    "name":"Adorable"
+    "names":["Adorable"]
   },
   {
     "id":"1515",
-    "name":"Adrian Belew"
+    "names":["Adrian Belew"]
   },
   {
     "id":"1516",
-    "name":"The Affair"
+    "names":["The Affair"]
   },
   {
     "id":"1517",
-    "name":"Air"
+    "names":["Air"]
   },
   {
     "id":"1518",
-    "name":"Alessandro Baricco"
+    "names":["Alessandro Baricco"]
   },
   {
     "id":"1519",
-    "name":"The Aardvarks"
+    "names":["The Aardvarks"]
   },
   {
     "id":"1520",
-    "name":"Actionslacks"
+    "names":["Actionslacks"]
   },
   {
     "id":"1521",
-    "name":"The Admirals"
+    "names":["The Admirals"]
   },
   {
     "id":"1522",
-    "name":"Ajax Green"
+    "names":["Ajax Green"]
   },
   {
     "id":"1523",
-    "name":"Don Henley"
+    "names":["Don Henley"]
   },
   {
     "id":"1524",
-    "name":"David Gray"
+    "names":["David Gray"]
   },
   {
     "id":"1525",
-    "name":"Deftones"
+    "names":["Deftones"]
   },
   {
     "id":"1526",
-    "name":"Jeanie And The Tits"
+    "names":["Jeanie And The Tits"]
   },
   {
     "id":"1527",
-    "name":"The Del-Rios"
+    "names":["The Del-Rios"]
   },
   {
     "id":"1528",
-    "name":"Middle Of The Road"
+    "names":["Middle Of The Road"]
   },
   {
     "id":"1529",
-    "name":"The Bevis Frond"
+    "names":["The Bevis Frond"]
   },
   {
     "id":"1530",
-    "name":"Jaco Pastorius"
+    "names":["Jaco Pastorius"]
   },
   {
     "id":"1531",
-    "name":"Robert Craft"
+    "names":["Robert Craft"]
   },
   {
     "id":"1532",
-    "name":"Edgar Varèse"
+    "names":["Edgar Varèse"]
   },
   {
     "id":"1533",
-    "name":"Mark Mothersbaugh"
+    "names":["Mark Mothersbaugh"]
   },
   {
     "id":"1534",
-    "name":"Lee \"Scratch\" Perry"
+    "names":["Lee \"Scratch\" Perry"]
   },
   {
     "id":"1535",
-    "name":"Gorgeous George"
+    "names":["Gorgeous George"]
   },
   {
     "id":"1536",
-    "name":"Lily Allen"
+    "names":["Lily Allen"]
   },
   {
     "id":"1537",
-    "name":"Common"
+    "names":["Common"]
   },
   {
     "id":"1538",
-    "name":"David Fanshawe"
+    "names":["David Fanshawe"]
   },
   {
     "id":"1539",
-    "name":"Oscar Brown, Jr."
+    "names":["Oscar Brown, Jr."]
   },
   {
     "id":"1540",
-    "name":"John Trubee"
+    "names":["John Trubee"]
   },
   {
     "id":"1541",
-    "name":"Van Morrison"
+    "names":["Van Morrison"]
   },
   {
     "id":"1542",
-    "name":"I Jog & The Tracksuits"
+    "names":["I Jog & The Tracksuits"]
   },
   {
     "id":"1543",
-    "name":"Jazz Warriors"
+    "names":["Jazz Warriors"]
   },
   {
     "id":"1544",
-    "name":"The Four Shells"
+    "names":["The Four Shells"]
   },
   {
     "id":"1545",
-    "name":"Heart"
+    "names":["Heart"]
   },
   {
     "id":"1546",
-    "name":"Winterpills"
+    "names":["Winterpills"]
   },
   {
     "id":"1547",
-    "name":"Cheryl Trykv"
+    "names":["Cheryl Trykv"]
   },
   {
     "id":"1548",
-    "name":"Beep Beep"
+    "names":["Beep Beep"]
   },
   {
     "id":"1549",
-    "name":"Lavender Diamond"
+    "names":["Lavender Diamond"]
   },
   {
     "id":"1550",
-    "name":"West Coast Pop Art Experimental Band"
+    "names":["West Coast Pop Art Experimental Band"]
   },
   {
     "id":"1551",
-    "name":"Johnnie Taylor"
+    "names":["Johnnie Taylor"]
   },
   {
     "id":"1552",
-    "name":"Hot Chip"
+    "names":["Hot Chip"]
   },
   {
     "id":"1553",
-    "name":"Wendy Rene"
+    "names":["Wendy Rene"]
   },
   {
     "id":"1554",
-    "name":"Hanne Hukkelberg"
+    "names":["Hanne Hukkelberg"]
   },
   {
     "id":"1555",
-    "name":"Michael Andrews"
+    "names":["Michael Andrews"]
   },
   {
     "id":"1556",
-    "name":"British Sea Power"
+    "names":["British Sea Power"]
   },
   {
     "id":"1557",
-    "name":"Zero dB"
+    "names":["Zero dB"]
   },
   {
     "id":"1558",
-    "name":"Todd Rundgren"
+    "names":["Todd Rundgren"]
   },
   {
     "id":"1559",
-    "name":"Team Dresch"
+    "names":["Team Dresch"]
   },
   {
     "id":"1560",
-    "name":"Dead Prez"
+    "names":["Dead Prez"]
   },
   {
     "id":"1561",
-    "name":"Tall Dwarfs"
+    "names":["Tall Dwarfs"]
   },
   {
     "id":"1562",
-    "name":"Billy Preston"
+    "names":["Billy Preston"]
   },
   {
     "id":"1563",
-    "name":"Syreeta"
+    "names":["Syreeta"]
   },
   {
     "id":"1564",
-    "name":"The Nerves"
+    "names":["The Nerves"]
   },
   {
     "id":"1565",
-    "name":"The Breakaways"
+    "names":["The Breakaways"]
   },
   {
     "id":"1566",
-    "name":"The Plimsouls"
+    "names":["The Plimsouls"]
   },
   {
     "id":"1567",
-    "name":"The Apples In Stereo"
+    "names":["The Apples In Stereo"]
   },
   {
     "id":"1568",
-    "name":"X-Ray Spex"
+    "names":["X-Ray Spex"]
   },
   {
     "id":"1569",
-    "name":"Bachman-Turner Overdrive"
+    "names":["Bachman-Turner Overdrive"]
   },
   {
     "id":"1570",
-    "name":"Wall Of Voodoo"
+    "names":["Wall Of Voodoo"]
   },
   {
     "id":"1571",
-    "name":"Barry Blue"
+    "names":["Barry Blue"]
   },
   {
     "id":"1572",
-    "name":"Cab Calloway"
+    "names":["Cab Calloway"]
   },
   {
     "id":"1573",
-    "name":"Steven Tyler"
+    "names":["Steven Tyler"]
   },
   {
     "id":"1574",
-    "name":"Diane Schuur"
+    "names":["Diane Schuur"]
   },
   {
     "id":"1575",
-    "name":"Elmo"
+    "names":["Elmo"]
   },
   {
     "id":"1576",
-    "name":"Oscar The Grouch"
+    "names":["Oscar The Grouch"]
   },
   {
     "id":"1577",
-    "name":"The Three Degrees"
+    "names":["The Three Degrees"]
   },
   {
     "id":"1578",
-    "name":"Lionel Richie"
+    "names":["Lionel Richie"]
   },
   {
     "id":"1579",
-    "name":"Courtney Pine"
+    "names":["Courtney Pine"]
   },
   {
     "id":"1580",
-    "name":"Jimi Hendrix"
+    "names":["Jimi Hendrix"]
   },
   {
     "id":"1581",
-    "name":"Art Tatum"
+    "names":["Art Tatum"]
   },
   {
     "id":"1582",
-    "name":"Sting"
+    "names":["Sting"]
   },
   {
     "id":"1583",
-    "name":"Tahiti 80"
+    "names":["Tahiti 80"]
   },
   {
     "id":"1584",
-    "name":"Sarah McLachlan"
+    "names":["Sarah McLachlan"]
   },
   {
     "id":"1585",
-    "name":"The Concretes"
+    "names":["The Concretes"]
   },
   {
     "id":"1586",
-    "name":"Kenny Barron"
+    "names":["Kenny Barron"]
   },
   {
     "id":"1587",
-    "name":"Thelma Houston"
+    "names":["Thelma Houston"]
   },
   {
     "id":"1588",
-    "name":"Patty Griffin"
+    "names":["Patty Griffin"]
   },
   {
     "id":"1589",
-    "name":"Ken Boothe"
+    "names":["Ken Boothe"]
   },
   {
     "id":"1590",
-    "name":"Matthews Southern Comfort"
+    "names":["Matthews Southern Comfort"]
   },
   {
     "id":"1591",
-    "name":"Detroit Spinners"
+    "names":["Detroit Spinners"]
   },
   {
     "id":"1592",
-    "name":"Maxine Nightingale"
+    "names":["Maxine Nightingale"]
   },
   {
     "id":"1593",
-    "name":"Telekinesis"
+    "names":["Telekinesis"]
   },
   {
     "id":"1594",
-    "name":"Clap Your Hands Say Yeah"
+    "names":["Clap Your Hands Say Yeah"]
   },
   {
     "id":"1595",
-    "name":"Spoon"
+    "names":["Spoon"]
   },
   {
     "id":"1596",
-    "name":"Wham!"
+    "names":["Wham!"]
   },
   {
     "id":"1597",
-    "name":"The Dils"
+    "names":["The Dils"]
   },
   {
     "id":"1598",
-    "name":"Rifle Sport"
+    "names":["Rifle Sport"]
   },
   {
     "id":"1599",
-    "name":"Big Black"
+    "names":["Big Black"]
   },
   {
     "id":"1600",
-    "name":"Jesse Malin"
+    "names":["Jesse Malin"]
   },
   {
     "id":"1601",
-    "name":"Frida"
+    "names":["Frida"]
   },
   {
     "id":"1602",
-    "name":"Vivian Campbell"
+    "names":["Vivian Campbell"]
   },
   {
     "id":"1603",
-    "name":"Nickelback"
+    "names":["Nickelback"]
   },
   {
     "id":"1604",
-    "name":"Hank Williams III"
+    "names":["Hank Williams III"]
   },
   {
     "id":"1605",
-    "name":"John Mayall"
+    "names":["John Mayall"]
   },
   {
     "id":"1606",
-    "name":"Kid Rock"
+    "names":["Kid Rock"]
   },
   {
     "id":"1607",
-    "name":"Brooks & Dunn"
+    "names":["Brooks & Dunn"]
   },
   {
     "id":"1608",
-    "name":"Gov't Mule"
+    "names":["Gov't Mule"]
   },
   {
     "id":"1609",
-    "name":"Billy Gibbons"
+    "names":["Billy Gibbons"]
   },
   {
     "id":"1610",
-    "name":"Dave Grohl"
+    "names":["Dave Grohl"]
   },
   {
     "id":"1611",
-    "name":"Thin Lizzy"
+    "names":["Thin Lizzy"]
   },
   {
     "id":"1612",
-    "name":"The Brodsky Quartet"
+    "names":["The Brodsky Quartet"]
   },
   {
     "id":"1613",
-    "name":"Ultravox"
+    "names":["Ultravox"]
   },
   {
     "id":"1614",
-    "name":"Smash Mouth"
+    "names":["Smash Mouth"]
   },
   {
     "id":"1615",
-    "name":"Killing Joke"
+    "names":["Killing Joke"]
   },
   {
     "id":"1616",
-    "name":"DMX"
+    "names":["DMX"]
   },
   {
     "id":"1617",
-    "name":"The Dylans"
+    "names":["The Dylans"]
   },
   {
     "id":"1618",
-    "name":"Crowded House"
+    "names":["Crowded House"]
   },
   {
     "id":"1619",
-    "name":"Thelonious Monster"
+    "names":["Thelonious Monster"]
   },
   {
     "id":"1620",
-    "name":"Lovage"
+    "names":["Lovage"]
   },
   {
     "id":"1621",
-    "name":"Björk"
+    "names":["Björk"]
   },
   {
     "id":"1622",
-    "name":"Steve Vai"
+    "names":["Steve Vai"]
   },
   {
     "id":"1623",
-    "name":"Alcatrazz"
+    "names":["Alcatrazz"]
   },
   {
     "id":"1624",
-    "name":"Antony And The Johnsons"
+    "names":["Antony And The Johnsons"]
   },
   {
     "id":"1625",
-    "name":"Creedence Clearwater Revival"
+    "names":["Creedence Clearwater Revival"]
   },
   {
     "id":"1626",
-    "name":"Tommy James & The Shondells"
+    "names":["Tommy James & The Shondells"]
   },
   {
     "id":"1627",
-    "name":"The Pleasure Kills"
+    "names":["The Pleasure Kills"]
   },
   {
     "id":"1628",
-    "name":"Kepi Ghoulie"
+    "names":["Kepi Ghoulie"]
   },
   {
     "id":"1629",
-    "name":"Avengers"
+    "names":["Avengers"]
   },
   {
     "id":"1630",
-    "name":"The Hi-Nobles"
+    "names":["The Hi-Nobles"]
   },
   {
     "id":"1631",
-    "name":"The Yardbirds"
+    "names":["The Yardbirds"]
   },
   {
     "id":"1632",
-    "name":"Placebo"
+    "names":["Placebo"]
   },
   {
     "id":"1633",
-    "name":"Sugar"
+    "names":["Sugar"]
   },
   {
     "id":"1634",
-    "name":"Automaton"
+    "names":["Automaton"]
   },
   {
     "id":"1635",
-    "name":"DJ Spooky"
+    "names":["DJ Spooky"]
   },
   {
     "id":"1636",
-    "name":"Dave Lombardo"
+    "names":["Dave Lombardo"]
   },
   {
     "id":"1637",
-    "name":"Norah Jones"
+    "names":["Norah Jones"]
   },
   {
     "id":"1638",
-    "name":"Sheena Easton"
+    "names":["Sheena Easton"]
   },
   {
     "id":"1639",
-    "name":"Marillion"
+    "names":["Marillion"]
   },
   {
     "id":"1641",
-    "name":"Hootie & The Blowfish"
+    "names":["Hootie & The Blowfish"]
   },
   {
     "id":"1642",
-    "name":"Bryan Adams"
+    "names":["Bryan Adams"]
   },
   {
     "id":"1643",
-    "name":"Nelly Furtado"
+    "names":["Nelly Furtado"]
   },
   {
     "id":"1644",
-    "name":"Stan Bush"
+    "names":["Stan Bush"]
   },
   {
     "id":"1645",
-    "name":"Glass Tiger"
+    "names":["Glass Tiger"]
   },
   {
     "id":"1646",
-    "name":"Ian Lloyd"
+    "names":["Ian Lloyd"]
   },
   {
     "id":"1647",
-    "name":"Prism"
+    "names":["Prism"]
   },
   {
     "id":"1648",
-    "name":"Toronto"
+    "names":["Toronto"]
   },
   {
     "id":"1649",
-    "name":"Tina Turner"
+    "names":["Tina Turner"]
   },
   {
     "id":"1650",
-    "name":"John Wetton"
+    "names":["John Wetton"]
   },
   {
     "id":"1651",
-    "name":"The Bad Plus"
+    "names":["The Bad Plus"]
   },
   {
     "id":"1652",
-    "name":"Bad Company"
+    "names":["Bad Company"]
   },
   {
     "id":"1653",
-    "name":"MGMT"
+    "names":["MGMT"]
   },
   {
     "id":"1654",
-    "name":"Pure Prairie League"
+    "names":["Pure Prairie League"]
   },
   {
     "id":"1655",
-    "name":"Betty Davis"
+    "names":["Betty Davis"]
   },
   {
     "id":"1656",
-    "name":"The Hollies"
+    "names":["The Hollies"]
   },
   {
     "id":"1657",
-    "name":"Crosby, Stills, Nash and Young"
+    "names":["Crosby, Stills, Nash and Young"]
   },
   {
     "id":"1658",
-    "name":"Bobby McFerrin"
+    "names":["Bobby McFerrin"]
   },
   {
     "id":"1659",
-    "name":"Monk Siddiq"
+    "names":["Monk Siddiq"]
   },
   {
     "id":"1660",
-    "name":"Starbelly"
+    "names":["Starbelly"]
   },
   {
     "id":"1661",
-    "name":"Jellyfish"
+    "names":["Jellyfish"]
   },
   {
     "id":"1662",
-    "name":"The Grays"
+    "names":["The Grays"]
   },
   {
     "id":"1663",
-    "name":"The Buggles"
+    "names":["The Buggles"]
   },
   {
     "id":"1664",
-    "name":"Weather Report"
+    "names":["Weather Report"]
   },
   {
     "id":"1665",
-    "name":"Ted Leo"
+    "names":["Ted Leo"]
   },
   {
     "id":"1666",
-    "name":"Nico"
+    "names":["Nico"]
   },
   {
     "id":"1667",
-    "name":"Kevin Ayers"
+    "names":["Kevin Ayers"]
   },
   {
     "id":"1668",
-    "name":"John Cale"
+    "names":["John Cale"]
   },
   {
     "id":"1669",
-    "name":"Nick Lowe"
+    "names":["Nick Lowe"]
   },
   {
     "id":"1670",
-    "name":"The Gabba Gabba Heys"
+    "names":["The Gabba Gabba Heys"]
   },
   {
     "id":"1671",
-    "name":"Xavier Cugat"
+    "names":["Xavier Cugat"]
   },
   {
     "id":"1672",
-    "name":"Don Johnson"
+    "names":["Don Johnson"]
   },
   {
     "id":"1673",
-    "name":"Bar Kokhba Sextet"
+    "names":["Bar Kokhba Sextet"]
   },
   {
     "id":"1674",
-    "name":"Dimmu Borgir"
+    "names":["Dimmu Borgir"]
   },
   {
     "id":"1675",
-    "name":"Joe Bonamassa"
+    "names":["Joe Bonamassa"]
   },
   {
     "id":"1676",
-    "name":"Bananarama"
+    "names":["Bananarama"]
   },
   {
     "id":"1677",
-    "name":"Red Fang"
+    "names":["Red Fang"]
   },
   {
     "id":"1678",
-    "name":"Deee-Lite"
+    "names":["Deee-Lite"]
   },
   {
     "id":"1679",
-    "name":"Gary Burton"
+    "names":["Gary Burton"]
   },
   {
     "id":"1680",
-    "name":"Gogol Bordello"
+    "names":["Gogol Bordello"]
   },
   {
     "id":"1681",
-    "name":"Focus"
+    "names":["Focus"]
   },
   {
     "id":"1682",
-    "name":"deadmau5"
+    "names":["deadmau5"]
   },
   {
     "id":"1683",
-    "name":"Pendulum"
+    "names":["Pendulum"]
   },
   {
     "id":"1684",
-    "name":"Tom Jones"
+    "names":["Tom Jones"]
   },
   {
     "id":"1685",
-    "name":"Jools Holland"
+    "names":["Jools Holland"]
   },
   {
     "id":"1686",
-    "name":"Rising Sons"
+    "names":["Rising Sons"]
   },
   {
     "id":"1687",
-    "name":"London Symphony Orchestra"
+    "names":["London Symphony Orchestra"]
   },
   {
     "id":"1688",
-    "name":"The Final Frontiersmen"
+    "names":["The Final Frontiersmen"]
   },
   {
     "id":"1689",
-    "name":"Don Caballero"
+    "names":["Don Caballero"]
   },
   {
     "id":"1690",
-    "name":"Hubert Laws"
+    "names":["Hubert Laws"]
   },
   {
     "id":"1691",
-    "name":"Mott The Hoople"
+    "names":["Mott The Hoople"]
   },
   {
     "id":"1692",
-    "name":"Ian Hunter"
+    "names":["Ian Hunter"]
   },
   {
     "id":"1693",
-    "name":"Warren Teagarden"
+    "names":["Warren Teagarden"]
   },
   {
     "id":"1694",
-    "name":"The Sisters Of Mercy"
+    "names":["The Sisters Of Mercy"]
   },
   {
     "id":"1695",
-    "name":"Jane's Addiction"
+    "names":["Jane's Addiction"]
   },
   {
     "id":"1696",
-    "name":"Kate Bush"
+    "names":["Kate Bush"]
   },
   {
     "id":"1697",
-    "name":"Wild Flag"
+    "names":["Wild Flag"]
   },
   {
     "id":"1698",
-    "name":"Billy Idol"
+    "names":["Billy Idol"]
   },
   {
     "id":"1699",
-    "name":"Conway Twitty"
+    "names":["Conway Twitty"]
   },
   {
     "id":"1700",
-    "name":"Zappa Plays Zappa"
+    "names":["Zappa Plays Zappa"]
   },
   {
     "id":"1701",
-    "name":"Dave Frishberg"
+    "names":["Dave Frishberg"]
   },
   {
     "id":"1702",
-    "name":"Phil Woods"
+    "names":["Phil Woods"]
   },
   {
     "id":"1703",
-    "name":"Stardeath and White Dwarfs"
+    "names":["Stardeath and White Dwarfs"]
   },
   {
     "id":"1704",
-    "name":"Ornette Coleman"
+    "names":["Ornette Coleman"]
   },
   {
     "id":"1705",
-    "name":"Boris"
+    "names":["Boris"]
   },
   {
     "id":"1706",
-    "name":"Michio Kurihara"
+    "names":["Michio Kurihara"]
   },
   {
     "id":"1707",
-    "name":"Slipknot"
+    "names":["Slipknot"]
   },
   {
     "id":"1708",
-    "name":"Lamb Of God"
+    "names":["Lamb Of God"]
   },
   {
     "id":"1709",
-    "name":"Big Star"
+    "names":["Big Star"]
   },
   {
     "id":"1710",
-    "name":"The Autocollants"
+    "names":["The Autocollants"]
   },
   {
     "id":"1711",
-    "name":"The Pancakes"
+    "names":["The Pancakes"]
   },
   {
     "id":"1712",
-    "name":"Evening Lights"
+    "names":["Evening Lights"]
   },
   {
     "id":"1713",
-    "name":"LoveLikeFire"
+    "names":["LoveLikeFire"]
   },
   {
     "id":"1714",
-    "name":"Mosshead"
+    "names":["Mosshead"]
   },
   {
     "id":"1715",
-    "name":"Britt Daniel"
+    "names":["Britt Daniel"]
   },
   {
     "id":"1716",
-    "name":"Death in Vegas"
+    "names":["Death in Vegas"]
   },
   {
     "id":"1717",
-    "name":"Vivian Girls"
+    "names":["Vivian Girls"]
   },
   {
     "id":"1718",
-    "name":"The Subterraneans"
+    "names":["The Subterraneans"]
   },
   {
     "id":"1719",
-    "name":"Duff McKagan's Loaded"
+    "names":["Duff McKagan's Loaded"]
   },
   {
     "id":"1720",
-    "name":"Mastodon"
+    "names":["Mastodon"]
   },
   {
     "id":"1721",
-    "name":"Machine Head"
+    "names":["Machine Head"]
   },
   {
     "id":"1722",
-    "name":"Midnight Oil"
+    "names":["Midnight Oil"]
   },
   {
     "id":"1723",
-    "name":"Huey Lewis"
+    "names":["Huey Lewis"]
   },
   {
     "id":"1724",
-    "name":"Mahavishnu Orchestra"
+    "names":["Mahavishnu Orchestra"]
   },
   {
     "id":"1725",
-    "name":"Big Country"
+    "names":["Big Country"]
   },
   {
     "id":"1726",
-    "name":"Mother Love Bone"
+    "names":["Mother Love Bone"]
   },
   {
     "id":"1727",
-    "name":"Flash"
+    "names":["Flash"]
   },
   {
     "id":"1728",
-    "name":"The Moody Blues"
+    "names":["The Moody Blues"]
   },
   {
     "id":"1729",
-    "name":"Legends"
+    "names":["Legends"]
   },
   {
     "id":"1730",
-    "name":"Yo-Yo Ma"
+    "names":["Yo-Yo Ma"]
   },
   {
     "id":"1731",
-    "name":"Taylor Eigsti"
+    "names":["Taylor Eigsti"]
   },
   {
     "id":"1732",
-    "name":"Arturo Sandoval"
+    "names":["Arturo Sandoval"]
   },
   {
     "id":"1733",
-    "name":"Notorious B.I.G."
+    "names":["Notorious B.I.G."]
   },
   {
     "id":"1734",
-    "name":"Wanda Jackson"
+    "names":["Wanda Jackson"]
   },
   {
     "id":"1735",
-    "name":"Erykah Badu"
+    "names":["Erykah Badu"]
   },
   {
     "id":"1736",
-    "name":"Eddie Floyd"
+    "names":["Eddie Floyd"]
   },
   {
     "id":"1737",
-    "name":"Les Baxter"
+    "names":["Les Baxter"]
   },
   {
     "id":"1738",
-    "name":"Oingo Boingo"
+    "names":["Oingo Boingo"]
   },
   {
     "id":"1739",
-    "name":"Nocturnal Projections"
+    "names":["Nocturnal Projections"]
   },
   {
     "id":"1740",
-    "name":"2 Foot Flame"
+    "names":["2 Foot Flame"]
   },
   {
     "id":"1741",
-    "name":"The Weeds"
+    "names":["The Weeds"]
   },
   {
     "id":"1742",
-    "name":"The Clean"
+    "names":["The Clean"]
   },
   {
     "id":"1743",
-    "name":"New Bomb Turks"
+    "names":["New Bomb Turks"]
   },
   {
     "id":"1744",
-    "name":"Seger Liberation Army"
+    "names":["Seger Liberation Army"]
   },
   {
     "id":"1745",
-    "name":"Bantam Rooster"
+    "names":["Bantam Rooster"]
   },
   {
     "id":"1746",
-    "name":"Katmandu"
+    "names":["Katmandu"]
   },
   {
     "id":"1747",
-    "name":"The Style Council"
+    "names":["The Style Council"]
   },
   {
     "id":"1748",
-    "name":"Players"
+    "names":["Players"]
   },
   {
     "id":"1749",
-    "name":"Marlena Shaw"
+    "names":["Marlena Shaw"]
   },
   {
     "id":"1750",
-    "name":"Clarence \"Frogman\" Henry"
+    "names":["Clarence \"Frogman\" Henry"]
   },
   {
     "id":"1751",
-    "name":"Charles Mingus"
+    "names":["Charles Mingus"]
   },
   {
     "id":"1752",
-    "name":"Jonathan Richman"
+    "names":["Jonathan Richman"]
   },
   {
     "id":"1753",
-    "name":"The Sunshine Boys"
+    "names":["The Sunshine Boys"]
   },
   {
     "id":"1754",
-    "name":"Sly And The Family Stone"
+    "names":["Sly And The Family Stone"]
   },
   {
     "id":"1755",
-    "name":"Sam & Dave"
+    "names":["Sam & Dave"]
   },
   {
     "id":"1756",
-    "name":"The Bar-Kays"
+    "names":["The Bar-Kays"]
   },
   {
     "id":"1757",
-    "name":"Mel Tormé"
+    "names":["Mel Tormé"]
   }
 ]
