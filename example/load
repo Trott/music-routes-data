@@ -1,11 +1,22 @@
 #!/usr/bin/env node
 
+// Load basic info
+
 var tracks = require('../data/tracks.json');
 var artists = require('../data/artists.json');
 var individuals = require('../data/individuals.json');
 var releases = require('../data/releases.json');
 
+// TODO: Should probably just assert that each .length is greater than 0
 console.log('Number of tracks: ' + tracks.length);
 console.log('Number of artists: ' + artists.length);
 console.log('Number of individuals: ' + individuals.length);
 console.log('Number of releases: ' + releases.length);
+
+// Load relation data
+var at = require('../data/artist_track.json');
+var ia = require('../data/individual_artist.json');
+var it = require('../data/individual_track.json');
+var tr = require('../data/track_release.json');
+
+// TODO: COnfirm that every artist appears in artist_track, etc.
