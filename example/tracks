@@ -1,4 +1,0 @@
-#!/usr/bin/env node
-
-var tracks = require('../data/tracks.json');
-console.log('Number of tracks: ' + tracks.length);

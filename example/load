@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var tracks = require('../data/tracks.json');
+var artists = require('../data/artists.json');
+var individuals = require('../data/individuals.json');
+var releases = require('../data/releases.json');
+
+console.log('Number of tracks: ' + tracks.length);
+console.log('Number of artists: ' + artists.length);
+console.log('Number of individuals: ' + individuals.length);
+console.log('Number of releases: ' + releases.length);
