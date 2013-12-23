@@ -30,4 +30,4 @@ data.keys.forEach(function(key) {
 
 // TODO: jshint for this in grunt, eh?
 
-// TODO: Get grunt to run npm test so that this gets run, eh?
+// TODO: .travis.yml
