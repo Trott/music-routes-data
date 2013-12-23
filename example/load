@@ -1,22 +1,33 @@
 #!/usr/bin/env node
 
-// Load basic info
+// Dependencies
+var assert = require('assert');
 
-var tracks = require('../data/tracks.json');
-var artists = require('../data/artists.json');
-var individuals = require('../data/individuals.json');
-var releases = require('../data/releases.json');
+var data = {};
 
-// TODO: Should probably just assert that each .length is greater than 0
-console.log('Number of tracks: ' + tracks.length);
-console.log('Number of artists: ' + artists.length);
-console.log('Number of individuals: ' + individuals.length);
-console.log('Number of releases: ' + releases.length);
+// Load basic info.
+data.tracks = require('../data/tracks.json');
+data.artists = require('../data/artists.json');
+data.individuals = require('../data/individuals.json');
+data.releases = require('../data/releases.json');
 
 // Load relation data
-var at = require('../data/artist_track.json');
-var ia = require('../data/individual_artist.json');
-var it = require('../data/individual_track.json');
-var tr = require('../data/track_release.json');
+data.at = require('../data/artist_track.json');
+data.ia = require('../data/individual_artist.json');
+data.it = require('../data/individual_track.json');
+data.tr = require('../data/track_release.json');
 
-// TODO: COnfirm that every artist appears in artist_track, etc.
+// Store keys object since I think we'll need it a lot.
+data.keys = Object.keys(data);
+
+assert.equal(data.keys.length, 8, 'data.keys has unexpected length: ' + data.keys.length);
+
+data.keys.forEach(function(key) {
+    assert.ok(data[key].length, 'data.' + key + ' has zero or undefined length');
+});
+
+// TODO: Confirm that every artist appears in artist_track, etc.
+
+// TODO: jshint for this in grunt, eh?
+
+// TODO: Get grunt to run npm test so that this gets run, eh?
