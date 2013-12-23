@@ -21,6 +21,12 @@ module.exports = function(grunt) {
     //     dest: 'dist/<%= pkg.name %>.js'
     //   }
     // },
+    exec: {
+        npm_test: {
+            cmd: 'npm test'
+        }
+    },
+
     jsonlint: {
       all: {
         src: [ 'data/*.json' ]
@@ -30,10 +36,11 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   // grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-jsonlint');
 
 
   // Default task.
-  grunt.registerTask('default', ['jsonlint']);
+  grunt.registerTask('default', ['jsonlint', 'exec:npm_test']);
 
 };
