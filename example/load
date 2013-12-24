@@ -45,6 +45,8 @@ data.included = function (basic, relation, propName) {
     return data[basic].every(related);
 };
 
+
+//TODO: Correct/expand data so that all of these are true.
 // All artists should have tracks.
 assert.ok(data.included('artists', 'at', 'artistId'));
 // All tracks should have artists.
@@ -57,3 +59,5 @@ assert.ok(data.included('tracks', 'at', 'trackId'));
 assert.ok(data.included('tracks', 'tr', 'trackId'));
 // All releases have at least one track.
 assert.ok(data.included('releases', 'tr', 'releaseId'));
+
+// TODO: Make sure that all artist IDs that appear in artist_track actually exist in artists, etc.
