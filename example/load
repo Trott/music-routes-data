@@ -36,11 +36,13 @@ assert.ok(data.artists.every(function (artistsValue) {
 // Check that all instances of basic are included in relation as propName.
 // For example, all instances of 'artists' included in 'at' as 'artistId'
 data.included = function (basic, relation, propName) {
-    return data[basic].every( function (basicValue) {
+    var related = function (basicValue) {
         return data[relation].some( function (relationValue) {
             return relationValue[propName] === basicValue.id;
         });
-    });
+    };
+
+    return data[basic].every(related);
 };
 
 // All artists should have tracks.
