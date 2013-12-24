@@ -3,6 +3,8 @@ music-routes-data
 
 Music Routes Data: What musicians played on which tracks?
 
+[![Build Status](https://travis-ci.org/Trott/music-routes-data.png?branch=master)](https://travis-ci.org/Trott/music-routes-data)
+
 Schema
 ======
 
