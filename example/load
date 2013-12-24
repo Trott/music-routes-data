@@ -26,4 +26,11 @@ data.keys.forEach(function(key) {
     assert.ok(data[key].length, 'data.' + key + ' has zero or undefined length');
 });
 
+//Confirm that all artists appear in artist_track.
+assert.ok(data.artists.every(function (artistsValue) {
+    return data.at.some( function (atValue) {
+        return atValue.artistId === artistsValue.id;
+    });
+}));
+
 // TODO: Confirm that every artist appears in artist_track, etc.
