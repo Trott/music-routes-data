@@ -26,13 +26,6 @@ data.keys.forEach(function(key) {
     assert.ok(data[key].length, 'data.' + key + ' has zero or undefined length');
 });
 
-//Confirm that all artists appear in artist_track.
-assert.ok(data.artists.every(function (artistsValue) {
-    return data.at.some( function (atValue) {
-        return atValue.artistId === artistsValue.id;
-    });
-}));
-
 // Check that all instances of basic are included in relation as propName.
 // For example, all instances of 'artists' included in 'at' as 'artistId'
 data.included = function (basic, relation, propName) {
@@ -44,7 +37,6 @@ data.included = function (basic, relation, propName) {
 
     return data[basic].every(related);
 };
-
 
 //TODO: Correct/expand data so that all of these are true.
 // All artists should have tracks.
