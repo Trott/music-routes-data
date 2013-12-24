@@ -1,0 +1,73 @@
+#!/usr/bin/env node
+
+var data = {};
+
+// Load basic info.
+data.tracks = require('../data/tracks.json');
+data.artists = require('../data/artists.json');
+data.individuals = require('../data/individuals.json');
+data.releases = require('../data/releases.json');
+
+// Load relation data
+data.at = require('../data/artist_track.json');
+data.ia = require('../data/individual_artist.json');
+data.it = require('../data/individual_track.json');
+data.tr = require('../data/track_release.json');
+
+data.printTrackInfo = function (track) {
+  console.log('Track ID: ' + track.id);
+
+  track.titles.forEach(function (title) {
+    console.log('\tTitle: ' + title);
+  });
+
+  data.printRelatedInfoForTrack({
+    trackId: track.id,
+    relatedInfo: 'artists',
+    relatedField: 'names',
+    relationData: 'at',
+    relationDataId: 'artistId',
+    label: 'Artist',
+  });
+
+  data.printRelatedInfoForTrack({
+    trackId: track.id,
+    relatedInfo: 'releases',
+    relatedField: 'titles',
+    relationData: 'tr',
+    relationDataId: 'releaseId',
+    label: 'Release',
+  });
+
+  data.printRelatedInfoForTrack({
+    trackId: track.id,
+    relatedInfo: 'individuals',
+    relatedField: 'names',
+    relationData: 'it',
+    relationDataId: 'individualId',
+    label: 'Individual',
+  });
+};
+
+data.printRelatedInfoForTrack = function (options) {
+
+  var relatedIds = data[options.relationData].filter(function (value) {
+    return value.trackId === options.trackId;
+  });
+
+  relatedIds = relatedIds.map(function (value) {
+    return value[options.relationDataId];
+  });
+
+  var relatedData = data[options.relatedInfo].filter(function (value) {
+    return relatedIds.indexOf(value.id) > -1;
+  });
+
+  relatedData.forEach(function (value) {
+    for (var i=0, l=value[options.relatedField].length; i<l; i++) {
+      console.log('\t' + options.label + ': ' + value[options.relatedField][i] + ' [' + value.id + ']');
+    }
+  });
+};
+
+data.tracks.forEach(data.printTrackInfo);
