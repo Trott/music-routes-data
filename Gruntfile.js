@@ -22,25 +22,31 @@ module.exports = function(grunt) {
     //   }
     // },
     exec: {
-        npm_test: {
-            cmd: 'npm test'
-        }
+      npm_test: {
+        cmd: 'npm test'
+      }
+    },
+
+    jshint: {
+      all: ['Gruntfile.js', 'example/*']
     },
 
     jsonlint: {
       all: {
-        src: [ 'data/*.json' ]
+        src: ['data/*.json']
       }
     },
+
   });
 
   // These plugins provide necessary tasks.
   // grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-jsonlint');
 
 
   // Default task.
-  grunt.registerTask('default', ['jsonlint', 'exec:npm_test']);
+  grunt.registerTask('default', ['jsonlint', 'jshint', 'exec:npm_test']);
 
 };
