@@ -28,6 +28,4 @@ data.keys.forEach(function(key) {
 
 // TODO: Confirm that every artist appears in artist_track, etc.
 
-// TODO: jshint for this in grunt, eh?
-
 // TODO: .travis.yml
