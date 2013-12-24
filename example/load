@@ -33,4 +33,25 @@ assert.ok(data.artists.every(function (artistsValue) {
     });
 }));
 
-// TODO: Confirm that every artist appears in artist_track, etc.
+// Check that all instances of basic are included in relation as propName.
+// For example, all instances of 'artists' included in 'at' as 'artistId'
+data.included = function (basic, relation, propName) {
+    return data[basic].every( function (basicValue) {
+        return data[relation].some( function (relationValue) {
+            return relationValue[propName] === basicValue.id;
+        });
+    });
+};
+
+// All artists should have tracks.
+assert.ok(data.included('artists', 'at', 'artistId'));
+// All tracks should have artists.
+assert.ok(data.included('tracks', 'at', 'trackId'));
+// All artists have individuals. (Not all individuals are members of artists, though.)
+//assert.ok(data.included('artists', 'ia', 'artistId'));
+// All individuals are associated with at least one track.
+//assert.ok(data.included('individuals', 'it', 'individualId'));
+// All tracks are on at least one release.
+assert.ok(data.included('tracks', 'tr', 'trackId'));
+// All releases have at least one track.
+assert.ok(data.included('releases', 'tr', 'releaseId'));
