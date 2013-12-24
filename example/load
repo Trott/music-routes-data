@@ -61,3 +61,5 @@ assert.ok(data.included('tracks', 'tr', 'trackId'));
 assert.ok(data.included('releases', 'tr', 'releaseId'));
 
 // TODO: Make sure that all artist IDs that appear in artist_track actually exist in artists, etc.
+// TODO: Make sure that all ids are unique
+// TODO: Make sure that all required fields are present in every entry
