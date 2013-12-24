@@ -27,5 +27,3 @@ data.keys.forEach(function(key) {
 });
 
 // TODO: Confirm that every artist appears in artist_track, etc.
-
-// TODO: .travis.yml
