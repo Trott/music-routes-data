@@ -1,6 +1,6 @@
 {
   "name": "music-routes-data",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "What musicians played on what tracks",
   "scripts": {
     "test": "node example/load"
