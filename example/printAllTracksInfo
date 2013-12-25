@@ -43,6 +43,7 @@ data.printTrackInfo = function (track) {
     trackId: track.id,
     relatedInfo: 'individuals',
     relatedField: 'names',
+    additionalInfo: 'credits',
     relationData: 'it',
     relationDataId: 'individualId',
     label: 'Individual',
@@ -51,21 +52,43 @@ data.printTrackInfo = function (track) {
 
 data.printRelatedInfoForTrack = function (options) {
 
-  var relatedIds = data[options.relationData].filter(function (value) {
+  var extras={};
+
+  // console.dir(value);
+  // extra = '';
+  // if (options.additionalInfo && value[options.addtionalInfo]) {
+  //   extra = ' (' + value[options.additionalInfo].join(',') + ')';
+  // }
+
+  // Get all the entries from the relation data structure that are related to this one.
+  var relatedIdsAndExtra = data[options.relationData].filter(function (value) {
     return value.trackId === options.trackId;
   });
 
-  relatedIds = relatedIds.map(function (value) {
+  // If we want additional info (like credits), grab that now too.
+  if (options.additionalInfo) {
+    for (var i=0, l=relatedIdsAndExtra.length; i<l; i++) {
+      extras[relatedIdsAndExtra[i][options.relationDataId]] =  relatedIdsAndExtra[i][options.additionalInfo] || [];
+    }
+  }
+
+  // Strip down to just the IDs we requested.
+  var relatedIds = relatedIdsAndExtra.map(function (value) {
     return value[options.relationDataId];
   });
 
+  // Get the actual data we want specified by the related IDs.
   var relatedData = data[options.relatedInfo].filter(function (value) {
     return relatedIds.indexOf(value.id) > -1;
   });
 
   relatedData.forEach(function (value) {
+    var extra = '';
+    if (extras[value.id] && extras[value.id].length>0) {
+      extra = ' (' + extras[value.id].join(', ') + ')';
+    }
     for (var i=0, l=value[options.relatedField].length; i<l; i++) {
-      console.log('\t' + options.label + ': ' + value[options.relatedField][i] + ' [' + value.id + ']');
+      console.log('\t' + options.label + ': ' + value[options.relatedField][i] + extra + ' [' + value.id + ']');
     }
   });
 };
