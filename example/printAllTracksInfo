@@ -54,12 +54,6 @@ data.printRelatedInfoForTrack = function (options) {
 
   var extras={};
 
-  // console.dir(value);
-  // extra = '';
-  // if (options.additionalInfo && value[options.addtionalInfo]) {
-  //   extra = ' (' + value[options.additionalInfo].join(',') + ')';
-  // }
-
   // Get all the entries from the relation data structure that are related to this one.
   var relatedIdsAndExtra = data[options.relationData].filter(function (value) {
     return value.trackId === options.trackId;
