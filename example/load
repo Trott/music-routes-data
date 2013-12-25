@@ -23,19 +23,29 @@ data.keys = Object.keys(data);
 assert.equal(data.keys.length, 8, 'data.keys has unexpected length: ' + data.keys.length);
 
 data.keys.forEach(function(key) {
-    assert.ok(data[key].length, 'data.' + key + ' has zero or undefined length');
+  assert.ok(data[key].length, 'data.' + key + ' has zero or undefined length');
 });
 
 // Check that all instances of basic are included in relation as propName.
 // For example, all instances of 'artists' included in 'at' as 'artistId'
 data.included = function (basic, relation, propName) {
-    var related = function (basicValue) {
-        return data[relation].some( function (relationValue) {
-            return relationValue[propName] === basicValue.id;
-        });
+
+  var related = function (basicValue) {
+
+    var idInRelatedTable = function (relationValue) {
+      return relationValue[propName] === basicValue.id;
     };
 
-    return data[basic].every(related);
+    var rv = data[relation].some(idInRelatedTable);
+
+    if (! rv) {
+      console.log('`' + basic + '` contains ID ' + basicValue.id + ' but it is not found in `' + relation + '` as `' + propName + '`');
+    }
+
+    return rv;
+  };
+
+  return data[basic].every(related);
 };
 
 //TODO: Correct/expand data so that all of these are true.
@@ -44,9 +54,9 @@ assert.ok(data.included('artists', 'at', 'artistId'));
 // All tracks should have artists.
 assert.ok(data.included('tracks', 'at', 'trackId'));
 // All artists have individuals. (Not all individuals are members of artists, though.)
-//assert.ok(data.included('artists', 'ia', 'artistId'));
+// assert.ok(data.included('artists', 'ia', 'artistId'));
 // All individuals are associated with at least one track.
-//assert.ok(data.included('individuals', 'it', 'individualId'));
+// assert.ok(data.included('individuals', 'it', 'individualId'));
 // All tracks are on at least one release.
 assert.ok(data.included('tracks', 'tr', 'trackId'));
 // All releases have at least one track.
