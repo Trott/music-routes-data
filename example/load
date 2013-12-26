@@ -56,7 +56,7 @@ assert.ok(data.included('tracks', 'at', 'trackId'));
 // All artists have individuals. (Not all individuals are members of artists, though.)
 // assert.ok(data.included('artists', 'ia', 'artistId'));
 // All individuals are associated with at least one track.
-// assert.ok(data.included('individuals', 'it', 'individualId'));
+//////assert.ok(data.included('individuals', 'it', 'individualId'));
 // All tracks are on at least one release.
 assert.ok(data.included('tracks', 'tr', 'trackId'));
 // All releases have at least one track.
