@@ -1,0 +1,1 @@
+var add = require('../lib/add.js');

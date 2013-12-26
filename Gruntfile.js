@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      all: ['Gruntfile.js', 'example/*']
+      all: ['Gruntfile.js', 'example/*', 'lib/*', 'spec/*', 'util/*']
     },
 
     jsonlint: {
