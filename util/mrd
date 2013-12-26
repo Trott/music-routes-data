@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var data = require('../lib/data');
+
+var actions = ['add'];
+
+var action = process.argv[2];
+
+var args = process.argv.splice(3);
+
+switch (action) {
+  case 'add':
+    data.add.apply(args);
+    break;
+  default:
+    console.log('mrd [' + actions.join(' | ') + '] ...');
+}

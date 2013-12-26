@@ -28,12 +28,12 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      all: ['Gruntfile.js', 'example/*']
+      all: ['Gruntfile.js', 'example/*', 'lib/*', 'spec/*', 'util/*']
     },
 
     jsonlint: {
       all: {
-        src: ['data/*.json']
+        src: ['package.json','spec/fixture/data/*','data/*']
       }
     },
 
@@ -41,12 +41,13 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   // grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-jasmine-node');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-jsonlint');
 
 
   // Default task.
-  grunt.registerTask('default', ['jsonlint', 'jshint', 'exec:npm_test']);
+  grunt.registerTask('default', ['jsonlint', 'jshint', 'jasmine_node', 'exec:npm_test']);
 
 };
