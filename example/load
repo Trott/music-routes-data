@@ -50,17 +50,17 @@ data.included = function (basic, relation, propName) {
 
 //TODO: Correct/expand data so that all of these are true.
 // All artists should have tracks.
-assert.ok(data.included('artists', 'at', 'artistId'));
+assert.ok(data.included('artists', 'at', 'artist_id'));
 // All tracks should have artists.
-assert.ok(data.included('tracks', 'at', 'trackId'));
+assert.ok(data.included('tracks', 'at', 'track_id'));
 // All artists have individuals. (Not all individuals are members of artists, though.)
-// assert.ok(data.included('artists', 'ia', 'artistId'));
+// assert.ok(data.included('artists', 'ia', 'artist_id'));
 // All individuals are associated with at least one track.
-//////assert.ok(data.included('individuals', 'it', 'individualId'));
+//////assert.ok(data.included('individuals', 'it', 'individual_id'));
 // All tracks are on at least one release.
-assert.ok(data.included('tracks', 'tr', 'trackId'));
+assert.ok(data.included('tracks', 'tr', 'track_id'));
 // All releases have at least one track.
-assert.ok(data.included('releases', 'tr', 'releaseId'));
+assert.ok(data.included('releases', 'tr', 'release_id'));
 
 // TODO: Make sure that all artist IDs that appear in artist_track actually exist in artists, etc.
 // TODO: Make sure that all _ids are unique
