@@ -46,7 +46,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-jsonlint');
 
-
   // Default task.
   grunt.registerTask('default', ['jsonlint', 'jshint', 'jasmine_node', 'exec:npm_test']);
 
