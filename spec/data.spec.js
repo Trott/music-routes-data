@@ -6,7 +6,7 @@ var data;
 
 describe('Constructor', function () {
 
-  it('should load from specified directory', function() {
+  it('should load from specified directory', function () {
     var dataDir = path.resolve('spec/fixture/data');
     data = new Data({dataDir: dataDir});
     expect(data.getTracks()).toEqual([{"id":"1", "titles":["That's All Right"]}, {"id":"2", "titles":["Blue Moon of Kentucky"]}]);
@@ -26,11 +26,19 @@ describe('Constructor', function () {
 
 });
 
-describe ('non-Constructor tests', function () {
+describe ("non-Constructor", function () {
 
   beforeEach(function () {
-    var dataDir = path.resolve('spec/fixture/data');
+    var dataDir = path.resolve("spec/fixture/data");
     data = new Data({dataDir: dataDir});
+  });
+
+  describe("createTrack()", function () {
+    it("should add a track to the track collection", function () {
+      var initialLength = data.getTracks().length;
+      data.createTrack({_id: "3", title: "If I Needed Someone"});
+      expect(data.getTracks().length).toBe(initialLength + 1);
+    });
   });
 
 });
