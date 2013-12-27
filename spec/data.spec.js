@@ -39,6 +39,31 @@ describe ("non-Constructor", function () {
       data.createTrack({_id: "3", title: "If I Needed Someone"});
       expect(data.getTracks().length).toBe(initialLength + 1);
     });
+
+    it("should return the _id of an added track", function () {
+      expect(data.createTrack({_id: "3", title: "Let's Go Away For A While"})).toBe("3");
+    });
+
+    xit("should return an empty string if _id matches another track", function () {
+      expect(function () {data.createTrack({_id: "2", title: "Someone Keeps Moving My Chair"});}.toThrow());
+    });
+
+    xit("should return an empty string if _id is not specified", function () {
+
+    });
+
+    xit("should not change the tracks collection if _id matches another track", function () {
+      expect();
+    });
+
+    xit("should not change the tracks collection if _id is not specified", function () {
+
+    });
+
+    xit("should not allow an empty _id string", function () {
+
+    });
+
   });
 
 });
