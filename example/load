@@ -32,14 +32,14 @@ data.included = function (basic, relation, propName) {
 
   var related = function (basicValue) {
 
-    var idInRelatedTable = function (relationValue) {
-      return relationValue[propName] === basicValue.id;
+    var _idInRelatedTable = function (relationValue) {
+      return relationValue[propName] === basicValue._id;
     };
 
-    var rv = data[relation].some(idInRelatedTable);
+    var rv = data[relation].some(_idInRelatedTable);
 
     if (! rv) {
-      console.log('`' + basic + '` contains ID ' + basicValue.id + ' but it is not found in `' + relation + '` as `' + propName + '`');
+      console.log('`' + basic + '` contains _id ' + basicValue._id + ' but it is not found in `' + relation + '` as `' + propName + '`');
     }
 
     return rv;
@@ -63,5 +63,5 @@ assert.ok(data.included('tracks', 'tr', 'trackId'));
 assert.ok(data.included('releases', 'tr', 'releaseId'));
 
 // TODO: Make sure that all artist IDs that appear in artist_track actually exist in artists, etc.
-// TODO: Make sure that all ids are unique
+// TODO: Make sure that all _ids are unique
 // TODO: Make sure that all required fields are present in every entry

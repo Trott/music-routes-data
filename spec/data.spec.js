@@ -33,14 +33,4 @@ describe ('non-Constructor tests', function () {
     data = new Data({dataDir: dataDir});
   });
 
-  // describe('data.getTracks()', function () {
-
-  //   it('should load from data directory if load is not called first', function () {
-  //     var dataWithoutLoad = data.tracks();
-  //     data.load();
-  //     expect(data.tracks()).toEqual(dataWithoutLoad);
-  //   });
-
-  // });
-
 });
