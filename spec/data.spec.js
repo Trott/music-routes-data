@@ -29,13 +29,12 @@ describe ("non-Constructor", function () {
 
   var data;
 
-  var resetData = function () {
+  beforeEach(function () {
     var dataDir = path.resolve("spec/fixture/data");
     data = new Data({dataDir: dataDir});
-  };
+  });
 
   describe("createTrack()", function () {
-    beforeEach(resetData);
 
     it("should add a track to the track collection", function () {
       var initialLength = data.getTracks().length;
