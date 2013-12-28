@@ -34,12 +34,14 @@ describe ("non-Constructor", function () {
     data = new Data({dataDir: __dirname + "/fixture/data"});
   });
 
-  describe("createTrack()", function () {
+  describe("createTrack(entry)", function () {
 
     it("should add a track to the track collection", function () {
       var initialLength = data.getTracks().length;
       data.createTrack({_id: "3", titles: ["If I Needed Someone"]});
-      expect(data.getTracks().length).toBe(initialLength + 1);
+      var tracks = data.getTracks();
+      expect(tracks.length).toBe(initialLength + 1);
+      expect(tracks).toContain({_id: "3", titles: ["If I Needed Someone"]});
     });
 
     it("should return the _id of an added track", function () {
@@ -111,6 +113,17 @@ describe ("non-Constructor", function () {
       var before = data.getTracks();
       data.createTrack({_id: "3", titles: ["Flesh, Blood, and Bone"]});
       expect(data.getTracks()).not.toEqual(before);
+    });
+  });
+
+  describe("add(collection, _id, displayName)", function () {
+    it("should create a new track when called with tracks", function () {
+      var initialLength = data.getTracks().length;
+      var rc = data.add("tracks", "5", "Original Faubus Fables");
+      expect(rc).toBe("5");
+      var tracks = data.getTracks();
+      expect(tracks).toContain({"_id": "5", "titles": ["Original Faubus Fables"]});
+      expect(tracks.length).toBe(initialLength + 1);
     });
   });
 
