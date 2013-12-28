@@ -60,7 +60,9 @@ describe ("non-Constructor", function () {
     });
 
     xit("should not change the tracks collection if _id is not specified", function () {
-
+      var before = data.getTracks();
+      data.createTrack({titles: ["Autumn Sweater"]});
+      expect(data.getTracks()).toEqual(before);
     });
 
     xit("should not allow an empty _id string", function () {
@@ -75,6 +77,14 @@ describe ("non-Constructor", function () {
 
     });
 
+  });
+
+  describe("getTracks()", function () {
+    it("should return a cloned array, not a reference to the internal tracks collection", function () {
+      var before = data.getTracks();
+      data.createTrack({_id: "3", titles: ["Flesh, Blood, and Bone"]});
+      expect(data.getTracks()).not.toEqual(before);
+    });
   });
 
 });
