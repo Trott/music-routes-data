@@ -7,7 +7,9 @@ describe('Constructor', function () {
   it('should load from specified directory', function () {
     var dataDir = __dirname + '/fixture/data';
     var data = new Data({dataDir: dataDir});
-    expect(data.getTracks()).toEqual([{_id:"1", titles:["That's All Right"]}, {_id:"2", titles:["Blue Moon of Kentucky"]}]);
+    var tracks = data.getTracks();
+    expect(tracks).toContain({_id:"1", titles:["That's All Right"]});
+    expect(tracks).toContain({_id:"2", titles:["Blue Moon of Kentucky"]});
   });
 
   it('should throw an exception if data directory does not exist', function () {
@@ -36,24 +38,25 @@ describe ("non-Constructor", function () {
 
     it("should add a track to the track collection", function () {
       var initialLength = data.getTracks().length;
-      data.createTrack({_id: "3", title: "If I Needed Someone"});
+      data.createTrack({_id: "3", titles: ["If I Needed Someone"]});
       expect(data.getTracks().length).toBe(initialLength + 1);
     });
 
     it("should return the _id of an added track", function () {
-      expect(data.createTrack({_id: "3", title: "Let's Go Away For A While"})).toBe("3");
+      expect(data.createTrack({_id: "3", titles: ["Let's Go Away For A While"]})).toBe("3");
     });
 
     it("should return an empty string if _id matches another track", function () {
-      expect(data.createTrack({_id: "2", title: "Someone Keeps Moving My Chair"})).toBe("");
+      expect(data.createTrack({_id: "2", titles: ["Someone Keeps Moving My Chair"]})).toBe("");
     });
 
     it("should return an empty string if _id is not specified", function () {
-      expect(data.createTrack({title: "Everybody's Got Something To Hide Except For Me And My Monkey"})).toBe("");
+      expect(data.createTrack({titles: ["Everybody's Got Something To Hide Except For Me And My Monkey"]})).toBe("");
     });
 
-    xit("should not change the tracks collection if _id matches another track", function () {
-      expect();
+    it("should not change the tracks collection if _id matches another track", function () {
+      data.createTrack({_id: "2", titles: ["The Night They Drove Old Dixie Down"]});
+      expect(data.getTracks()).not.toContain({_id: "3", titles: ["The Night They Drove Old Dixie Down"]});
     });
 
     xit("should not change the tracks collection if _id is not specified", function () {
@@ -61,6 +64,14 @@ describe ("non-Constructor", function () {
     });
 
     xit("should not allow an empty _id string", function () {
+
+    });
+
+    xit("should return an empty string and not update tracks collection if titles array is not provided", function () {
+
+    });
+
+    xit("should return an empty string and not update tracks collection if titles is provided but not an array", function () {
 
     });
 
