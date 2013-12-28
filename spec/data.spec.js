@@ -1,23 +1,22 @@
 // Specs are run via Grunt: grunt jasmine_node
 
-var path = require('path');
 var Data = require('../lib/Data.js');
 
 describe('Constructor', function () {
 
   it('should load from specified directory', function () {
-    var dataDir = path.resolve('spec/fixture/data');
+    var dataDir = __dirname + '/fixture/data';
     var data = new Data({dataDir: dataDir});
     expect(data.getTracks()).toEqual([{_id:"1", titles:["That's All Right"]}, {_id:"2", titles:["Blue Moon of Kentucky"]}]);
   });
 
   it('should throw an exception if data directory does not exist', function () {
-    var dataDir = path.resolve('bad/path');
+    var dataDir = __dirname + 'bad/path';
     expect(function () {var data = new Data({dataDir: dataDir});}).toThrow();
   });
 
   it('should load from the data directory if no directory is specified', function () {
-    var dataDir = path.resolve('data');
+    var dataDir = __dirname + '/../data';
     var dataWithArgument = new Data({dataDir: dataDir});
     var dataWithoutArgument = new Data();
     expect(dataWithArgument.getTracks()).toEqual(dataWithoutArgument.getTracks());
@@ -30,8 +29,7 @@ describe ("non-Constructor", function () {
   var data;
 
   beforeEach(function () {
-    var dataDir = path.resolve("spec/fixture/data");
-    data = new Data({dataDir: dataDir});
+    data = new Data({dataDir: __dirname + "/fixture/data"});
   });
 
   describe("createTrack()", function () {
