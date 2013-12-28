@@ -78,7 +78,22 @@ describe ("non-Constructor", function () {
       expect(data.getTracks()).toEqual(before);
     });
 
-    xit("should return an empty string and not update tracks collection if titles is provided but not an array", function () {
+    it("should return an empty string and not update tracks collection if titles property is provided but not an array", function () {
+      var before = data.getTracks();
+      var rc = data.createTrack({_id: "3", titles: "The Battle Of Who Could Care Less"});
+      expect(rc).toBe("");
+      expect(data.getTracks()).toEqual(before);
+    });
+
+    xit("should discard properties other than _id and titles", function () {
+
+    });
+
+    xit("should reject a track with an _id that is not a string", function () {
+
+    });
+
+    xit("should reject a track with a titles array where one or more elements are not strings", function () {
 
     });
 
