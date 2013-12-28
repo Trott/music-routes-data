@@ -2,19 +2,18 @@
 
 var path = require('path');
 var Data = require('../lib/Data.js');
-var data;
 
 describe('Constructor', function () {
 
   it('should load from specified directory', function () {
     var dataDir = path.resolve('spec/fixture/data');
-    data = new Data({dataDir: dataDir});
-    expect(data.getTracks()).toEqual([{"id":"1", "titles":["That's All Right"]}, {"id":"2", "titles":["Blue Moon of Kentucky"]}]);
+    var data = new Data({dataDir: dataDir});
+    expect(data.getTracks()).toEqual([{_id:"1", titles:["That's All Right"]}, {_id:"2", titles:["Blue Moon of Kentucky"]}]);
   });
 
   it('should throw an exception if data directory does not exist', function () {
     var dataDir = path.resolve('bad/path');
-    expect(function () {data = new Data({dataDir: dataDir});}).toThrow();
+    expect(function () {var data = new Data({dataDir: dataDir});}).toThrow();
   });
 
   it('should load from the data directory if no directory is specified', function () {
@@ -28,12 +27,16 @@ describe('Constructor', function () {
 
 describe ("non-Constructor", function () {
 
-  beforeEach(function () {
-    var dataDir = path.resolve("spec/fixture/data");
+  var data;
+  var dataDir = path.resolve("spec/fixture/data");
+
+  var resetData = function () {
     data = new Data({dataDir: dataDir});
-  });
+  };
 
   describe("createTrack()", function () {
+    beforeEach(resetData);
+
     it("should add a track to the track collection", function () {
       var initialLength = data.getTracks().length;
       data.createTrack({_id: "3", title: "If I Needed Someone"});
@@ -44,8 +47,8 @@ describe ("non-Constructor", function () {
       expect(data.createTrack({_id: "3", title: "Let's Go Away For A While"})).toBe("3");
     });
 
-    xit("should return an empty string if _id matches another track", function () {
-      expect(function () {data.createTrack({_id: "2", title: "Someone Keeps Moving My Chair"});}.toThrow());
+    it("should return an empty string if _id matches another track", function () {
+      expect(data.createTrack({_id: "2", title: "Someone Keeps Moving My Chair"})).toBe("");
     });
 
     xit("should return an empty string if _id is not specified", function () {
