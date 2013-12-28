@@ -1,14 +1,14 @@
 [
   {
-    "id":"1",
+    "_id":"1",
     "names":["Elvis Presley"]
   },
   {
-    "id":"2",
+    "_id":"2",
     "names":["Scotty Moore"]
   },
   {
-    "id":"3",
+    "_id":"3",
     "names":["Bill Black"]
   }
 ]
