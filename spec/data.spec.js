@@ -1,24 +1,27 @@
 // Specs are run via Grunt: grunt jasmine_node
 
-var Data = require('../lib/Data.js');
+var fs = require("fs");
+var glob = require("glob");
 
-describe('Constructor', function () {
+var Data = require("../lib/Data.js");
 
-  it('should load from specified directory', function () {
-    var dataDir = __dirname + '/fixture/data';
+describe("Constructor", function () {
+
+  it("should load from specified directory", function () {
+    var dataDir = __dirname + "/fixture/data";
     var data = new Data({dataDir: dataDir});
     var tracks = data.getTracks();
     expect(tracks).toContain({_id:"1", titles:["That's All Right"]});
     expect(tracks).toContain({_id:"2", titles:["Blue Moon of Kentucky"]});
   });
 
-  it('should throw an exception if data directory does not exist', function () {
-    var dataDir = __dirname + 'bad/path';
+  it("should throw an exception if data directory does not exist", function () {
+    var dataDir = __dirname + "bad/path";
     expect(function () {var data = new Data({dataDir: dataDir});}).toThrow();
   });
 
-  it('should load from the data directory if no directory is specified', function () {
-    var dataDir = __dirname + '/../data';
+  it("should load from the data directory if no directory is specified", function () {
+    var dataDir = __dirname + "/../data";
     var dataWithArgument = new Data({dataDir: dataDir});
     var dataWithoutArgument = new Data();
     expect(dataWithArgument.getTracks()).toEqual(dataWithoutArgument.getTracks());
@@ -29,9 +32,13 @@ describe('Constructor', function () {
 describe ("non-Constructor", function () {
 
   var data;
+  var fixtureDir = __dirname + "/fixture/data";
+  var outputDir = __dirname + "/../tmp";
 
   beforeEach(function () {
-    data = new Data({dataDir: __dirname + "/fixture/data"});
+    data = new Data({dataDir: fixtureDir, outputDir: outputDir});
+    console.dir(outputDir);
+    glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
   });
 
   describe("createTrack(entry)", function () {
@@ -124,6 +131,24 @@ describe ("non-Constructor", function () {
       var tracks = data.getTracks();
       expect(tracks).toContain({"_id": "5", "titles": ["Original Faubus Fables"]});
       expect(tracks.length).toBe(initialLength + 1);
+    });
+  });
+
+  describe("write()", function () {
+    it("should duplicate the track collection if no changes have been made", function () {
+      data.write();
+      var newData = new Data({dataDir: outputDir});
+      expect(newData.getTracks()).toEqual(data.getTracks());
+    });
+
+    it("should reflect a newly-created track in the output", function () {
+      var newTrack = {_id: "3", titles:["Count It Higher"]};
+      data.createTrack(newTrack);
+      data.write();
+      var newData = new Data({dataDir: outputDir});
+      expect(newData.getTracks()).toContain(newTrack);
+      var oldData = new Data({dataDir: fixtureDir});
+      expect(oldData.getTracks()).not.toContain(newTrack);
     });
   });
 
