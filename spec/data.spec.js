@@ -73,7 +73,8 @@ describe ("non-Constructor", function () {
 
     it("should return an empty string and not update tracks collection if titles array is not provided", function () {
       var before = data.getTracks();
-      data.createTrack({_id: "3"});
+      var rc = data.createTrack({_id: "3"});
+      expect(rc).toBe("");
       expect(data.getTracks()).toEqual(before);
     });
 
