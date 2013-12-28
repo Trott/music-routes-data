@@ -85,8 +85,9 @@ describe ("non-Constructor", function () {
       expect(data.getTracks()).toEqual(before);
     });
 
-    xit("should discard properties other than _id and titles", function () {
-
+    it("should discard properties other than _id and titles", function () {
+      data.createTrack({_id: "3", titles: ["Uh, Zoom Zip"], releases: ["Ruby Vroom"]});
+      expect(data.getTracks()).toContain({_id: "3", titles: ["Uh, Zoom Zip"]});
     });
 
     xit("should reject a track with an _id that is not a string", function () {
