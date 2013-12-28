@@ -28,9 +28,9 @@ describe('Constructor', function () {
 describe ("non-Constructor", function () {
 
   var data;
-  var dataDir = path.resolve("spec/fixture/data");
 
   var resetData = function () {
+    var dataDir = path.resolve("spec/fixture/data");
     data = new Data({dataDir: dataDir});
   };
 
