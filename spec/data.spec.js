@@ -48,8 +48,8 @@ describe ("non-Constructor", function () {
       expect(data.createTrack({_id: "2", title: "Someone Keeps Moving My Chair"})).toBe("");
     });
 
-    xit("should return an empty string if _id is not specified", function () {
-
+    it("should return an empty string if _id is not specified", function () {
+      expect(data.createTrack({title: "Everybody's Got Something To Hide Except For Me And My Monkey"})).toBe("");
     });
 
     xit("should not change the tracks collection if _id matches another track", function () {
