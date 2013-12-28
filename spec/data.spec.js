@@ -59,18 +59,22 @@ describe ("non-Constructor", function () {
       expect(data.getTracks()).not.toContain({_id: "3", titles: ["The Night They Drove Old Dixie Down"]});
     });
 
-    xit("should not change the tracks collection if _id is not specified", function () {
+    it("should not change the tracks collection if _id is not specified", function () {
       var before = data.getTracks();
       data.createTrack({titles: ["Autumn Sweater"]});
       expect(data.getTracks()).toEqual(before);
     });
 
-    xit("should not allow an empty _id string", function () {
-
+    it("should not allow an empty _id string", function () {
+      var before = data.getTracks();
+      data.createTrack({_id: "", titles: ["Quiet Village"]});
+      expect(data.getTracks()).toEqual(before);
     });
 
-    xit("should return an empty string and not update tracks collection if titles array is not provided", function () {
-
+    it("should return an empty string and not update tracks collection if titles array is not provided", function () {
+      var before = data.getTracks();
+      data.createTrack({_id: "3"});
+      expect(data.getTracks()).toEqual(before);
     });
 
     xit("should return an empty string and not update tracks collection if titles is provided but not an array", function () {
