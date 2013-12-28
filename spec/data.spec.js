@@ -97,8 +97,11 @@ describe ("non-Constructor", function () {
       expect(data.getTracks()).toEqual(before);
     });
 
-    xit("should reject a track with a titles array where one or more elements are not strings", function () {
-
+    it("should reject a track with a titles array where one or more elements are not strings", function () {
+      var before = data.getTracks();
+      var rc = data.createTrack({_id: "3", titles: [true, "True"]});
+      expect(rc).toBe("");
+      expect(data.getTracks()).toEqual(before);
     });
 
   });
