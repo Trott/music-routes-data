@@ -90,8 +90,11 @@ describe ("non-Constructor", function () {
       expect(data.getTracks()).toContain({_id: "3", titles: ["Uh, Zoom Zip"]});
     });
 
-    xit("should reject a track with an _id that is not a string", function () {
-
+    it("should reject a track with an _id that is not a string", function () {
+      var before = data.getTracks();
+      var rc = data.createTrack({_id: true, titles: ["Don't Think Twice, It's Alright"]});
+      expect(rc).toBe("");
+      expect(data.getTracks()).toEqual(before);
     });
 
     xit("should reject a track with a titles array where one or more elements are not strings", function () {
