@@ -10,7 +10,7 @@ describe("Constructor", function () {
   it("should load from specified directory", function () {
     var dataDir = __dirname + "/fixture/data";
     var data = new Data({dataDir: dataDir});
-    var tracks = data.find('tracks');
+    var tracks = data.find("tracks");
     expect(tracks).toContain({_id:"1", titles:["That's All Right"]});
     expect(tracks).toContain({_id:"2", titles:["Blue Moon of Kentucky"]});
   });
@@ -24,7 +24,7 @@ describe("Constructor", function () {
     var dataDir = __dirname + "/../data";
     var dataWithArgument = new Data({dataDir: dataDir});
     var dataWithoutArgument = new Data();
-    expect(dataWithArgument.find('tracks')).toEqual(dataWithoutArgument.find('tracks'));
+    expect(dataWithArgument.find("tracks")).toEqual(dataWithoutArgument.find("tracks"));
   });
 
 });
@@ -44,9 +44,9 @@ describe ("non-Constructor", function () {
   describe("createTrack(entry)", function () {
 
     it("should add a track to the track collection", function () {
-      var initialLength = data.find('tracks').length;
+      var initialLength = data.find("tracks").length;
       data.createTrack({_id: "3", titles: ["If I Needed Someone"]});
-      var tracks = data.find('tracks');
+      var tracks = data.find("tracks");
       expect(tracks.length).toBe(initialLength + 1);
       expect(tracks).toContain({_id: "3", titles: ["If I Needed Someone"]});
     });
@@ -65,26 +65,26 @@ describe ("non-Constructor", function () {
 
     it("should not change the tracks collection if _id matches another track", function () {
       data.createTrack({_id: "2", titles: ["The Night They Drove Old Dixie Down"]});
-      expect(data.find('tracks')).not.toContain({_id: "3", titles: ["The Night They Drove Old Dixie Down"]});
+      expect(data.find("tracks")).not.toContain({_id: "3", titles: ["The Night They Drove Old Dixie Down"]});
     });
 
     it("should not change the tracks collection if _id is not specified", function () {
-      var before = data.find('tracks');
+      var before = data.find("tracks");
       data.createTrack({titles: ["Autumn Sweater"]});
-      expect(data.find('tracks')).toEqual(before);
+      expect(data.find("tracks")).toEqual(before);
     });
 
     it("should not allow an empty _id string", function () {
-      var before = data.find('tracks');
+      var before = data.find("tracks");
       data.createTrack({_id: "", titles: ["Quiet Village"]});
-      expect(data.find('tracks')).toEqual(before);
+      expect(data.find("tracks")).toEqual(before);
     });
 
     it("should return an empty string and not update tracks collection if titles array is not provided", function () {
-      var before = data.find('tracks');
+      var before = data.find("tracks");
       var rc = data.createTrack({_id: "3"});
       expect(rc).toBe("");
-      expect(data.find('tracks')).toEqual(before);
+      expect(data.find("tracks")).toEqual(before);
     });
 
     it("should return an empty string and not update tracks collection if titles property is provided but not an array", function () {
@@ -117,17 +117,17 @@ describe ("non-Constructor", function () {
 
   describe("find(collection)", function () {
     it("should return a cloned array, not a reference to the internal collection", function () {
-      var before = data.find('tracks');
+      var before = data.find("tracks");
       data.createTrack({_id: "3", titles: ["Flesh, Blood, and Bone"]});
-      expect(data.find('tracks')).not.toEqual(before);
+      expect(data.find("tracks")).not.toEqual(before);
     });
 
-    xit("should throw an exception if called without a collection argument", function () {
-      expect(data.find()).toThrow();
+    it("should throw an exception if called without a collection argument", function () {
+      expect(function () {data.find();}).toThrow();
     });
 
-    xit("should throw an exception if the collection does not exist", function () {
-      expect(data.find('a bad collection name')).toThrow();
+    it("should throw an exception if the collection does not exist", function () {
+      expect(function () {data.find('a bad collection name');}).toThrow();
     });
   });
 
