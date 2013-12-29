@@ -122,12 +122,12 @@ describe ("non-Constructor", function () {
       expect(data.find('tracks')).not.toEqual(before);
     });
 
-    xit("should throw an exception if called without a collection argument", function () {
-      expect(data.find()).toThrow();
+    it("should throw an exception if called without a collection argument", function () {
+      expect(function () {data.find();}).toThrow();
     });
 
-    xit("should throw an exception if the collection does not exist", function () {
-      expect(data.find('a bad collection name')).toThrow();
+    it("should throw an exception if the collection does not exist", function () {
+      expect(function () {data.find('a bad collection name');}).toThrow();
     });
   });
 
