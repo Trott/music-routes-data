@@ -41,76 +41,81 @@ describe ("non-Constructor", function () {
     glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
   });
 
-  describe("createTrack(entry)", function () {
+  describe("create(collection, entry)", function () {
 
     it("should add a track to the track collection", function () {
       var initialLength = data.find("tracks").length;
-      data.createTrack({_id: "3", titles: ["If I Needed Someone"]});
+      data.create('tracks', {_id: "3", titles: ["If I Needed Someone"]});
       var tracks = data.find("tracks");
       expect(tracks.length).toBe(initialLength + 1);
       expect(tracks).toContain({_id: "3", titles: ["If I Needed Someone"]});
     });
 
     it("should return the _id of an added track", function () {
-      expect(data.createTrack({_id: "3", titles: ["Let's Go Away For A While"]})).toBe("3");
+      expect(data.create('tracks', {_id: "3", titles: ["Let's Go Away For A While"]})).toBe("3");
     });
 
     it("should return an empty string if _id matches another track", function () {
-      expect(data.createTrack({_id: "2", titles: ["Someone Keeps Moving My Chair"]})).toBe("");
+      expect(data.create('tracks', {_id: "2", titles: ["Someone Keeps Moving My Chair"]})).toBe("");
     });
 
     it("should return an empty string if _id is not specified", function () {
-      expect(data.createTrack({titles: ["Everybody's Got Something To Hide Except For Me And My Monkey"]})).toBe("");
+      expect(data.create('tracks', {titles: ["Everybody's Got Something To Hide Except For Me And My Monkey"]})).toBe("");
     });
 
     it("should not change the tracks collection if _id matches another track", function () {
-      data.createTrack({_id: "2", titles: ["The Night They Drove Old Dixie Down"]});
+      data.create('tracks', {_id: "2", titles: ["The Night They Drove Old Dixie Down"]});
       expect(data.find("tracks")).not.toContain({_id: "3", titles: ["The Night They Drove Old Dixie Down"]});
     });
 
     it("should not change the tracks collection if _id is not specified", function () {
       var before = data.find("tracks");
-      data.createTrack({titles: ["Autumn Sweater"]});
+      data.create('tracks', {titles: ["Autumn Sweater"]});
       expect(data.find("tracks")).toEqual(before);
     });
 
     it("should not allow an empty _id string", function () {
       var before = data.find("tracks");
-      data.createTrack({_id: "", titles: ["Quiet Village"]});
+      data.create('tracks', {_id: "", titles: ["Quiet Village"]});
       expect(data.find("tracks")).toEqual(before);
     });
 
     it("should return an empty string and not update tracks collection if titles array is not provided", function () {
       var before = data.find("tracks");
-      var rc = data.createTrack({_id: "3"});
+      var rc = data.create('tracks', {_id: "3"});
       expect(rc).toBe("");
       expect(data.find("tracks")).toEqual(before);
     });
 
     it("should return an empty string and not update tracks collection if titles property is provided but not an array", function () {
       var before = data.find("tracks");
-      var rc = data.createTrack({_id: "3", titles: "The Battle Of Who Could Care Less"});
+      var rc = data.create('tracks', {_id: "3", titles: "The Battle Of Who Could Care Less"});
       expect(rc).toBe("");
       expect(data.find("tracks")).toEqual(before);
     });
 
     it("should discard properties other than _id and titles", function () {
-      data.createTrack({_id: "3", titles: ["Uh, Zoom Zip"], releases: ["Ruby Vroom"]});
+      data.create('tracks', {_id: "3", titles: ["Uh, Zoom Zip"], releases: ["Ruby Vroom"]});
       expect(data.find("tracks")).toContain({_id: "3", titles: ["Uh, Zoom Zip"]});
     });
 
     it("should reject a track with an _id that is not a string", function () {
       var before = data.find("tracks");
-      var rc = data.createTrack({_id: true, titles: ["Don't Think Twice, It's Alright"]});
+      var rc = data.create('tracks', {_id: true, titles: ["Don't Think Twice, It's Alright"]});
       expect(rc).toBe("");
       expect(data.find("tracks")).toEqual(before);
     });
 
     it("should reject a track with a titles array where one or more elements are not strings", function () {
       var before = data.find("tracks");
-      var rc = data.createTrack({_id: "3", titles: [true, "True"]});
+      var rc = data.create('tracks', {_id: "3", titles: [true, "True"]});
       expect(rc).toBe("");
       expect(data.find("tracks")).toEqual(before);
+    });
+
+    it("should throw an exception if the collection does not exist", function () {
+      var newTrack = {_id: "3", titles: ["All The Things You Could Be By Now If Sigmund Freud's Wife Were Your Mother"]};
+      expect(function () {data.create("invalid collection", newTrack);}).toThrow();
     });
 
   });
@@ -118,7 +123,7 @@ describe ("non-Constructor", function () {
   describe("find(collection)", function () {
     it("should return a cloned array, not a reference to the internal collection", function () {
       var before = data.find("tracks");
-      data.createTrack({_id: "3", titles: ["Flesh, Blood, and Bone"]});
+      data.create('tracks', {_id: "3", titles: ["Flesh, Blood, and Bone"]});
       expect(data.find("tracks")).not.toEqual(before);
     });
 
@@ -151,7 +156,7 @@ describe ("non-Constructor", function () {
 
     it("should reflect a newly-created track in the output", function () {
       var newTrack = {_id: "3", titles:["Count It Higher"]};
-      data.createTrack(newTrack);
+      data.create('tracks', newTrack);
       data.write();
       var newData = new Data({dataDir: outputDir});
       expect(newData.find("tracks")).toContain(newTrack);
