@@ -37,7 +37,6 @@ describe ("non-Constructor", function () {
 
   beforeEach(function () {
     data = new Data({dataDir: fixtureDir, outputDir: outputDir});
-    console.dir(outputDir);
     glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
   });
 
