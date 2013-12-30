@@ -50,16 +50,19 @@ describe ("non-Constructor", function () {
       expect(tracks).toContain({_id: "3", titles: ["If I Needed Someone"]});
     });
 
-    it("should return the _id of an added track", function () {
-      expect(data.create('tracks', {_id: "3", titles: ["Let's Go Away For A While"]})).toBe("3");
+    it("should return OK status code if track is added", function () {
+      var rv = data.create('tracks', {_id: "3", titles: ["Let's Go Away For A While"]});
+      expect(rv.status).toEqual(data.StatusEnum.OK);
     });
 
-    it("should return an empty string if _id matches another track", function () {
-      expect(data.create('tracks', {_id: "2", titles: ["Someone Keeps Moving My Chair"]})).toBe("");
+    it("should return ERROR if _id matches another track", function () {
+      var rv = data.create('tracks', {_id: "2", titles: ["Someone Keeps Moving My Chair"]});
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
-    it("should return an empty string if _id is not specified", function () {
-      expect(data.create('tracks', {titles: ["Everybody's Got Something To Hide Except For Me And My Monkey"]})).toBe("");
+    it("should return ERROR if _id is not specified", function () {
+      var rv = data.create('tracks', {titles: ["Everybody's Got Something To Hide Except For Me And My Monkey"]});
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
     it("should not change the tracks collection if _id matches another track", function () {
@@ -75,46 +78,49 @@ describe ("non-Constructor", function () {
 
     it("should not allow an empty _id string", function () {
       var before = data.find("tracks");
-      data.create('tracks', {_id: "", titles: ["Quiet Village"]});
+      var rv = data.create('tracks', {_id: "", titles: ["Quiet Village"]});
+      expect(data.find("tracks")).toEqual(before);
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
+    });
+
+    it("should return ERROR and not update tracks collection if titles array is not provided", function () {
+      var before = data.find("tracks");
+      var rv = data.create('tracks', {_id: "3"});
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.find("tracks")).toEqual(before);
     });
 
-    it("should return an empty string and not update tracks collection if titles array is not provided", function () {
+    it("should return ERROR and not update tracks collection if titles property is provided but not an array", function () {
       var before = data.find("tracks");
-      var rc = data.create('tracks', {_id: "3"});
-      expect(rc).toBe("");
-      expect(data.find("tracks")).toEqual(before);
-    });
-
-    it("should return an empty string and not update tracks collection if titles property is provided but not an array", function () {
-      var before = data.find("tracks");
-      var rc = data.create('tracks', {_id: "3", titles: "The Battle Of Who Could Care Less"});
-      expect(rc).toBe("");
+      var rv = data.create('tracks', {_id: "3", titles: "The Battle Of Who Could Care Less"});
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.find("tracks")).toEqual(before);
     });
 
     it("should discard properties other than _id and titles", function () {
-      data.create('tracks', {_id: "3", titles: ["Uh, Zoom Zip"], releases: ["Ruby Vroom"]});
+      var rv = data.create('tracks', {_id: "3", titles: ["Uh, Zoom Zip"], releases: ["Ruby Vroom"]});
+      expect(rv.status).toEqual(data.StatusEnum.OK);
       expect(data.find("tracks")).toContain({_id: "3", titles: ["Uh, Zoom Zip"]});
     });
 
-    it("should reject a track with an _id that is not a string", function () {
+    it("should return ERROR and not change collection if _id is not a string", function () {
       var before = data.find("tracks");
-      var rc = data.create('tracks', {_id: true, titles: ["Don't Think Twice, It's Alright"]});
-      expect(rc).toBe("");
+      var rv = data.create('tracks', {_id: true, titles: ["Don't Think Twice, It's Alright"]});
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.find("tracks")).toEqual(before);
     });
 
-    it("should reject a track with a titles array where one or more elements are not strings", function () {
+    it("should return ERROR and not change collection with a titles array where one or more elements are not strings", function () {
       var before = data.find("tracks");
-      var rc = data.create('tracks', {_id: "3", titles: [true, "True"]});
-      expect(rc).toBe("");
+      var rv = data.create('tracks', {_id: "3", titles: [true, "True"]});
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.find("tracks")).toEqual(before);
     });
 
-    it("should throw an exception if the collection does not exist", function () {
+    it("should return ERROR if collection does not exist", function () {
       var newTrack = {_id: "3", titles: ["All The Things You Could Be By Now If Sigmund Freud's Wife Were Your Mother"]};
-      expect(function () {data.create("invalid collection", newTrack);}).toThrow();
+      var rv = data.create("invalid collection", newTrack);
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
   });
@@ -126,11 +132,11 @@ describe ("non-Constructor", function () {
       expect(data.find("tracks")).not.toEqual(before);
     });
 
-    it("should throw an exception if called without a collection argument", function () {
+    it("should return ERROR if called without a collection argument", function () {
       expect(function () {data.find();}).toThrow();
     });
 
-    it("should throw an exception if the collection does not exist", function () {
+    it("should return ERROR if the collection does not exist", function () {
       expect(function () {data.find('a bad collection name');}).toThrow();
     });
   });
@@ -138,8 +144,8 @@ describe ("non-Constructor", function () {
   describe("add(collection, _id, displayName)", function () {
     it("should create a new track when called with tracks", function () {
       var initialLength = data.find("tracks").length;
-      var rc = data.add("tracks", "5", "Original Faubus Fables");
-      expect(rc).toBe("5");
+      var rv = data.add("tracks", "5", "Original Faubus Fables");
+      expect(rv.status).toEqual(data.StatusEnum.OK);
       var tracks = data.find("tracks");
       expect(tracks).toContain({"_id": "5", "titles": ["Original Faubus Fables"]});
       expect(tracks.length).toBe(initialLength + 1);
