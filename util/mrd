@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-var data = require("../lib/data");
+var Data = require("../lib/data");
+var data = new Data();
 
 var actions = ["add"];
 
@@ -8,9 +9,14 @@ var action = process.argv[2];
 
 var args = process.argv.splice(3);
 
+var rv;
+
 switch (action) {
   case "add":
-    data.add.apply(args);
+    rv = data.add.apply(data, args);
+    if (rv.status === data.StatusEnum.OK) {
+        data.write();
+    }
     break;
   default:
     console.log("mrd [" + actions.join(" | ") + "] ...");
