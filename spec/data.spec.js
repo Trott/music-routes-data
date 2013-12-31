@@ -160,7 +160,7 @@ describe ("non-Constructor", function () {
       expect(rv.results).toEqual([{_id:"1", names:["Elvis Presley"]}]);
     });
 
-    xit("should return ERROR if filterCallback is not a function", function () {
+    it("should return ERROR if filterCallback is not a function", function () {
       var rv = data.search({collection: "individuals", filterCallback: "*"});
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
