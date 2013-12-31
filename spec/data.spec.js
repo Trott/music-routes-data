@@ -145,10 +145,24 @@ describe ("non-Constructor", function () {
       expect(rv.results.length).toBe(2);
     });
 
-    it("should return a cloned array, not a reference to the internal collection when retrieving everything", function () {
+    it("should return a cloned array, not a reference to the internal results", function () {
       var before = data.search({collection: "tracks"}).results;
       data.create("tracks", {_id: "3", titles: ["Flesh, Blood, and Bone"]});
       expect(data.search({collection: "tracks"}).results).not.toEqual(before);
+    });
+
+    it("should filter using the filterCallback option", function () {
+      var filterCallback = function (individual) {
+        return individual.names.indexOf("Elvis Presley") !== -1;
+      };
+      var rv = data.search({collection: "individuals", filterCallback: filterCallback});
+      expect(rv.status).toEqual(data.StatusEnum.OK);
+      expect(rv.results).toEqual([{_id:"1", names:["Elvis Presley"]}]);
+    });
+
+    xit("should return ERROR if filterCallback is not a function", function () {
+      var rv = data.search({collection: "individuals", filterCallback: "*"});
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
   });
