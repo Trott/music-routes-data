@@ -112,7 +112,7 @@ describe ("non-Constructor", function () {
 
     it("should return ERROR and not change collection with a titles array where one or more elements are not strings", function () {
       var before = data.search("tracks").results;
-      var rv = data.create('tracks', {_id: "3", titles: [true, "True"]});
+      var rv = data.create("tracks", {_id: "3", titles: [true, "True"]});
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.search("tracks").results).toEqual(before);
     });
@@ -126,19 +126,27 @@ describe ("non-Constructor", function () {
   });
 
   describe("search(collection)", function () {
-    it("should return a cloned array, not a reference to the internal collection", function () {
-      var before = data.search("tracks").results;
-      data.create('tracks', {_id: "3", titles: ["Flesh, Blood, and Bone"]});
-      expect(data.search("tracks").results).not.toEqual(before);
-    });
 
     it("should return ERROR if called without a collection argument", function () {
-      expect(function () {data.find();}).toThrow();
+      expect(data.search().status).toEqual(data.StatusEnum.ERROR);
     });
 
     it("should return ERROR if the collection does not exist", function () {
-      expect(function () {data.find('a bad collection name');}).toThrow();
+      expect(data.search("a bad collection name").status).toEqual(data.StatusEnum.ERROR);
     });
+
+    it("should return OK and all documents in collection if no filter specified", function () {
+      var rv = data.search("tracks");
+      expect(rv.status).toEqual(data.StatusEnum.OK);
+      expect(rv.results.length).toBe(2);
+    });
+
+    it("should return a cloned array, not a reference to the internal collection when retrieving everything", function () {
+      var before = data.search("tracks").results;
+      data.create("tracks", {_id: "3", titles: ["Flesh, Blood, and Bone"]});
+      expect(data.search("tracks").results).not.toEqual(before);
+    });
+
   });
 
   describe("add(collection, _id, displayName)", function () {
