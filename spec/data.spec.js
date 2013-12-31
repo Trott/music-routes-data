@@ -125,7 +125,7 @@ describe ("non-Constructor", function () {
 
   });
 
-  describe("find(collection)", function () {
+  describe("search(collection)", function () {
     it("should return a cloned array, not a reference to the internal collection", function () {
       var before = data.search("tracks").results;
       data.create('tracks', {_id: "3", titles: ["Flesh, Blood, and Bone"]});
