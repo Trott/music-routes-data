@@ -1,34 +1,24 @@
 #!/usr/bin/env node
 
 // Dependencies
-var assert = require('assert');
+var assert = require("assert");
+var Data = require("../lib/data.js");
 
-var data = {};
+var data = new Data();
+var dump = {}; // local copy of all collections
 
-// Load basic info.
-data.tracks = require('../data/tracks.json');
-data.artists = require('../data/artists.json');
-data.individuals = require('../data/individuals.json');
-data.releases = require('../data/releases.json');
+collections = ["tracks", "artists", "releases", "individuals", "artist_track", "individual_artist", "individual_track", "track_release"];
 
-// Load relation data
-data.at = require('../data/artist_track.json');
-data.ia = require('../data/individual_artist.json');
-data.it = require('../data/individual_track.json');
-data.tr = require('../data/track_release.json');
-
-// Store keys object since I think we'll need it a lot.
-data.keys = Object.keys(data);
-
-assert.equal(data.keys.length, 8, 'data.keys has unexpected length: ' + data.keys.length);
-
-data.keys.forEach(function(key) {
-  assert.ok(data[key].length, 'data.' + key + ' has zero or undefined length');
+collections.forEach(function(collection) {
+  var rv = data.search({collection: collection});
+  assert.ok(rv.status === data.StatusEnum.OK, "Could not retrieve contents of collection " + collection);
+  assert.ok(rv.results.length > 0, "Collection " + collection + " has no entries");
+  dump[collection] = rv.results;
 });
 
 // Check that all instances of basic are included in relation as propName.
 // For example, all instances of 'artists' included in 'at' as 'artistId'
-data.included = function (basic, relation, propName) {
+dump.included = function (basic, relation, propName) {
 
   var related = function (basicValue) {
 
@@ -36,32 +26,32 @@ data.included = function (basic, relation, propName) {
       return relationValue[propName] === basicValue._id;
     };
 
-    var rv = data[relation].some(_idInRelatedTable);
+    var rv = dump[relation].some(_idInRelatedTable);
 
     if (! rv) {
-      console.log('`' + basic + '` contains _id ' + basicValue._id + ' but it is not found in `' + relation + '` as `' + propName + '`');
+      console.log("`" + basic + "` contains _id " + basicValue._id + " but it is not found in `" + relation + "` as `" + propName + "`");
     }
 
     return rv;
   };
 
-  return data[basic].every(related);
+  return dump[basic].every(related);
 };
 
 //TODO: Correct/expand data so that all of these are true.
 // All artists should have tracks.
-assert.ok(data.included('artists', 'at', 'artist_id'));
+assert.ok(dump.included("artists", "artist_track", "artist_id"));
 // All tracks should have artists.
-assert.ok(data.included('tracks', 'at', 'track_id'));
+assert.ok(dump.included("tracks", "artist_track", "track_id"));
 // All artists have individuals. (Not all individuals are members of artists, though.)
-// assert.ok(data.included('artists', 'ia', 'artist_id'));
+// assert.ok(dump.included("artists", "individual_artist", "artist_id"));
 // All individuals are associated with at least one track.
-//////assert.ok(data.included('individuals', 'it', 'individual_id'));
+// assert.ok(dump.included("individuals", "individual_track", "individual_id"));
 // All tracks are on at least one release.
-assert.ok(data.included('tracks', 'tr', 'track_id'));
+assert.ok(dump.included("tracks", "track_release", "track_id"));
 // All releases have at least one track.
-assert.ok(data.included('releases', 'tr', 'release_id'));
+assert.ok(dump.included("releases", "track_release", "release_id"));
 
 // TODO: Make sure that all artist IDs that appear in artist_track actually exist in artists, etc.
 // TODO: Make sure that all _ids are unique
-// TODO: Make sure that all required fields are present in every entry
+// TODO: Make sure that all required fields are present in every entry (including "credits", yeah? even if empty)
