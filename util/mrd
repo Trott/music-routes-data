@@ -3,7 +3,7 @@
 var Data = require("../lib/data");
 var data = new Data();
 
-var actions = ["add"];
+var actions = ["add"|"search"];
 
 var action = process.argv[2];
 
@@ -12,12 +12,34 @@ var args = process.argv.splice(3);
 var rv;
 
 switch (action) {
+//TODO: put all the logic in cli.add, cli.search, etc.
   case "add":
     rv = data.add.apply(data, args);
     if (rv.status === data.StatusEnum.OK) {
         data.write();
     }
+    if (rv.message) {
+      console.error(rv.message);
+    }
     break;
+
+  case "search":
+    var collection = args.shift();
+    var searchTerm = args.shift();
+    filterCallback = function (value) {
+      //TODO: standardize collection on something so that "titles" vs. "names" issue goes away
+      var fields = value.titles || value.names;
+      return fields.indexOf(searchTerm) !== -1;
+    };
+    rv = data.search({collection: collection, filterCallback: filterCallback});
+    if (rv.status === data.StatusEnum.OK) {
+      console.dir(rv.results);
+    }
+    if (rv.message) {
+      console.error(rv.message);
+    }
+    break;
+
   default:
     console.log("mrd [" + actions.join(" | ") + "] ...");
 }
