@@ -27,9 +27,8 @@ switch (action) {
     var collection = args.shift();
     var searchTerm = args.shift();
     filterCallback = function (value) {
-      //TODO: standardize collection on something so that "titles" vs. "names" issue goes away
-      var fields = value.titles || value.names;
-      return fields.indexOf(searchTerm) !== -1;
+      var names = value.names;
+      return names.indexOf(searchTerm) !== -1;
     };
     rv = data.search({collection: collection, filterCallback: filterCallback});
     if (rv.status === data.StatusEnum.OK) {

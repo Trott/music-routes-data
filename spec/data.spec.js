@@ -11,8 +11,8 @@ describe("Constructor", function () {
     var dataDir = __dirname + "/fixture/data";
     var data = new Data({dataDir: dataDir});
     var tracks = data.search({collection: "tracks"}).results;
-    expect(tracks).toContain({_id:"1", titles:["That's All Right"]});
-    expect(tracks).toContain({_id:"2", titles:["Blue Moon of Kentucky"]});
+    expect(tracks).toContain({_id:"1", names:["That's All Right"]});
+    expect(tracks).toContain({_id:"2", names:["Blue Moon of Kentucky"]});
   });
 
   it("should throw an exception if data directory does not exist", function () {
@@ -44,81 +44,81 @@ describe ("non-Constructor", function () {
 
     it("should add a track to the track collection", function () {
       var initialLength = data.search({collection: "tracks"}).results.length;
-      data.create('tracks', {_id: "3", titles: ["If I Needed Someone"]});
+      data.create('tracks', {_id: "3", names: ["If I Needed Someone"]});
       var tracks = data.search({collection: "tracks"}).results;
       expect(tracks.length).toBe(initialLength + 1);
-      expect(tracks).toContain({_id: "3", titles: ["If I Needed Someone"]});
+      expect(tracks).toContain({_id: "3", names: ["If I Needed Someone"]});
     });
 
     it("should return OK status code if track is added", function () {
-      var rv = data.create('tracks', {_id: "3", titles: ["Let's Go Away For A While"]});
+      var rv = data.create('tracks', {_id: "3", names: ["Let's Go Away For A While"]});
       expect(rv.status).toEqual(data.StatusEnum.OK);
     });
 
     it("should return ERROR if _id matches another track", function () {
-      var rv = data.create('tracks', {_id: "2", titles: ["Someone Keeps Moving My Chair"]});
+      var rv = data.create('tracks', {_id: "2", names: ["Someone Keeps Moving My Chair"]});
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
     it("should return ERROR if _id is not specified", function () {
-      var rv = data.create('tracks', {titles: ["Everybody's Got Something To Hide Except For Me And My Monkey"]});
+      var rv = data.create('tracks', {names: ["Everybody's Got Something To Hide Except For Me And My Monkey"]});
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
     it("should not change the tracks collection if _id matches another track", function () {
-      data.create('tracks', {_id: "2", titles: ["The Night They Drove Old Dixie Down"]});
-      expect(data.search({collection: "tracks"}).results).not.toContain({_id: "3", titles: ["The Night They Drove Old Dixie Down"]});
+      data.create('tracks', {_id: "2", names: ["The Night They Drove Old Dixie Down"]});
+      expect(data.search({collection: "tracks"}).results).not.toContain({_id: "3", names: ["The Night They Drove Old Dixie Down"]});
     });
 
     it("should not change the tracks collection if _id is not specified", function () {
       var before = data.search({collection: "tracks"}).results;
-      data.create('tracks', {titles: ["Autumn Sweater"]});
+      data.create('tracks', {names: ["Autumn Sweater"]});
       expect(data.search({collection: "tracks"}).results).toEqual(before);
     });
 
     it("should not allow an empty _id string", function () {
       var before = data.search({collection: "tracks"}).results;
-      var rv = data.create('tracks', {_id: "", titles: ["Quiet Village"]});
+      var rv = data.create('tracks', {_id: "", names: ["Quiet Village"]});
       expect(data.search({collection: "tracks"}).results).toEqual(before);
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
-    it("should return ERROR and not update tracks collection if titles array is not provided", function () {
+    it("should return ERROR and not update tracks collection if names array is not provided", function () {
       var before = data.search({collection: "tracks"}).results;
       var rv = data.create('tracks', {_id: "3"});
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.search({collection: "tracks"}).results).toEqual(before);
     });
 
-    it("should return ERROR and not update tracks collection if titles property is provided but not an array", function () {
+    it("should return ERROR and not update tracks collection if names property is provided but not an array", function () {
       var before = data.search({collection: "tracks"}).results;
-      var rv = data.create('tracks', {_id: "3", titles: "The Battle Of Who Could Care Less"});
+      var rv = data.create('tracks', {_id: "3", names: "The Battle Of Who Could Care Less"});
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.search({collection: "tracks"}).results).toEqual(before);
     });
 
-    it("should discard properties other than _id and titles", function () {
-      var rv = data.create('tracks', {_id: "3", titles: ["Uh, Zoom Zip"], releases: ["Ruby Vroom"]});
+    it("should discard properties other than _id and names", function () {
+      var rv = data.create('tracks', {_id: "3", names: ["Uh, Zoom Zip"], releases: ["Ruby Vroom"]});
       expect(rv.status).toEqual(data.StatusEnum.OK);
-      expect(data.search({collection: "tracks"}).results).toContain({_id: "3", titles: ["Uh, Zoom Zip"]});
+      expect(data.search({collection: "tracks"}).results).toContain({_id: "3", names: ["Uh, Zoom Zip"]});
     });
 
     it("should return ERROR and not change collection if _id is not a string", function () {
       var before = data.search({collection: "tracks"}).results;
-      var rv = data.create('tracks', {_id: true, titles: ["Don't Think Twice, It's Alright"]});
+      var rv = data.create('tracks', {_id: true, names: ["Don't Think Twice, It's Alright"]});
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.search({collection: "tracks"}).results).toEqual(before);
     });
 
-    it("should return ERROR and not change collection with a titles array where one or more elements are not strings", function () {
+    it("should return ERROR and not change collection with a names array where one or more elements are not strings", function () {
       var before = data.search({collection: "tracks"}).results;
-      var rv = data.create("tracks", {_id: "3", titles: [true, "True"]});
+      var rv = data.create("tracks", {_id: "3", names: [true, "True"]});
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
       expect(data.search({collection: "tracks"}).results).toEqual(before);
     });
 
     it("should return ERROR if collection does not exist", function () {
-      var newTrack = {_id: "3", titles: ["All The Things You Could Be By Now If Sigmund Freud's Wife Were Your Mother"]};
+      var newTrack = {_id: "3", names: ["All The Things You Could Be By Now If Sigmund Freud's Wife Were Your Mother"]};
       var rv = data.create("invalid collection", newTrack);
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
@@ -147,7 +147,7 @@ describe ("non-Constructor", function () {
 
     it("should return a cloned array, not a reference to the internal results", function () {
       var before = data.search({collection: "tracks"}).results;
-      data.create("tracks", {_id: "3", titles: ["Flesh, Blood, and Bone"]});
+      data.create("tracks", {_id: "3", names: ["Flesh, Blood, and Bone"]});
       expect(data.search({collection: "tracks"}).results).not.toEqual(before);
     });
 
@@ -173,7 +173,7 @@ describe ("non-Constructor", function () {
       var rv = data.add("tracks", "5", "Original Faubus Fables");
       expect(rv.status).toEqual(data.StatusEnum.OK);
       var tracks = data.search({collection: "tracks"}).results;
-      expect(tracks).toContain({"_id": "5", "titles": ["Original Faubus Fables"]});
+      expect(tracks).toContain({_id: "5", names: ["Original Faubus Fables"]});
       expect(tracks.length).toBe(initialLength + 1);
     });
   });
@@ -186,7 +186,7 @@ describe ("non-Constructor", function () {
     });
 
     it("should reflect a newly-created track in the output", function () {
-      var newTrack = {_id: "3", titles:["Count It Higher"]};
+      var newTrack = {_id: "3", names:["Count It Higher"]};
       data.create('tracks', newTrack);
       data.write();
       var newData = new Data({dataDir: outputDir});

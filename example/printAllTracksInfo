@@ -17,7 +17,7 @@ data.tr = require('../data/track_release.json');
 data.printTrackInfo = function (track) {
   console.log('Track ID: ' + track.id);
 
-  track.titles.forEach(function (title) {
+  track.names.forEach(function (title) {
     console.log('\tTitle: ' + title);
   });
 
@@ -33,7 +33,7 @@ data.printTrackInfo = function (track) {
   data.printRelatedInfoForTrack({
     trackId: track.id,
     relatedInfo: 'releases',
-    relatedField: 'titles',
+    relatedField: 'names',
     relationData: 'tr',
     relationDataId: 'releaseId',
     label: 'Release',

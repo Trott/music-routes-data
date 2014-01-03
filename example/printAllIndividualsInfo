@@ -33,7 +33,7 @@ data.printIndividualDiscography = function (individual) {
   data.printRelatedInfoForIndividual({
     individualId: individual.id,
     relatedInfo: 'tracks',
-    relatedField: 'titles',
+    relatedField: 'names',
     relationData: 'it',
     relationDataId: 'trackId',
     label: 'Performed on'

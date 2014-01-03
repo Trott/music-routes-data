@@ -1,10 +1,10 @@
 [
   {
     "_id":"1",
-    "titles":["That's All Right"]
+    "names":["That's All Right"]
   },
   {
     "_id":"2",
-    "titles":["Blue Moon of Kentucky"]
+    "names":["Blue Moon of Kentucky"]
   }
 ]
