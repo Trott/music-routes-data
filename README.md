@@ -12,8 +12,8 @@ Data is stored in eight JSON files in the `data` directory.
 
 Four of the files contain basic data:
 
-* `tracks.json` contains the `titles` and unique `id` string for a track.
-* `releases.json` contains the `titles` and unique `id` string for a release.
+* `tracks.json` contains the `names` and unique `id` string for a track.
+* `releases.json` contains the `names` and unique `id` string for a release.
 * `artists.json` contains the `names` and unique `id` string for an artist.
 * `individuals.json` contains the `names` and unique `id` string for an individual.
 
