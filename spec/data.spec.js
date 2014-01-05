@@ -5,7 +5,7 @@ var glob = require("glob");
 
 var Data = require("../lib/Data.js");
 
-describe("Constructor", function () {
+describe("Data Constructor", function () {
 
   it("should load from specified directory", function () {
     var dataDir = __dirname + "/fixture/data";
@@ -29,7 +29,7 @@ describe("Constructor", function () {
 
 });
 
-describe ("non-Constructor", function () {
+describe ("Data non-Constructor", function () {
 
   var data;
   var fixtureDir = __dirname + "/fixture/data";
@@ -165,17 +165,6 @@ describe ("non-Constructor", function () {
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
-  });
-
-  describe("add(collection, _id, displayName)", function () {
-    it("should create a new track when called with tracks", function () {
-      var initialLength = data.search({collection: "tracks"}).results.length;
-      var rv = data.add("tracks", "5", "Original Faubus Fables");
-      expect(rv.status).toEqual(data.StatusEnum.OK);
-      var tracks = data.search({collection: "tracks"}).results;
-      expect(tracks).toContain({_id: "5", names: ["Original Faubus Fables"]});
-      expect(tracks.length).toBe(initialLength + 1);
-    });
   });
 
   describe("write()", function () {
