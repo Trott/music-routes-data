@@ -3,6 +3,8 @@
 var Cli = require("../lib/cli");
 var cli = new Cli();
 
+// TODO: SHould everything below actually be inside the Cli object?
+
 var actions = ["add", "search"];
 
 var action = process.argv[2];
