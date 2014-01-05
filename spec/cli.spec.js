@@ -3,11 +3,11 @@
 var fs = require("fs");
 var glob = require("glob");
 
-var Cli = require("../lib/Cli");
+var Data = require("../lib/Data");
+var cli = require("../lib/cli");
 
 describe ("cli", function () {
 
-  var cli;
   var inputDir = __dirname + "/fixture/data";
   var outputDir = __dirname + "/../tmp";
   var argv;
@@ -15,7 +15,6 @@ describe ("cli", function () {
 
   beforeEach(function () {
     argv = {_: [], inputDir: inputDir, outputDir: outputDir};
-    cli = new Cli();
     glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
     spyOn(cli, 'exit');
     spyOn(cli, 'error');
@@ -25,7 +24,9 @@ describe ("cli", function () {
     it("should run the command with the given arguments", function () {
       argv._ = ["add", "tracks", "5", "Dis Here"];
       cli.argv(argv);
-      expect(cli.search({collection: "tracks"}).results).toContain({_id: "5", names:["Dis Here"]});
+      var data = new Data();
+      data.read(outputDir);
+      expect(data.search({collection: "tracks"}).results).toContain({_id: "5", names:["Dis Here"]});
     });
 
     it("should return the usage message if command is not recognized", function () {
@@ -34,21 +35,6 @@ describe ("cli", function () {
       cli.argv(argv);
       expect(cli.error).toHaveBeenCalledWith("Usage: mrd [ add | search ] ...");
     });
-
-    it("should write to specified directory", function () {
-      spyOn(cli, "write");
-      argv._ = ["add", "tracks", "5", "Thrak"];
-      argv.outputDir = "/some/random/directory";
-      cli.argv(argv);
-      expect(cli.write).toHaveBeenCalledWith("/some/random/directory");
-    });
-
-    it("should read from specified directory", function () {
-      spyOn(cli, "read");
-      argv.inputDir = "/my/data/directory";
-      cli.argv(argv);
-      expect(cli.read).toHaveBeenCalledWith("/my/data/directory");
-    });
   });
 
   describe("add", function () {
@@ -56,7 +42,9 @@ describe ("cli", function () {
       argv._ = ["add", "tracks", "5", "Original Faubus Fables"];
       cli.argv(argv);
       expect(cli.exit).toHaveBeenCalledWith(0);
-      var tracks = cli.search({collection: "tracks"}).results;
+      var data = new Data();
+      data.read(outputDir);
+      var tracks = data.search({collection: "tracks"}).results;
       expect(tracks).toContain({_id: "5", names: ["Original Faubus Fables"]});
       expect(tracks.length).toBe(3);
     });
@@ -71,16 +59,19 @@ describe ("cli", function () {
       argv._ = ["add", "tracks", "1", "Me And Her Got A Good Thing Goin' Baby"];
       cli.argv(argv);
       expect(cli.exit).toHaveBeenCalledWith(1);
-      var tracks = cli.search({collection: "tracks"}).results;
+      var data = new Data();
+      data.read(outputDir);
+      var tracks = data.search({collection: "tracks"}).results;
       expect(tracks).not.toContain({_id: "1", names: ["Me And Her Got A Good Thing Goin' Baby"]});
-      expect(tracks).toContain({_id: "1", names: ["That's All Right"]});
     });
 
     it("should create a new artist when called with artists", function () {
       argv._ = ["add", "artists", "100", "Palace Family Steak House"];
       cli.argv(argv);
       expect(cli.exit).toHaveBeenCalledWith(0);
-      var artists = cli.search({collection: "artists"}).results;
+      var data = new Data();
+      data.read(outputDir);
+      var artists = data.search({collection: "artists"}).results;
       expect(artists).toContain({_id: "100", names: ["Palace Family Steak House"]});
       expect(artists.length).toBe(2);
     });
