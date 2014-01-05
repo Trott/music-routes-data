@@ -185,4 +185,15 @@ describe ("Data non-Constructor", function () {
     });
   });
 
+  describe("setOutputDir()", function () {
+    it("should change location that output files are written to", function () {
+      var myData = new Data({dataDir: fixtureDir});
+      var outputDir = __dirname + "/../tmp";
+      myData.setOutputDir(outputDir);
+      expect(fs.readdirSync(outputDir)).toEqual([ '.gitignore' ]);
+      myData.write();
+      expect(fs.readdirSync(outputDir)).not.toEqual([]);
+    });
+  });
+
 });
