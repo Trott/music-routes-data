@@ -5,40 +5,50 @@ var glob = require("glob");
 
 var Data = require("../lib/data");
 
-describe("Data Constructor", function () {
 
-  it("should load from specified directory", function () {
-    var dataDir = __dirname + "/fixture/data";
-    var data = new Data({dataDir: dataDir});
+describe("data", function () {
+
+  it("should begin with no data", function () {
+    var data = new Data();
     var tracks = data.search({collection: "tracks"}).results;
-    expect(tracks).toContain({_id:"1", names:["That's All Right"]});
-    expect(tracks).toContain({_id:"2", names:["Blue Moon of Kentucky"]});
+    expect(tracks.length).toBe(0);
   });
 
-  it("should throw an exception if data directory does not exist", function () {
-    var dataDir = __dirname + "bad/path";
-    expect(function () {var data = new Data({dataDir: dataDir});}).toThrow();
-  });
+  describe("read(dataDir)", function () {
+    it("should read from specified directory", function () {
+      var dataDir = __dirname + "/fixture/data";
+      var data = new Data();
+      data.read(dataDir);
+      var tracks = data.search({collection: "tracks"}).results;
+      expect(tracks).toContain({_id:"1", names:["That's All Right"]});
+      expect(tracks).toContain({_id:"2", names:["Blue Moon of Kentucky"]});
+      expect(tracks.length).toBe(2);
+    });
 
-  it("should load from the data directory if no directory is specified", function () {
-    var dataDir = __dirname + "/../data";
-    var dataWithArgument = new Data({dataDir: dataDir});
-    var dataWithoutArgument = new Data();
-    expect(dataWithArgument.search("tracks").results).toEqual(dataWithoutArgument.search("tracks").results);
-  });
+    it("should return ERROR if data directory does not exist", function () {
+      var dataDir = __dirname + "bad/path";
+      var data = new Data();
+      var rv = data.read(dataDir);
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
+    });
 
+    it("should return ERROR if dataDir not specified", function () {
+      var data = new Data ();
+      var rv = data.read();
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
+    });
+
+  });
 });
 
-describe ("Data non-Constructor", function () {
+describe ("data", function () {
 
   var data;
   var fixtureDir = __dirname + "/fixture/data";
-  var outputDir = __dirname + "/../tmp";
 
   beforeEach(function () {
-    data = new Data({dataDir: fixtureDir});
-    data.outputDir = outputDir;
-    glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
+    data = new Data();
+    data.read(fixtureDir);
   });
 
   describe("create(collection, entry)", function () {
@@ -168,33 +178,41 @@ describe ("Data non-Constructor", function () {
 
   });
 
-  describe("write()", function () {
+  describe("write(outputDir)", function () {
+    var outputDir;
+
+    beforeEach(function () {
+      outputDir = __dirname + "/../tmp";
+      glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
+    });
+
     it("should duplicate the track collection if no changes have been made", function () {
-      data.write();
-      var newData = new Data({dataDir: outputDir});
+      data.write(outputDir);
+      var newData = new Data();
+      newData.read(outputDir);
       expect(newData.search({collection: "tracks"}).results).toEqual(data.search({collection: "tracks"}).results);
     });
 
     it("should reflect a newly-created track in the output", function () {
       var newTrack = {_id: "3", names:["Count It Higher"]};
       data.create('tracks', newTrack);
-      data.write();
-      var newData = new Data({dataDir: outputDir});
+      data.write(outputDir);
+      var newData = new Data();
+      newData.read(outputDir);
       expect(newData.search({collection: "tracks"}).results).toContain(newTrack);
-      var oldData = new Data({dataDir: fixtureDir});
+      var oldData = new Data();
+      oldData.read(fixtureDir);
       expect(oldData.search({collection: "tracks"}).results).not.toContain(newTrack);
     });
-  });
 
-  describe("outputDir", function () {
-    it("should change location that output files are written to", function () {
-      var myData = new Data({dataDir: fixtureDir});
-      var outputDir = __dirname + "/../tmp";
-      myData.outputDir = outputDir;
-      expect(fs.readdirSync(outputDir)).toEqual([ '.gitignore' ]);
-      myData.write();
-      expect(fs.readdirSync(outputDir)).not.toEqual([]);
+    it("should return ERROR if outputDir not specified", function () {
+      var rv = data.write();
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
+    });
+
+    it("should return OK for routine usage", function () {
+      var rv = data.write(outputDir);
+      expect(rv.status).toEqual(data.StatusEnum.OK);
     });
   });
-
 });

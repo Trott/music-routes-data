@@ -2,5 +2,6 @@
 
 var Cli = require("../lib/cli");
 var cli = new Cli();
+var argv = require('optimist').argv;
 
-cli.argv(process.argv);
+cli.argv(argv);
