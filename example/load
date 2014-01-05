@@ -5,6 +5,15 @@ var assert = require("assert");
 var Data = require("../lib/data");
 
 var data = new Data();
+
+var rv;
+
+rv = data.read(__dirname + "/../data");
+if (rv.status === data.StatusEnum.ERROR) {
+  console.error(rv.message || "Unknown error");
+  process.exit(1);
+}
+
 var dump = {}; // local copy of all collections
 
 collections = ["tracks", "artists", "releases", "individuals", "artist_track", "individual_artist", "individual_track", "track_release"];
