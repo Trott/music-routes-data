@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      all: ["Gruntfile.js", "example/*", "lib/*", "spec/*", "util/*"]
+      all: ["Gruntfile.js", "example/*", "lib/*", "spec/*", "bin/*"]
     },
 
     jsonlint: {
