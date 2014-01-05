@@ -12,7 +12,8 @@ describe ("CLI", function () {
   var outputDir = __dirname + "/../tmp";
 
   beforeEach(function () {
-    cli = new Cli({dataDir: fixtureDir, outputDir: outputDir});
+    cli = new Cli({dataDir: fixtureDir});
+    cli.outputDir = outputDir;
     glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
   });
 
