@@ -5,16 +5,17 @@ var glob = require("glob");
 
 var Cli = require("../lib/Cli");
 
-describe ("CLI", function () {
+describe ("cli", function () {
 
   var cli;
-  var fixtureDir = __dirname + "/fixture/data";
+  var inputDir = __dirname + "/fixture/data";
   var outputDir = __dirname + "/../tmp";
-  var argv = {outputDir: outputDir};
+  var argv;
 
 
   beforeEach(function () {
-    cli = new Cli({dataDir: fixtureDir});
+    argv = {_: [], inputDir: inputDir, outputDir: outputDir};
+    cli = new Cli();
     glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
     spyOn(cli, 'exit');
     spyOn(cli, 'error');
@@ -29,21 +30,35 @@ describe ("CLI", function () {
 
     it("should return the usage message if command is not recognized", function () {
       spyOn(console, 'error');
-      argv._ = ["node", "mrd", "nonexistent command"];
+      argv._ = ["nonexistent command"];
       cli.argv(argv);
       expect(cli.error).toHaveBeenCalledWith("Usage: mrd [ add | search ] ...");
+    });
+
+    it("should write to specified directory", function () {
+      spyOn(cli, "write");
+      argv._ = ["add", "tracks", "5", "Thrak"];
+      argv.outputDir = "/some/random/directory";
+      cli.argv(argv);
+      expect(cli.write).toHaveBeenCalledWith("/some/random/directory");
+    });
+
+    it("should read from specified directory", function () {
+      spyOn(cli, "read");
+      argv.inputDir = "/my/data/directory";
+      cli.argv(argv);
+      expect(cli.read).toHaveBeenCalledWith("/my/data/directory");
     });
   });
 
   describe("add", function () {
     it("should create a new track when called with tracks", function () {
-      var initialLength = cli.search({collection: "tracks"}).results.length;
       argv._ = ["add", "tracks", "5", "Original Faubus Fables"];
       cli.argv(argv);
       expect(cli.exit).toHaveBeenCalledWith(0);
       var tracks = cli.search({collection: "tracks"}).results;
       expect(tracks).toContain({_id: "5", names: ["Original Faubus Fables"]});
-      expect(tracks.length).toBe(initialLength + 1);
+      expect(tracks.length).toBe(3);
     });
 
     it("should return ERROR if collection is invalid", function () {
@@ -62,13 +77,12 @@ describe ("CLI", function () {
     });
 
     it("should create a new artist when called with artists", function () {
-      var initialLength = cli.search({collection: "artists"}).results.length;
       argv._ = ["add", "artists", "100", "Palace Family Steak House"];
       cli.argv(argv);
       expect(cli.exit).toHaveBeenCalledWith(0);
       var artists = cli.search({collection: "artists"}).results;
       expect(artists).toContain({_id: "100", names: ["Palace Family Steak House"]});
-      expect(artists.length).toBe(initialLength + 1);
+      expect(artists.length).toBe(2);
     });
   });
 
