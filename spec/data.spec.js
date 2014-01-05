@@ -33,12 +33,9 @@ describe ("Data non-Constructor", function () {
 
   var data;
   var fixtureDir = __dirname + "/fixture/data";
-  var outputDir = __dirname + "/../tmp";
 
   beforeEach(function () {
     data = new Data({dataDir: fixtureDir});
-    data.outputDir = outputDir;
-    glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
   });
 
   describe("create(collection, entry)", function () {
@@ -168,9 +165,16 @@ describe ("Data non-Constructor", function () {
 
   });
 
-  describe("write()", function () {
+  describe("write(outputDir)", function () {
+    var outputDir;
+
+    beforeEach(function () {
+      outputDir = __dirname + "/../tmp";
+      glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
+    });
+
     it("should duplicate the track collection if no changes have been made", function () {
-      data.write();
+      data.write(outputDir);
       var newData = new Data({dataDir: outputDir});
       expect(newData.search({collection: "tracks"}).results).toEqual(data.search({collection: "tracks"}).results);
     });
@@ -178,23 +182,21 @@ describe ("Data non-Constructor", function () {
     it("should reflect a newly-created track in the output", function () {
       var newTrack = {_id: "3", names:["Count It Higher"]};
       data.create('tracks', newTrack);
-      data.write();
+      data.write(outputDir);
       var newData = new Data({dataDir: outputDir});
       expect(newData.search({collection: "tracks"}).results).toContain(newTrack);
       var oldData = new Data({dataDir: fixtureDir});
       expect(oldData.search({collection: "tracks"}).results).not.toContain(newTrack);
     });
-  });
 
-  describe("outputDir", function () {
-    it("should change location that output files are written to", function () {
-      var myData = new Data({dataDir: fixtureDir});
-      var outputDir = __dirname + "/../tmp";
-      myData.outputDir = outputDir;
-      expect(fs.readdirSync(outputDir)).toEqual([ '.gitignore' ]);
-      myData.write();
-      expect(fs.readdirSync(outputDir)).not.toEqual([]);
+    it("should return ERROR if outputDir not specified", function () {
+      var rv = data.write();
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
+    });
+
+    it("should return OK for routine usage", function () {
+      var rv = data.write(outputDir);
+      expect(rv.status).toEqual(data.StatusEnum.OK);
     });
   });
-
 });
