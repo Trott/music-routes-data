@@ -3,7 +3,7 @@
 var fs = require("fs");
 var glob = require("glob");
 
-var Cli = require("../lib/Cli.js");
+var Cli = require("../lib/Cli");
 
 describe ("CLI", function () {
 

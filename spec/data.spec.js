@@ -3,7 +3,7 @@
 var fs = require("fs");
 var glob = require("glob");
 
-var Data = require("../lib/Data.js");
+var Data = require("../lib/data");
 
 describe("Data Constructor", function () {
 
