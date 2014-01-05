@@ -49,4 +49,17 @@ describe ("CLI", function () {
     });
   });
 
+  describe("argv()", function () {
+    it("should run the command with the given arguments", function () {
+      cli.argv(["node", "/foo/bar.js", "add", "tracks", "5", "Dis Here"]);
+      expect(cli.search({collection: "tracks"}).results).toContain({_id: "5", names:["Dis Here"]});
+    });
+
+    it("should return the usage message if command is not recognized", function () {
+      spyOn(console, 'error');
+      cli.argv(["node", "mrd", "nonexistent command"]);
+      expect(console.error).toHaveBeenCalledWith("Usage: mrd [ add | search ] ...");
+    });
+  });
+
 });
