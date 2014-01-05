@@ -25,6 +25,28 @@ describe ("CLI", function () {
       expect(tracks).toContain({_id: "5", names: ["Original Faubus Fables"]});
       expect(tracks.length).toBe(initialLength + 1);
     });
+
+    it("should return ERROR if collection is invalid", function () {
+      var rv = cli.add("invalid collection name", "5", "Dat Dere");
+      expect(rv.status).toEqual(cli.StatusEnum.ERROR);
+    });
+
+    it("should return ERROR if _id is a duplicate", function () {
+      var rv = cli.add("tracks", "1", "Me And Her Got A Good Thing Goin' Baby");
+      expect(rv.status).toEqual(cli.StatusEnum.ERROR);
+      var tracks = cli.search({collection: "tracks"}).results;
+      expect(tracks).not.toContain({_id: "1", names: ["Me And Her Got A Good Thing Goin' Baby"]});
+      expect(tracks).toContain({_id: "1", names: ["That's All Right"]});
+    });
+
+    it("should create a new artist when called with artists", function () {
+      var initialLength = cli.search({collection: "artists"}).results.length;
+      var rv = cli.add("artists", "100", "Palace Family Steak House");
+      expect(rv.status).toEqual(cli.StatusEnum.OK);
+      var artists = cli.search({collection: "artists"}).results;
+      expect(artists).toContain({_id: "100", names: ["Palace Family Steak House"]});
+      expect(artists.length).toBe(initialLength + 1);
+    });
   });
 
 });
