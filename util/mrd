@@ -3,43 +3,4 @@
 var Cli = require("../lib/cli");
 var cli = new Cli();
 
-// TODO: SHould everything below actually be inside the Cli object?
-
-var actions = ["add", "search"];
-
-var action = process.argv[2];
-
-var args = process.argv.splice(3);
-
-var rv;
-
-switch (action) {
-  case "add":
-    rv = cli.add.apply(cli, args);
-    if (rv.status === cli.StatusEnum.OK) {
-        cli.write();
-    }
-    if (rv.message) {
-      console.error(rv.message);
-    }
-    break;
-
-  case "search":
-    var collection = args.shift();
-    var searchTerm = args.shift();
-    filterCallback = function (value) {
-      var names = value.names;
-      return names.indexOf(searchTerm) !== -1;
-    };
-    rv = cli.search({collection: collection, filterCallback: filterCallback});
-    if (rv.status === cli.StatusEnum.OK) {
-      console.dir(rv.results);
-    }
-    if (rv.message) {
-      console.error(rv.message);
-    }
-    break;
-
-  default:
-    console.log("mrd [ " + actions.join(" | ") + " ] ...");
-}
+cli.argv(process.argv);
