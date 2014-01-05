@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-var Data = require("../lib/data");
-var data = new Data();
+var Cli = require("../lib/cli");
+var cli = new Cli();
 
-var actions = ["add"|"search"];
+var actions = ["add", "search"];
 
 var action = process.argv[2];
 
@@ -12,11 +12,10 @@ var args = process.argv.splice(3);
 var rv;
 
 switch (action) {
-//TODO: put all the logic in cli.add, cli.search, etc.
   case "add":
-    rv = data.add.apply(data, args);
-    if (rv.status === data.StatusEnum.OK) {
-        data.write();
+    rv = cli.add.apply(cli, args);
+    if (rv.status === cli.StatusEnum.OK) {
+        cli.write();
     }
     if (rv.message) {
       console.error(rv.message);
@@ -30,8 +29,8 @@ switch (action) {
       var names = value.names;
       return names.indexOf(searchTerm) !== -1;
     };
-    rv = data.search({collection: collection, filterCallback: filterCallback});
-    if (rv.status === data.StatusEnum.OK) {
+    rv = cli.search({collection: collection, filterCallback: filterCallback});
+    if (rv.status === cli.StatusEnum.OK) {
       console.dir(rv.results);
     }
     if (rv.message) {
@@ -40,5 +39,5 @@ switch (action) {
     break;
 
   default:
-    console.log("mrd [" + actions.join(" | ") + "] ...");
+    console.log("mrd [ " + actions.join(" | ") + " ] ...");
 }
