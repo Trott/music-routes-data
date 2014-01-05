@@ -36,7 +36,8 @@ describe ("Data non-Constructor", function () {
   var outputDir = __dirname + "/../tmp";
 
   beforeEach(function () {
-    data = new Data({dataDir: fixtureDir, outputDir: outputDir});
+    data = new Data({dataDir: fixtureDir});
+    data.outputDir = outputDir;
     glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
   });
 
@@ -185,11 +186,11 @@ describe ("Data non-Constructor", function () {
     });
   });
 
-  describe("setOutputDir()", function () {
+  describe("outputDir", function () {
     it("should change location that output files are written to", function () {
       var myData = new Data({dataDir: fixtureDir});
       var outputDir = __dirname + "/../tmp";
-      myData.setOutputDir(outputDir);
+      myData.outputDir = outputDir;
       expect(fs.readdirSync(outputDir)).toEqual([ '.gitignore' ]);
       myData.write();
       expect(fs.readdirSync(outputDir)).not.toEqual([]);
