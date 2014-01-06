@@ -29,11 +29,11 @@ describe ("cli", function () {
       expect(data.search({collection: "tracks"}).results).toContain({_id: "5", names:["Dis Here"]});
     });
 
-    it("should return the usage message if command is not recognized", function () {
-      spyOn(console, 'error');
+    it("should return help file text if command is not recognized", function () {
       argv._ = ["nonexistent command"];
       cli.argv(argv);
-      expect(cli.error).toHaveBeenCalledWith("Usage: mrd [ add | search ] ...");
+      var message = fs.readFileSync(__dirname + "/../doc/cli/help.txt", "utf8");
+      expect(cli.error).toHaveBeenCalledWith(message);
     });
   });
 

@@ -1,0 +1,21 @@
+Usage: mrd [options] [commands]
+
+Description:
+
+  Command line tool for reading and modifying Music Routes data
+
+Commands:
+
+  add <collection> <id> <name>
+    add an entry for name with id to the collection
+
+  search <collection> <name>
+    return JSON for all entries in collection that have the specified name
+
+Options:
+
+  -i, --inputDir
+    directory from which data JSON files will be read
+
+  -o, --outputDir
+    directory to which data JSON files will be written
