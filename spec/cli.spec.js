@@ -35,6 +35,13 @@ describe ("cli", function () {
       var message = fs.readFileSync(__dirname + "/../doc/cli/help.txt", "utf8");
       expect(cli.error).toHaveBeenCalledWith(message);
     });
+
+    it("should return error code if bad inputdir specified", function () {
+        argv.inputDir = "/a/directory/that/does/not/exist";
+        argv._ = ["add", "tracks", "5", "Fool For The City"];
+        cli.argv(argv);
+        expect(cli.exit).toHaveBeenCalledWith(1);
+    });
   });
 
   describe("add", function () {
