@@ -84,4 +84,16 @@ describe ("cli", function () {
     });
   });
 
+  describe("link", function () {
+    it("should link an individual to a track", function () {
+      argv._ = ["link", "individual", "1", "track", "1"];
+      cli.argv(argv);
+      var data = new Data();
+      data.read(outputDir);
+      var individual_track = data.search({collection: "individual_track"}).results;
+      expect(cli.error).not.toHaveBeenCalled();
+      expect(individual_track).toEqual([{individual_id: "1", track_id: "1"}]);
+    });
+  });
+
 });
