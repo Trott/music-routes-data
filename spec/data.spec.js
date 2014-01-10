@@ -6,7 +6,7 @@ var glob = require("glob");
 var Data = require("../lib/data");
 
 
-describe("data", function () {
+describe("data constructor", function () {
 
   it("should begin with no data", function () {
     var data = new Data();
@@ -134,6 +134,16 @@ describe ("data", function () {
       expect(rv.status).toEqual(data.StatusEnum.ERROR);
     });
 
+  });
+
+  describe("link(collection, entry)", function () {
+    it("should connect two entities from different collections", function () {
+      var initialLength = data.search({collection: "individual_track"}).results.length;
+      data.link('individual_track', {track_id: "1", individual_id: "1"});
+      var individual_track = data.search({collection: "individual_track"}).results;
+      expect(individual_track.length).toBe(initialLength + 1);
+      expect(individual_track).toContain({track_id: "1", individual_id: "1"});
+    });
   });
 
   describe("search(options)", function () {
