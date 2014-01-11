@@ -88,11 +88,21 @@ describe ("cli", function () {
     it("should link an individual to a track", function () {
       argv._ = ["link", "individual", "1", "track", "1"];
       cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
       var data = new Data();
       data.read(outputDir);
       var individual_track = data.search({collection: "individual_track"}).results;
-      expect(cli.error).not.toHaveBeenCalled();
       expect(individual_track).toEqual([{individual_id: "1", track_id: "1"}]);
+    });
+
+    it("should link a track to a release", function () {
+      argv._ = ["link", "track", "1", "release", "1"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
+      var data = new Data();
+      data.read(outputDir);
+      var track_release = data.search({collection: "track_release"}).results;
+      expect(track_release).toEqual([{track_id: "1", release_id: "1"}]);
     });
   });
 
