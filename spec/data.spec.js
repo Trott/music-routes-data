@@ -144,6 +144,11 @@ describe ("data", function () {
       expect(individual_track.length).toBe(initialLength + 1);
       expect(individual_track).toContain({track_id: "1", individual_id: "1"});
     });
+
+    it("should return ERROR if collection is not a link collection", function () {
+      var rv = data.link('tracks', {});
+      expect(rv.status).toEqual(data.StatusEnum.ERROR);
+    });
   });
 
   describe("search(options)", function () {
