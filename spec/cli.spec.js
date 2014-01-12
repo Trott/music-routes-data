@@ -124,6 +124,16 @@ describe ("cli", function () {
       var artist_track = data.search({collection: "artist_track"}).results;
       expect(artist_track).toEqual([{artist_id: "1", track_id: "1"}]);
     });
+
+    it("should link an individual to an artist", function () {
+      argv._ = ["link", "individual", "1", "artist", "1"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
+      var data = new Data();
+      data.read(outputDir);
+      var individual_artist = data.search({collection: "individual_artist"}).results;
+      expect(individual_artist).toEqual([{individual_id: "1", artist_id: "1"}]);
+    });
   });
 
 });
