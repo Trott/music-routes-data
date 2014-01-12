@@ -104,6 +104,26 @@ describe ("cli", function () {
       var track_release = data.search({collection: "track_release"}).results;
       expect(track_release).toEqual([{track_id: "1", release_id: "1"}]);
     });
+
+    it("should link a track to an artist", function () {
+      argv._ = ["link", "artist", "1", "track", "1"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
+      var data = new Data();
+      data.read(outputDir);
+      var artist_track = data.search({collection: "artist_track"}).results;
+      expect(artist_track).toEqual([{artist_id: "1", track_id: "1"}]);
+    });
+
+    it("should allow collections to be specified in reverse order", function () {
+      argv._ = ["link", "track", "1", "artist", "1"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
+      var data = new Data();
+      data.read(outputDir);
+      var artist_track = data.search({collection: "artist_track"}).results;
+      expect(artist_track).toEqual([{artist_id: "1", track_id: "1"}]);
+    });
   });
 
 });
