@@ -28,6 +28,7 @@ module.exports = function(grunt) {
     },
 
     jasmine_node: {
+      captureExceptions: true,
       forceExit: true,
     },
 
