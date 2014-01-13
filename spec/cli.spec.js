@@ -4,8 +4,8 @@ var fs = require("fs");
 var glob = require("glob");
 var path = require("path");
 
-var Data = require(path.join("..", "lib", "Data"));
-var cli = require(path.join("..", "lib", "cli"));
+var Data = require(path.join(__dirname, "..", "lib", "Data"));
+var cli = require(path.join(__dirname, "..", "lib", "cli"));
 
 describe ("cli", function () {
 
