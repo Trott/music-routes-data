@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "description": "What musicians played on what tracks",
   "scripts": {
+    "preinstall": "npm install -g grunt-cli",
     "test": "grunt"
   },
   "repository": {
@@ -26,8 +27,7 @@
     "grunt-exec": "~0.4.2",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-jasmine-node": "~0.1.0",
-    "glob": "~3.2.7",
-    "grunt-cli": "~0.1.11"
+    "glob": "~3.2.7"
   },
   "dependencies": {
     "optimist": "~0.6.0"
