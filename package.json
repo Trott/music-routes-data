@@ -3,7 +3,8 @@
   "version": "0.2.1",
   "description": "What musicians played on what tracks",
   "scripts": {
-    "test": "node example/load"
+    "preinstall": "npm install -g grunt-cli",
+    "test": "grunt"
   },
   "repository": {
     "type": "git",
