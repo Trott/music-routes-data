@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     // },
     exec: {
       verify: {
-        cmd: "node example/load",
+        cmd: "node bin/verify",
       }
     },
 
