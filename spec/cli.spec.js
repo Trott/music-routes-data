@@ -17,8 +17,9 @@ describe ("cli", function () {
   beforeEach(function () {
     argv = {_: [], inputDir: inputDir, outputDir: outputDir};
     glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
-    spyOn(cli, 'exit');
-    spyOn(cli, 'error');
+    spyOn(cli, "exit");
+    spyOn(cli, "error");
+    spyOn(cli, "dir");
   });
 
   describe("argv()", function () {
@@ -134,6 +135,15 @@ describe ("cli", function () {
       data.read(outputDir);
       var individual_artist = data.search({collection: "individual_artist"}).results;
       expect(individual_artist).toEqual([{individual_id: "1", artist_id: "1"}]);
+    });
+  });
+
+  describe("search", function () {
+    it("should return entries with a name that exactly matches the search term", function () {
+      argv._ = ["search", "individuals", "Elvis Presley"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
+      expect(cli.dir).toHaveBeenCalledWith([{ _id : "1", names: ["Elvis Presley"]}]);
     });
   });
 
