@@ -26,7 +26,8 @@
     "grunt-exec": "~0.4.2",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-jasmine-node": "~0.1.0",
-    "glob": "~3.2.7"
+    "glob": "~3.2.7",
+    "grunt-cli": "~0.1.11"
   },
   "dependencies": {
     "optimist": "~0.6.0"
