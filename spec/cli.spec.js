@@ -2,14 +2,15 @@
 
 var fs = require("fs");
 var glob = require("glob");
+var path = require("path");
 
-var Data = require("../lib/Data");
-var cli = require("../lib/cli");
+var Data = require(path.join("..", "lib", "Data"));
+var cli = require(path.join("..", "lib", "cli"));
 
 describe ("cli", function () {
 
-  var inputDir = __dirname + "/fixture/data";
-  var outputDir = __dirname + "/../tmp";
+  var inputDir = path.join(__dirname, "fixture/data");
+  var outputDir = path.join(__dirname, "..", "tmp");
   var argv;
 
 
@@ -32,7 +33,7 @@ describe ("cli", function () {
     it("should return help file text if command is not recognized", function () {
       argv._ = ["nonexistent command"];
       cli.argv(argv);
-      var message = fs.readFileSync(__dirname + "/../doc/cli/help.txt", "utf8");
+      var message = fs.readFileSync(path.join(__dirname, "..", "doc/cli/help.txt"), "utf8");
       expect(cli.error).toHaveBeenCalledWith(message);
     });
 
