@@ -22,8 +22,8 @@ module.exports = function(grunt) {
     //   }
     // },
     exec: {
-      npm_test: {
-        cmd: "npm test",
+      verify: {
+        cmd: "node example/load",
       }
     },
 
@@ -51,6 +51,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-jsonlint");
 
   // Default task.
-  grunt.registerTask("default", ["jsonlint", "jshint", "jasmine_node", "exec:npm_test"]);
+  grunt.registerTask("default", ["jsonlint", "jshint", "jasmine_node", "exec:verify"]);
 
 };
