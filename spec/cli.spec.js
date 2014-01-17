@@ -39,10 +39,24 @@ describe ("cli", function () {
     });
 
     it("should return error code if bad inputdir specified", function () {
-        argv.inputDir = "/a/directory/that/does/not/exist";
-        argv._ = ["add", "tracks", "5", "Fool For The City"];
-        cli.argv(argv);
-        expect(cli.exit).toHaveBeenCalledWith(1);
+      argv.inputDir = "/a/directory/that/does/not/exist";
+      argv._ = ["add", "tracks", "5", "Fool For The City"];
+      cli.argv(argv);
+      expect(cli.exit).toHaveBeenCalledWith(1);
+    });
+
+    it("should print a warning if no inputdir specified", function () {
+      delete argv.inputDir;
+      argv._ = ["search", "tracks", "Birdhouse In Your Soul"];
+      cli.argv(argv);
+      expect(cli.error).toHaveBeenCalledWith("No input directory -i specified. Operating on empty data set.\nUse -i to specify a data directory.");
+    });
+
+    it("should not print a warning if inputdir specified", function () {
+      expect(argv.inputDir).toBeTruthy();
+      argv._ = ["search", "tracks", "My Attorney Bernie"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
     });
   });
 
