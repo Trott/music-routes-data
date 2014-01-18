@@ -163,6 +163,19 @@ describe ("cli", function () {
       var individual_artist = data.search({collection: "individual_artist"}).results;
       expect(individual_artist).toEqual([{individual_id: "1", artist_id: "1"}]);
     });
+
+    it("should print a warning if no outputDir specified", function () {
+      delete argv.outputDir;
+      argv._ = ["link", "artist", "1", "track", "1"];
+      cli.argv(argv);
+      expect(cli.error).toHaveBeenCalledWith("No output directory specified. Your data will not be saved.\nUse -o to specify an output directory.");
+    });
+
+    it("should not print a warning if outputDir specified", function () {
+      argv._ = ["link", "artist", "1", "track", "1"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
+    });
   });
 
   describe("search", function () {
