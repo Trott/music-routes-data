@@ -49,7 +49,7 @@ describe ("cli", function () {
       delete argv.inputDir;
       argv._ = ["search", "tracks", "Birdhouse In Your Soul"];
       cli.argv(argv);
-      expect(cli.error).toHaveBeenCalledWith("No input directory -i specified. Operating on empty data set.\nUse -i to specify a data directory.");
+      expect(cli.error).toHaveBeenCalledWith("No input directory specified. Operating on empty data set.\nUse -i to specify a data directory.");
     });
 
     it("should not print a warning if inputdir specified", function () {
@@ -97,6 +97,19 @@ describe ("cli", function () {
       var artists = data.search({collection: "artists"}).results;
       expect(artists).toContain({_id: "100", names: ["Palace Family Steak House"]});
       expect(artists.length).toBe(2);
+    });
+
+    it("should print a warning if no outputDir specified", function () {
+      delete argv.outputDir;
+      argv._ = ["add", "artists", "100", "Palace Family Steak House"];
+      cli.argv(argv);
+      expect(cli.error).toHaveBeenCalledWith("No output directory specified. Your data will not be saved.\nUse -o to specify an output directory.");
+    });
+
+    it("should not print a warning if outputDir specified", function () {
+      argv._ = ["add", "artists", "100", "Palace Family Steak House"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
     });
   });
 
@@ -149,6 +162,19 @@ describe ("cli", function () {
       data.read(outputDir);
       var individual_artist = data.search({collection: "individual_artist"}).results;
       expect(individual_artist).toEqual([{individual_id: "1", artist_id: "1"}]);
+    });
+
+    it("should print a warning if no outputDir specified", function () {
+      delete argv.outputDir;
+      argv._ = ["link", "artist", "1", "track", "1"];
+      cli.argv(argv);
+      expect(cli.error).toHaveBeenCalledWith("No output directory specified. Your data will not be saved.\nUse -o to specify an output directory.");
+    });
+
+    it("should not print a warning if outputDir specified", function () {
+      argv._ = ["link", "artist", "1", "track", "1"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
     });
   });
 
