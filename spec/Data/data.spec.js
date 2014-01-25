@@ -3,7 +3,7 @@
 var fs = require("fs");
 var glob = require("glob");
 
-var Data = require("../lib/Data");
+var Data = require("../../lib/Data");
 
 
 describe("data constructor", function () {
@@ -16,7 +16,7 @@ describe("data constructor", function () {
 
   describe("read(dataDir)", function () {
     it("should read from specified directory", function () {
-      var dataDir = __dirname + "/fixture/data";
+      var dataDir = __dirname + "/../fixture/data";
       var data = new Data();
       data.read(dataDir);
       var tracks = data.search({collection: "tracks"}).results;
@@ -44,7 +44,7 @@ describe("data constructor", function () {
 describe ("data", function () {
 
   var data;
-  var fixtureDir = __dirname + "/fixture/data";
+  var fixtureDir = __dirname + "/../fixture/data";
 
   beforeEach(function () {
     data = new Data();
@@ -197,7 +197,7 @@ describe ("data", function () {
     var outputDir;
 
     beforeEach(function () {
-      outputDir = __dirname + "/../tmp";
+      outputDir = __dirname + "/../../tmp";
       glob.sync(outputDir+"/*.json").forEach(function (fileName) { fs.unlinkSync(fileName); });
     });
 
