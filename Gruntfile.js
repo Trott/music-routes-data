@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     exec: {
       verify: {
         cmd: "node bin/verify",
-      }
+      },
     },
 
     jasmine_node: {
@@ -32,13 +32,13 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      all: ["Gruntfile.js", "example/*", "lib/*", "spec/*", "bin/*"]
+      all: ["Gruntfile.js", "example/*", "lib/**/*.js", "spec/**/*.js", "bin/*"],
     },
 
     jsonlint: {
       all: {
-        src: ["package.json","spec/fixture/data/*","data/*"]
-      }
+        src: ["package.json","spec/fixture/data/*","data/*"],
+      },
     },
 
   });
