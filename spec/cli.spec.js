@@ -111,6 +111,12 @@ describe ("cli", function () {
       cli.argv(argv);
       expect(cli.error).not.toHaveBeenCalled();
     });
+
+    it("should convert an integer _id to a string rather than rejecting it", function () {
+      argv._ = ["add", "artists", 100, "Palace Family Steak House"];
+      cli.argv(argv);
+      expect(cli.error).not.toHaveBeenCalled();
+    });
   });
 
   describe("link", function () {
