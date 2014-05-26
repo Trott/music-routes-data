@@ -15,27 +15,27 @@ data.it = require('../data/individual_track.json');
 data.tr = require('../data/track_release.json');
 
 data.printIndividualDiscography = function (individual) {
-  console.log('Individual ID: ' + individual.id);
+  console.log('Individual ID: ' + individual._id);
 
   individual.names.forEach(function (name) {
     console.log('\tName: ' + name);
   });
 
   data.printRelatedInfoForIndividual({
-    individualId: individual.id,
+    individual_id: individual._id,
     relatedInfo: 'artists',
     relatedField: 'names',
     relationData: 'ia',
-    relationDataId: 'artistId',
+    relationDataId: 'artist_id',
     label: 'Member of',
   });
 
   data.printRelatedInfoForIndividual({
-    individualId: individual.id,
+    individual_id: individual._id,
     relatedInfo: 'tracks',
     relatedField: 'names',
     relationData: 'it',
-    relationDataId: 'trackId',
+    relationDataId: 'track_id',
     label: 'Performed on'
   });
 };
@@ -43,7 +43,7 @@ data.printIndividualDiscography = function (individual) {
 data.printRelatedInfoForIndividual = function (options) {
 
   var relatedIds = data[options.relationData].filter(function (value) {
-    return value.individualId === options.individualId;
+    return value.individual_id === options.individual_id;
   });
 
   relatedIds = relatedIds.map(function (value) {
@@ -51,12 +51,12 @@ data.printRelatedInfoForIndividual = function (options) {
   });
 
   var relatedData = data[options.relatedInfo].filter(function (value) {
-    return relatedIds.indexOf(value.id) > -1;
+    return relatedIds.indexOf(value._id) > -1;
   });
 
   relatedData.forEach(function (value) {
     for (var i=0, l=value[options.relatedField].length; i<l; i++) {
-      console.log('\t' + options.label + ': ' + value[options.relatedField][i] + ' [' + value.id + ']');
+      console.log('\t' + options.label + ': ' + value[options.relatedField][i] + ' [' + value._id + ']');
     }
   });
 };
