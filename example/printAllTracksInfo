@@ -15,37 +15,37 @@ data.it = require('../data/individual_track.json');
 data.tr = require('../data/track_release.json');
 
 data.printTrackInfo = function (track) {
-  console.log('Track ID: ' + track.id);
+  console.log('Track ID: ' + track._id);
 
   track.names.forEach(function (title) {
     console.log('\tTitle: ' + title);
   });
 
   data.printRelatedInfoForTrack({
-    trackId: track.id,
+    track_id: track._id,
     relatedInfo: 'artists',
     relatedField: 'names',
     relationData: 'at',
-    relationDataId: 'artistId',
+    relationDataId: 'artist_id',
     label: 'Artist',
   });
 
   data.printRelatedInfoForTrack({
-    trackId: track.id,
+    track_id: track._id,
     relatedInfo: 'releases',
     relatedField: 'names',
     relationData: 'tr',
-    relationDataId: 'releaseId',
+    relationDataId: 'release_id',
     label: 'Release',
   });
 
   data.printRelatedInfoForTrack({
-    trackId: track.id,
+    track_id: track._id,
     relatedInfo: 'individuals',
     relatedField: 'names',
     additionalInfo: 'credits',
     relationData: 'it',
-    relationDataId: 'individualId',
+    relationDataId: 'individual_id',
     label: 'Individual',
   });
 };
@@ -56,7 +56,7 @@ data.printRelatedInfoForTrack = function (options) {
 
   // Get all the entries from the relation data structure that are related to this one.
   var relatedIdsAndExtra = data[options.relationData].filter(function (value) {
-    return value.trackId === options.trackId;
+    return value.track_id === options.track_id;
   });
 
   // If we want additional info (like credits), grab that now too.
@@ -73,16 +73,16 @@ data.printRelatedInfoForTrack = function (options) {
 
   // Get the actual data we want specified by the related IDs.
   var relatedData = data[options.relatedInfo].filter(function (value) {
-    return relatedIds.indexOf(value.id) > -1;
+    return relatedIds.indexOf(value._id) > -1;
   });
 
   relatedData.forEach(function (value) {
     var extra = '';
-    if (extras[value.id] && extras[value.id].length>0) {
-      extra = ' (' + extras[value.id].join(', ') + ')';
+    if (extras[value._id] && extras[value._id].length>0) {
+      extra = ' (' + extras[value._id].join(', ') + ')';
     }
     for (var i=0, l=value[options.relatedField].length; i<l; i++) {
-      console.log('\t' + options.label + ': ' + value[options.relatedField][i] + extra + ' [' + value.id + ']');
+      console.log('\t' + options.label + ': ' + value[options.relatedField][i] + extra + ' [' + value._id + ']');
     }
   });
 };
