@@ -33,7 +33,7 @@ var tracksWithIndividual = individual_track.filter(function (elem) {
 var connectedIndividuals = individual_track.filter(function (elem) {
   return tracksWithIndividual.indexOf(elem.track_id) > -1;
 }).map(function (elem) {
-  return {source: sourceLabel, target: getName(elem.individual_id), type: 'licensing'};
+  return {source: sourceLabel, target: getName(elem.individual_id)};
 });
 
 // convert IDs to labels
