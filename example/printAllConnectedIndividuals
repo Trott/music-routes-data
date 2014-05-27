@@ -41,5 +41,5 @@ connectedIndividuals.map(function(elem) {
 
 });
 
-console.dir(connectedIndividuals);
+console.log(JSON.stringify(connectedIndividuals, null, 2));
 
