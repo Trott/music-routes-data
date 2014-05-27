@@ -1,18 +1,11 @@
 #!/usr/bin/env node
 
-/* Returns JSON representation of all individuals on tracks with a given individual */
+/* Writes files for JSON representation of all individuals on tracks with a given individual */
 
-// TODO: Take operations in here and convert to Data API calls
-
-// var Data = require("../lib/Data");
-
-// var data = new Data();
-// data.read(__dirname + "/../data");
-
-// data.getConnected('individuals', '1', 'tracks'); // get all individuals connected by tracks to individual of id '1'
+var fs = require("graceful-fs");
 
 var individuals = require("../data/individuals.json");
-var individualId = individuals[0]._id;
+var individualIds = individuals.map(function(elem) { return elem._id; });
 var individual_track = require("../data/individual_track.json");
 
 var getName = function (id) {
@@ -21,20 +14,32 @@ var getName = function (id) {
   })[0].names[0];
 };
 
+var generateJson = function (individualId) {
+  var sourceLabel = getName(individualId);
 
-var sourceLabel = getName(individualId);
+  var tracksWithIndividual = individual_track.filter(function (elem) {
+    return elem.individual_id === individualId;
+  }).map(function (elem) {
+    return elem.track_id;
+  });
 
-var tracksWithIndividual = individual_track.filter(function (elem) {
-  return elem.individual_id === individualId;
-}).map(function (elem) {
-  return elem.track_id;
+  var connectedIndividuals = individual_track.filter(function (elem) {
+    return tracksWithIndividual.indexOf(elem.track_id) > -1 &&
+      elem.individual_id != individualId;
+  }).map(function (elem) {
+    return {source: sourceLabel, target: getName(elem.individual_id)};
+  });
+
+  var file = individualId + '.json';
+  var formattedOutput = JSON.stringify(connectedIndividuals, null, 2);
+
+  fs.writeFile(file, formattedOutput,
+    function (err) {
+      if (err) throw err;
+    }
+  );
+};
+
+individualIds.forEach(function (individualId) {
+  generateJson(individualId);
 });
-
-var connectedIndividuals = individual_track.filter(function (elem) {
-  return tracksWithIndividual.indexOf(elem.track_id) > -1 && elem.individual_id != individualId;
-}).map(function (elem) {
-  return {source: sourceLabel, target: getName(elem.individual_id)};
-});
-
-console.log(JSON.stringify(connectedIndividuals, null, 2));
-
