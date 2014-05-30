@@ -23,9 +23,20 @@ var generateJson = function (individualId) {
     return elem.track_id;
   });
 
+  var seen = [];
   var connectedIndividuals = individual_track.filter(function (elem) {
-    return tracksWithIndividual.indexOf(elem.track_id) > -1 &&
-      elem.individual_id != individualId;
+    if (seen.indexOf(elem.individual_id) != -1) {
+      return false;
+    }
+
+    if (tracksWithIndividual.indexOf(elem.track_id) > -1) {
+      if (elem.individual_id != individualId) {
+        seen.push(elem.individual_id);
+        return true;
+      }
+    }
+
+    return false;
   }).map(function (elem) {
     return {source: sourceLabel, target: getName(elem.individual_id)};
   });
