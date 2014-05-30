@@ -38,7 +38,7 @@ var generateJson = function (individualId) {
 
     return false;
   }).map(function (elem) {
-    return {source: sourceLabel, target: getName(elem.individual_id)};
+    return {source: sourceLabel, target: getName(elem.individual_id), targetId: elem.individual_id};
   });
 
   var file = individualId + '.json';
