@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 /* Writes files for JSON representation of all individuals on tracks with a given individual */
+/* TODO: This is basically for the music-routes-visualization repo and should be moved there */
 
 var fs = require("graceful-fs");
 
@@ -38,11 +39,11 @@ var generateJson = function (individualId) {
 
     return false;
   }).map(function (elem) {
-    return {source: sourceLabel, target: getName(elem.individual_id), targetId: elem.individual_id};
+    return {name: getName(elem.individual_id), targetId: elem.individual_id};
   });
 
   var file = individualId + '.json';
-  var formattedOutput = JSON.stringify(connectedIndividuals, null, 2);
+  var formattedOutput = JSON.stringify({source: sourceLabel, targets: connectedIndividuals}, null, 2);
 
   fs.writeFile(file, formattedOutput,
     function (err) {
