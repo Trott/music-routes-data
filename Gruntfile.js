@@ -28,7 +28,9 @@ module.exports = function(grunt) {
     },
 
     jasmine_node: {
-      forceExit: true,
+      opetions: {
+        forceExit: true
+      },
     },
 
     jshint: {
