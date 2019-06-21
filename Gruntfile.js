@@ -1,10 +1,9 @@
-/*global module:false*/
-module.exports = function(grunt) {
-
+/* global module:false */
+module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
     // Metadata.
-    pkg: grunt.file.readJSON("package.json"),
+    pkg: grunt.file.readJSON('package.json'),
     // banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
     //   '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
     //   '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
@@ -22,37 +21,34 @@ module.exports = function(grunt) {
     //   }
     // },
     exec: {
+      jslint: {
+        cmd: 'npx semistandard'
+      },
       verify: {
-        cmd: "node bin/verify",
+        cmd: 'node bin/verify'
       }
     },
 
     jasmine_node: {
       opetions: {
         forceExit: true
-      },
-    },
-
-    jshint: {
-      all: ["Gruntfile.js", "example/*", "lib/*", "spec/*", "bin/*"]
+      }
     },
 
     jsonlint: {
       all: {
-        src: ["package.json","spec/fixture/data/*","data/*"]
+        src: ['package.json', 'spec/fixture/data/*', 'data/*']
       }
-    },
+    }
 
   });
 
   // These plugins provide necessary tasks.
   // grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks("grunt-jasmine-node");
-  grunt.loadNpmTasks("grunt-contrib-jshint");
-  grunt.loadNpmTasks("grunt-exec");
-  grunt.loadNpmTasks("grunt-jsonlint");
+  grunt.loadNpmTasks('grunt-jasmine-node');
+  grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-jsonlint');
 
   // Default task.
-  grunt.registerTask("default", ["jsonlint", "jshint", "jasmine_node", "exec:verify"]);
-
+  grunt.registerTask('default', ['jsonlint', 'exec:jslint', 'jasmine_node', 'exec:verify']);
 };

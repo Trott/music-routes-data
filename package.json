@@ -33,12 +33,15 @@
     "glob": "^7.1.2",
     "grunt": "^1.0.4",
     "grunt-cli": "^1.2.0",
-    "grunt-contrib-jshint": "^1.1.0",
     "grunt-exec": "~0.4.2",
     "grunt-jasmine-node": "^0.3.1",
-    "grunt-jsonlint": "~1.0.4"
+    "grunt-jsonlint": "~1.0.4",
+    "semistandard": "^13.0.1"
   },
   "dependencies": {
     "optimist": "~0.6.0"
+  },
+  "semistandard": {
+    "env": { "jasmine": true }
   }
 }
