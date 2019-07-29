@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-// Dependencies
 var assert = require("assert");
 var Data = require("../lib/Data");
 
