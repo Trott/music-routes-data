@@ -1,6 +1,6 @@
 {
   "name": "music-routes-data",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "What musicians played on what tracks",
   "homepage": "https://github.com/Trott/music-routes-data",
   "files": [
@@ -42,6 +42,8 @@
     "optimist": "~0.6.0"
   },
   "semistandard": {
-    "env": { "jasmine": true }
+    "env": {
+      "jasmine": true
+    }
   }
 }
