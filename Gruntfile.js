@@ -3,6 +3,9 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     exec: {
+      test: {
+        cmd: 'npx jasmine spec/*.js'
+      },
       jslint: {
         cmd: 'npx semistandard'
       },
@@ -12,7 +15,7 @@ module.exports = function (grunt) {
     },
 
     jasmine_node: {
-      opetions: {
+      options: {
         forceExit: true
       }
     },
@@ -32,5 +35,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-jsonlint');
 
   // Default task.
-  grunt.registerTask('default', ['jsonlint', 'exec:jslint', 'jasmine_node', 'exec:verify']);
+  grunt.registerTask('default', ['jsonlint', 'exec:jslint', 'exec:test', 'exec:verify']);
 };
