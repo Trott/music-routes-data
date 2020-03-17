@@ -39,7 +39,7 @@
     "semistandard": "^13.0.1"
   },
   "dependencies": {
-    "optimist": "~0.6.0"
+    "minimist": "^1.2.5"
   },
   "semistandard": {
     "env": {
