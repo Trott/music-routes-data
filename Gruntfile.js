@@ -29,8 +29,6 @@ module.exports = function (grunt) {
   });
 
   // These plugins provide necessary tasks.
-  // grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-jasmine-node');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-jsonlint');
 
