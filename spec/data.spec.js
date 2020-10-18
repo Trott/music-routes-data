@@ -1,4 +1,3 @@
-// Specs are run via Grunt: grunt jasmine_node
 /* global beforeEach describe expect it */
 
 var fs = require('fs')
