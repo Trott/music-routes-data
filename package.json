@@ -12,7 +12,7 @@
     "README.md"
   ],
   "scripts": {
-    "test": "grunt"
+    "test": "standard && grunt"
   },
   "repository": {
     "type": "git",
@@ -34,42 +34,36 @@
     "@semantic-release/git": "^9.0.0",
     "glob": "^7.1.2",
     "grunt": "^1.1.0",
-    "grunt-cli": "^1.2.0",
     "grunt-exec": "~0.4.2",
     "grunt-jsonlint": "~1.0.4",
     "jasmine": "^3.4.0",
     "semantic-release": "^17.2.1",
-    "semistandard": "^14.2.2"
+    "standard": "^14.3.4"
   },
   "dependencies": {
     "minimist": "^1.2.5"
   },
-  "semistandard": {
-    "env": {
-      "jasmine": true
-    }
-  },
   "release": {
     "plugins": [
-        "@semantic-release/commit-analyzer",
-        "@semantic-release/release-notes-generator",
-        [
-            "@semantic-release/changelog",
-            {
-                "changelogFile": "CHANGELOG"
-            }
-        ],
-        "@semantic-release/npm",
-        [
-            "@semantic-release/git",
-            {
-                "assets": [
-                    "CHANGELOG",
-                    "package.json"
-                ],
-                "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-            }
-        ]
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG"
+        }
+      ],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
     ]
   }
 }

@@ -6,9 +6,6 @@ module.exports = function (grunt) {
       test: {
         cmd: 'npx jasmine spec/*.js'
       },
-      jslint: {
-        cmd: 'npx semistandard'
-      },
       verify: {
         cmd: 'node bin/verify'
       }
@@ -26,12 +23,12 @@ module.exports = function (grunt) {
       }
     }
 
-  });
+  })
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-exec');
-  grunt.loadNpmTasks('grunt-jsonlint');
+  grunt.loadNpmTasks('grunt-exec')
+  grunt.loadNpmTasks('grunt-jsonlint')
 
   // Default task.
-  grunt.registerTask('default', ['jsonlint', 'exec:jslint', 'exec:test', 'exec:verify']);
-};
+  grunt.registerTask('default', ['jsonlint', 'exec:test', 'exec:verify'])
+}
