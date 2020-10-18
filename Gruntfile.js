@@ -15,20 +15,12 @@ module.exports = function (grunt) {
       options: {
         forceExit: true
       }
-    },
-
-    jsonlint: {
-      all: {
-        src: ['package.json', 'spec/fixture/data/*', 'data/*']
-      }
     }
-
   })
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-exec')
-  grunt.loadNpmTasks('grunt-jsonlint')
 
   // Default task.
-  grunt.registerTask('default', ['jsonlint', 'exec:test', 'exec:verify'])
+  grunt.registerTask('default', ['exec:test', 'exec:verify'])
 }
