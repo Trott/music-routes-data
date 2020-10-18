@@ -12,7 +12,7 @@
     "README.md"
   ],
   "scripts": {
-    "test": "standard && grunt"
+    "test": "standard && grunt && bin/verify"
   },
   "repository": {
     "type": "git",
