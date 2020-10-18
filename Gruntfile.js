@@ -5,9 +5,6 @@ module.exports = function (grunt) {
     exec: {
       test: {
         cmd: 'npx jasmine spec/*.js'
-      },
-      verify: {
-        cmd: 'node bin/verify'
       }
     },
 
@@ -22,5 +19,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-exec')
 
   // Default task.
-  grunt.registerTask('default', ['exec:test', 'exec:verify'])
+  grunt.registerTask('default', ['exec:test'])
 }
