@@ -41,6 +41,9 @@
     "minimist": "^1.2.5"
   },
   "release": {
+    "branches": [
+      "main"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
