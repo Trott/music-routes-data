@@ -1,16 +1,16 @@
 /* global beforeEach describe expect it spyOn */
 
-var fs = require('fs')
-var glob = require('glob')
-var path = require('path')
+const fs = require('fs')
+const glob = require('glob')
+const path = require('path')
 
-var Data = require('../lib/Data')
-var cli = require('../lib/cli')
+const Data = require('../lib/Data')
+const cli = require('../lib/cli')
 
 describe('cli', function () {
-  var inputDir = path.join(__dirname, 'fixture', 'data')
-  var outputDir = path.join(__dirname, '..', 'tmp')
-  var argv
+  const inputDir = path.join(__dirname, 'fixture', 'data')
+  const outputDir = path.join(__dirname, '..', 'tmp')
+  let argv
 
   beforeEach(function () {
     argv = { _: [], inputDir: inputDir, outputDir: outputDir }
@@ -24,7 +24,7 @@ describe('cli', function () {
     it('should run the command with the given arguments', function () {
       argv._ = ['add', 'tracks', '5', 'Dis Here']
       cli.argv(argv)
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
       expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '5', names: ['Dis Here'] })
     })
@@ -32,7 +32,7 @@ describe('cli', function () {
     it('should return help file text if command is not recognized', function () {
       argv._ = ['nonexistent command']
       cli.argv(argv)
-      var message = fs.readFileSync(path.join(__dirname, '..', 'doc', 'cli', 'help.txt'), 'utf8')
+      const message = fs.readFileSync(path.join(__dirname, '..', 'doc', 'cli', 'help.txt'), 'utf8')
       expect(cli.error).toHaveBeenCalledWith(message)
     })
 
@@ -63,9 +63,9 @@ describe('cli', function () {
       argv._ = ['add', 'tracks', '5', 'Original Faubus Fables']
       cli.argv(argv)
       expect(cli.exit).toHaveBeenCalledWith(0)
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var tracks = data.search({ collection: 'tracks' }).results
+      const tracks = data.search({ collection: 'tracks' }).results
       expect(tracks).toContain({ _id: '5', names: ['Original Faubus Fables'] })
       expect(tracks.length).toBe(3)
     })
@@ -80,9 +80,9 @@ describe('cli', function () {
       argv._ = ['add', 'tracks', '1', "Me And Her Got A Good Thing Goin' Baby"]
       cli.argv(argv)
       expect(cli.exit).toHaveBeenCalledWith(1)
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var tracks = data.search({ collection: 'tracks' }).results
+      const tracks = data.search({ collection: 'tracks' }).results
       expect(tracks).not.toContain({ _id: '1', names: ["Me And Her Got A Good Thing Goin' Baby"] })
     })
 
@@ -90,9 +90,9 @@ describe('cli', function () {
       argv._ = ['add', 'artists', '100', 'Palace Family Steak House']
       cli.argv(argv)
       expect(cli.exit).toHaveBeenCalledWith(0)
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var artists = data.search({ collection: 'artists' }).results
+      const artists = data.search({ collection: 'artists' }).results
       expect(artists).toContain({ _id: '100', names: ['Palace Family Steak House'] })
       expect(artists.length).toBe(2)
     })
@@ -122,9 +122,9 @@ describe('cli', function () {
       argv._ = ['link', 'individual', '1', 'track', '1']
       cli.argv(argv)
       expect(cli.error).not.toHaveBeenCalled()
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var individualTrack = data.search({ collection: 'individual_track' }).results
+      const individualTrack = data.search({ collection: 'individual_track' }).results
       expect(individualTrack).toEqual([{ individual_id: '1', track_id: '1' }])
     })
 
@@ -132,9 +132,9 @@ describe('cli', function () {
       argv._ = ['link', 'track', '1', 'release', '1']
       cli.argv(argv)
       expect(cli.error).not.toHaveBeenCalled()
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var trackRelease = data.search({ collection: 'track_release' }).results
+      const trackRelease = data.search({ collection: 'track_release' }).results
       expect(trackRelease).toEqual([{ track_id: '1', release_id: '1' }])
     })
 
@@ -142,9 +142,9 @@ describe('cli', function () {
       argv._ = ['link', 'artist', '1', 'track', '1']
       cli.argv(argv)
       expect(cli.error).not.toHaveBeenCalled()
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var artistTrack = data.search({ collection: 'artist_track' }).results
+      const artistTrack = data.search({ collection: 'artist_track' }).results
       expect(artistTrack).toEqual([{ artist_id: '1', track_id: '1' }])
     })
 
@@ -152,9 +152,9 @@ describe('cli', function () {
       argv._ = ['link', 'track', '1', 'artist', '1']
       cli.argv(argv)
       expect(cli.error).not.toHaveBeenCalled()
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var artistTrack = data.search({ collection: 'artist_track' }).results
+      const artistTrack = data.search({ collection: 'artist_track' }).results
       expect(artistTrack).toEqual([{ artist_id: '1', track_id: '1' }])
     })
 
@@ -162,9 +162,9 @@ describe('cli', function () {
       argv._ = ['link', 'individual', '1', 'artist', '1']
       cli.argv(argv)
       expect(cli.error).not.toHaveBeenCalled()
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var individualArtist = data.search({ collection: 'individual_artist' }).results
+      const individualArtist = data.search({ collection: 'individual_artist' }).results
       expect(individualArtist).toEqual([{ individual_id: '1', artist_id: '1' }])
     })
 
@@ -185,9 +185,9 @@ describe('cli', function () {
       argv._ = ['link', 'artist', 1, 'track', 1]
       cli.argv(argv)
       expect(cli.error).not.toHaveBeenCalled()
-      var data = new Data()
+      const data = new Data()
       data.read(outputDir)
-      var artistTrack = data.search({ collection: 'artist_track' }).results
+      const artistTrack = data.search({ collection: 'artist_track' }).results
       expect(artistTrack).toEqual([{ artist_id: '1', track_id: '1' }])
     })
   })
