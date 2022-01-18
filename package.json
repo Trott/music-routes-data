@@ -34,7 +34,7 @@
     "@semantic-release/git": "^10.0.1",
     "glob": "^7.1.2",
     "jasmine": "^3.6.2",
-    "semantic-release": "^19.0.1",
+    "semantic-release": "^19.0.2",
     "standard": "^16.0.3"
   },
   "dependencies": {
