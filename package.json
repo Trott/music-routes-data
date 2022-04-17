@@ -32,8 +32,8 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "c8": "^7.11.0",
-    "glob": "^7.2.0",
-    "jasmine": "^4.0.2",
+    "glob": "^8.0.1",
+    "jasmine": "^4.1.0",
     "semantic-release": "^19.0.2",
     "standard": "^16.0.4"
   },
