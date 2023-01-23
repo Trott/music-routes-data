@@ -13,7 +13,7 @@ describe('cli', function () {
   let argv
 
   beforeEach(function () {
-    argv = { _: [], inputDir: inputDir, outputDir: outputDir }
+    argv = { _: [], inputDir, outputDir }
     glob.sync(outputDir + '/*.json').forEach(function (fileName) { fs.unlinkSync(fileName) })
     spyOn(cli, 'exit')
     spyOn(cli, 'error')
