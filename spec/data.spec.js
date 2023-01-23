@@ -176,7 +176,7 @@ describe('data', function () {
       const filterCallback = function (individual) {
         return individual.names.indexOf('Elvis Presley') !== -1
       }
-      const rv = data.search({ collection: 'individuals', filterCallback: filterCallback })
+      const rv = data.search({ collection: 'individuals', filterCallback })
       expect(rv.status).toEqual(data.StatusEnum.OK)
       expect(rv.results).toEqual([{ _id: '1', names: ['Elvis Presley'] }])
     })
