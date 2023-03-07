@@ -3,8 +3,6 @@
 const fs = require('fs')
 const path = require('path')
 
-const glob = require('glob')
-
 const Data = require('../lib/Data')
 
 describe('data constructor', function () {
@@ -192,7 +190,12 @@ describe('data', function () {
 
     beforeEach(function () {
       outputDir = path.join(__dirname, '..', 'tmp')
-      glob.sync(outputDir + '/*.json').forEach(function (fileName) { fs.unlinkSync(fileName) })
+      try {
+        fs.rmSync(outputDir, { recursive: true })
+      } catch (e) {
+        // ignore
+      }
+      fs.mkdirSync(outputDir)
     })
 
     it('should duplicate the track collection if no changes have been made', function () {
