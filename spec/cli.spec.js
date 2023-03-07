@@ -1,7 +1,6 @@
 /* global beforeEach describe expect it spyOn */
 
 const fs = require('fs')
-const glob = require('glob')
 const path = require('path')
 
 const Data = require('../lib/Data')
@@ -14,7 +13,12 @@ describe('cli', function () {
 
   beforeEach(function () {
     argv = { _: [], inputDir, outputDir }
-    glob.sync(outputDir + '/*.json').forEach(function (fileName) { fs.unlinkSync(fileName) })
+    try {
+      fs.rmSync(outputDir, { recursive: true })
+    } catch (e) {
+      // ignore
+    }
+    fs.mkdirSync(outputDir)
     spyOn(cli, 'exit')
     spyOn(cli, 'error')
     spyOn(cli, 'dir')
