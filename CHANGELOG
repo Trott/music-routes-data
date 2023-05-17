@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/Trott/music-routes-data/compare/v2.0.0...v3.0.0) (2023-05-17)
+
+
+### chore
+
+* drop support for EOL Node.js 14.x ([#188](https://github.com/Trott/music-routes-data/issues/188)) ([9abb9d5](https://github.com/Trott/music-routes-data/commit/9abb9d5c84e34624330779bd2045dd9ddaa5ea57))
+
+
+### BREAKING CHANGES
+
+* Drop support for Node.js 14.x and 15.x
+
 # [2.0.0](https://github.com/Trott/music-routes-data/compare/v1.3.1...v2.0.0) (2023-03-07)
 
 
