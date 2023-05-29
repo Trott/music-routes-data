@@ -31,7 +31,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
-    "c8": "7.13",
+    "c8": "7.14",
     "jasmine": "5.0",
     "semantic-release": "^21.0.0",
     "standard": "^17.0.0"
