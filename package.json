@@ -33,7 +33,7 @@
     "@semantic-release/git": "^10.0.1",
     "c8": "9.1",
     "jasmine": "5.1",
-    "semantic-release": "^23.0.0",
+    "semantic-release": "^24.0.0",
     "standard": "^17.0.0"
   },
   "dependencies": {
