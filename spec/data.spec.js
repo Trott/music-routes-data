@@ -66,27 +66,21 @@ describe('data', function () {
       expect(rv.status).toEqual(data.StatusEnum.ERROR)
     })
 
-    it('should return ERROR if _id is not specified', function () {
-      const rv = data.create('tracks', { names: ["Everybody's Got Something To Hide Except For Me And My Monkey"] })
-      expect(rv.status).toEqual(data.StatusEnum.ERROR)
-    })
-
     it('should not change the tracks collection if _id matches another track', function () {
       data.create('tracks', { _id: '2', names: ['The Night They Drove Old Dixie Down'] })
       expect(data.search({ collection: 'tracks' }).results).not.toContain({ _id: '3', names: ['The Night They Drove Old Dixie Down'] })
     })
 
-    it('should not change the tracks collection if _id is not specified', function () {
-      const before = data.search({ collection: 'tracks' }).results
-      data.create('tracks', { names: ['Autumn Sweater'] })
-      expect(data.search({ collection: 'tracks' }).results).toEqual(before)
+    it('should generate an _id if _id is not specified', function () {
+      const rv = data.create('tracks', { names: ['Autumn Sweater'] })
+      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '3', names: ['Autumn Sweater'] })
+      expect(rv.status).toEqual(data.StatusEnum.OK)
     })
 
-    it('should not allow an empty _id string', function () {
-      const before = data.search({ collection: 'tracks' }).results
+    it('should generate an _id string if empty string is provided', function () {
       const rv = data.create('tracks', { _id: '', names: ['Quiet Village'] })
-      expect(data.search({ collection: 'tracks' }).results).toEqual(before)
-      expect(rv.status).toEqual(data.StatusEnum.ERROR)
+      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '3', names: ['Quiet Village'] })
+      expect(rv.status).toEqual(data.StatusEnum.OK)
     })
 
     it('should return ERROR and not update tracks collection if names array is not provided', function () {
