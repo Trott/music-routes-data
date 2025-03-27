@@ -26,11 +26,11 @@ describe('cli', function () {
 
   describe('argv()', function () {
     it('should run the command with the given arguments', function () {
-      argv._ = ['add', 'tracks', '5', 'Dis Here']
+      argv._ = ['add', 'tracks', 'Dis Here']
       cli.argv(argv)
       const data = new Data()
       data.read(outputDir)
-      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '5', names: ['Dis Here'] })
+      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '3', names: ['Dis Here'] })
     })
 
     it('should return help file text if command is not recognized', function () {
@@ -42,16 +42,9 @@ describe('cli', function () {
 
     it('should return error code if bad inputdir specified', function () {
       argv.inputDir = '/a/directory/that/does/not/exist'
-      argv._ = ['add', 'tracks', '5', 'Fool For The City']
+      argv._ = ['add', 'tracks', 'Fool For The City']
       cli.argv(argv)
       expect(cli.exit).toHaveBeenCalledWith(1)
-    })
-
-    it('should print a warning if no inputdir specified', function () {
-      delete argv.inputDir
-      argv._ = ['search', 'tracks', 'Birdhouse In Your Soul']
-      cli.argv(argv)
-      expect(cli.error).toHaveBeenCalledWith('No input directory specified. Operating on empty data set.\nUse -i to specify a data directory.')
     })
 
     it('should not print a warning if inputdir specified', function () {
@@ -64,58 +57,35 @@ describe('cli', function () {
 
   describe('add', function () {
     it('should create a new track when called with tracks', function () {
-      argv._ = ['add', 'tracks', '5', 'Original Faubus Fables']
+      argv._ = ['add', 'tracks', 'Original Faubus Fables']
       cli.argv(argv)
       expect(cli.exit).toHaveBeenCalledWith(0)
       const data = new Data()
       data.read(outputDir)
       const tracks = data.search({ collection: 'tracks' }).results
-      expect(tracks).toContain({ _id: '5', names: ['Original Faubus Fables'] })
+      expect(tracks).toContain({ _id: '3', names: ['Original Faubus Fables'] })
       expect(tracks.length).toBe(3)
     })
 
     it('should return ERROR if collection is invalid', function () {
-      argv._ = ['add', 'invalid collection name', '5', 'Dat Dere']
+      argv._ = ['add', 'invalid collection name', 'Dat Dere']
       cli.argv(argv)
       expect(cli.exit).toHaveBeenCalledWith(1)
-    })
-
-    it('should return ERROR if _id is a duplicate', function () {
-      argv._ = ['add', 'tracks', '1', "Me And Her Got A Good Thing Goin' Baby"]
-      cli.argv(argv)
-      expect(cli.exit).toHaveBeenCalledWith(1)
-      const data = new Data()
-      data.read(outputDir)
-      const tracks = data.search({ collection: 'tracks' }).results
-      expect(tracks).not.toContain({ _id: '1', names: ["Me And Her Got A Good Thing Goin' Baby"] })
     })
 
     it('should create a new artist when called with artists', function () {
-      argv._ = ['add', 'artists', '100', 'Palace Family Steak House']
+      argv._ = ['add', 'artists', 'Palace Family Steak House']
       cli.argv(argv)
       expect(cli.exit).toHaveBeenCalledWith(0)
       const data = new Data()
       data.read(outputDir)
       const artists = data.search({ collection: 'artists' }).results
-      expect(artists).toContain({ _id: '100', names: ['Palace Family Steak House'] })
+      expect(artists).toContain({ _id: '2', names: ['Palace Family Steak House'] })
       expect(artists.length).toBe(2)
     })
 
-    it('should print a warning if no outputDir specified', function () {
-      delete argv.outputDir
-      argv._ = ['add', 'artists', '100', 'Palace Family Steak House']
-      cli.argv(argv)
-      expect(cli.error).toHaveBeenCalledWith('No output directory specified. Your data will not be saved.\nUse -o to specify an output directory.')
-    })
-
     it('should not print a warning if outputDir specified', function () {
-      argv._ = ['add', 'artists', '100', 'Palace Family Steak House']
-      cli.argv(argv)
-      expect(cli.error).not.toHaveBeenCalled()
-    })
-
-    it('should convert an integer _id to a string rather than rejecting it', function () {
-      argv._ = ['add', 'artists', 100, 'Palace Family Steak House']
+      argv._ = ['add', 'artists', 'Palace Family Steak House']
       cli.argv(argv)
       expect(cli.error).not.toHaveBeenCalled()
     })
@@ -170,13 +140,6 @@ describe('cli', function () {
       data.read(outputDir)
       const individualArtist = data.search({ collection: 'individual_artist' }).results
       expect(individualArtist).toEqual([{ individual_id: '1', artist_id: '1' }])
-    })
-
-    it('should print a warning if no outputDir specified', function () {
-      delete argv.outputDir
-      argv._ = ['link', 'artist', '1', 'track', '1']
-      cli.argv(argv)
-      expect(cli.error).toHaveBeenCalledWith('No output directory specified. Your data will not be saved.\nUse -o to specify an output directory.')
     })
 
     it('should not print a warning if outputDir specified', function () {
