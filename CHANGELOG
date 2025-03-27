@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/Trott/music-routes-data/compare/v3.1.0...v3.2.0) (2025-03-27)
+
+
+### Features
+
+* add default data directory for tooling ([#238](https://github.com/Trott/music-routes-data/issues/238)) ([d7a5904](https://github.com/Trott/music-routes-data/commit/d7a59045b6fea7c174ffbf4bbe4b70e99dd95c4d))
+
 # [3.1.0](https://github.com/Trott/music-routes-data/compare/v3.0.1...v3.1.0) (2025-03-26)
 
 
