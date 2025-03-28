@@ -6,7 +6,7 @@ Description:
 
 Commands:
 
-  add <collection> <id> <name>
+  add <collection> <name>
     add an entry for name with id to the collection
 
   link <collection1> <id1> <collection2> <id2>
