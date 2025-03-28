@@ -166,5 +166,14 @@ describe('cli', function () {
       expect(cli.error).not.toHaveBeenCalled()
       expect(cli.dir).toHaveBeenCalledWith([{ _id: '1', names: ['Elvis Presley'] }])
     })
+
+    it('should run using the default data directory if no input or output directories are specified', function () {
+      delete argv.inputDir
+      delete argv.outputDir
+      argv._ = ['search', 'tracks', 'Fanstume [singular] 2024'] // This track should exist in the default data
+      cli.argv(argv)
+      expect(cli.error).not.toHaveBeenCalled()
+      expect(cli.dir).toHaveBeenCalledWith([{ _id: '13483', names: ['Fanstume [singular] 2024'] }])
+    })
   })
 })
