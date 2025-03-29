@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/Trott/music-routes-data/compare/v4.0.0...v5.0.0) (2025-03-29)
+
+
+### chore
+
+* improve data validation and cleanup ([#241](https://github.com/Trott/music-routes-data/issues/241)) ([584dcde](https://github.com/Trott/music-routes-data/commit/584dcde0fd95b55db9f0d2ac012188627e6814d0))
+
+
+### BREAKING CHANGES
+
+* Require Node.js 22.x or later
+
 # [4.0.0](https://github.com/Trott/music-routes-data/compare/v3.4.0...v4.0.0) (2025-03-29)
 
 
