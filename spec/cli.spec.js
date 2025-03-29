@@ -153,6 +153,13 @@ describe('cli', function () {
       const artistTrack = data.search({ collection: 'artist_track' }).results
       expect(artistTrack).toEqual([{ artist_id: '1', track_id: '1' }])
     })
+
+    it('should report an error if we try to link two collections that cannot be linked', function () {
+      argv._ = ['link', 'individual', '1', 'release', '1']
+      cli.argv(argv)
+      expect(cli.error).toHaveBeenCalledWith('individual and release cannot be linked')
+      expect(cli.exit).toHaveBeenCalledOnceWith(1)
+    })
   })
 
   describe('search', function () {
