@@ -15,7 +15,7 @@ if (rv.status === data.StatusEnum.ERROR) {
 
 var dump = {}; // local copy of all collections
 
-collections = ["tracks", "artists", "releases", "individuals", "artist_track", "individual_artist", "individual_track", "track_release"];
+collections = ["tracks", "artists", "releases", "individuals", "artist_track", "individual_track", "track_release"];
 
 collections.forEach(function(collection) {
   var rv = data.search({collection: collection});
@@ -51,8 +51,6 @@ dump.included = function (basic, relation, propName) {
 assert.ok(dump.included("artists", "artist_track", "artist_id"));
 // All tracks should have artists.
 assert.ok(dump.included("tracks", "artist_track", "track_id"));
-// All artists have individuals. (Not all individuals are members of artists, though.)
-// assert.ok(dump.included("artists", "individual_artist", "artist_id"));
 // All individuals are associated with at least one track.
 // assert.ok(dump.included("individuals", "individual_track", "individual_id"));
 // All tracks are on at least one release.

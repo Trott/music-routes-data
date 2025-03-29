@@ -128,16 +128,6 @@ describe('cli', function () {
       expect(artistTrack).toEqual([{ artist_id: '1', track_id: '1' }])
     })
 
-    it('should link an individual to an artist', function () {
-      argv._ = ['link', 'individual', '1', 'artist', '1']
-      cli.argv(argv)
-      expect(cli.error).not.toHaveBeenCalled()
-      const data = new Data()
-      data.read(outputDir)
-      const individualArtist = data.search({ collection: 'individual_artist' }).results
-      expect(individualArtist).toEqual([{ individual_id: '1', artist_id: '1' }])
-    })
-
     it('should not print a warning if outputDir specified', function () {
       argv._ = ['link', 'artist', '1', 'track', '1']
       cli.argv(argv)

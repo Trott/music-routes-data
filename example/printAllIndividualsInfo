@@ -10,7 +10,6 @@ data.releases = require('../data/releases.json');
 
 // Load relation data
 data.at = require('../data/artist_track.json');
-data.ia = require('../data/individual_artist.json');
 data.it = require('../data/individual_track.json');
 data.tr = require('../data/track_release.json');
 
@@ -19,15 +18,6 @@ data.printIndividualDiscography = function (individual) {
 
   individual.names.forEach(function (name) {
     console.log('\tName: ' + name);
-  });
-
-  data.printRelatedInfoForIndividual({
-    individual_id: individual._id,
-    relatedInfo: 'artists',
-    relatedField: 'names',
-    relationData: 'ia',
-    relationDataId: 'artist_id',
-    label: 'Member of',
   });
 
   data.printRelatedInfoForIndividual({
