@@ -11,7 +11,7 @@
     "README.md"
   ],
   "scripts": {
-    "test": "standard && c8 jasmine spec/*.js && bin/verify"
+    "test": "standard && c8 --100 jasmine spec/*.js && bin/verify"
   },
   "repository": {
     "type": "git",
