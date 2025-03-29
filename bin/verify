@@ -52,7 +52,7 @@ assert.ok(dump.included("artists", "artist_track", "artist_id"));
 // All tracks should have artists.
 assert.ok(dump.included("tracks", "artist_track", "track_id"));
 // All individuals are associated with at least one track.
-// assert.ok(dump.included("individuals", "individual_track", "individual_id"));
+assert.ok(dump.included("individuals", "individual_track", "individual_id"));
 // All tracks are on at least one release.
 assert.ok(dump.included("tracks", "track_release", "track_id"));
 // All releases have at least one track.
