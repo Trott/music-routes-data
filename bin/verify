@@ -23,6 +23,48 @@ collections.forEach(function (collection) {
   dump[collection] = rv.results
 })
 
+const getSet = function (collectionName, options = {}) {
+  const idName = options.idName || '_id'
+  const ignoreDuplicates = options.ignoreDuplicates || false
+  const myArray = dump[collectionName].map((item) => item[idName])
+  const mySet = new Set(myArray)
+  if (!ignoreDuplicates) {
+    assert.strictEqual(mySet.size, myArray.length, `Duplicate IDs found in ${collectionName} collection`)
+  }
+  return mySet
+}
+
+const compare = function (a, b, nameA, nameB) {
+  const diff = a.symmetricDifference(b)
+  assert.strictEqual(diff.size, 0, `The ${nameA} and ${nameB} collections have different IDs: ${Array.from(diff).join(', ')}`)
+}
+
+const trackIds = getSet('tracks')
+const artistIds = getSet('artists')
+const releaseIds = getSet('releases')
+const individualIds = getSet('individuals')
+
+const artistTrackIds = {
+  artist: getSet('artist_track', { idName: 'artist_id', ignoreDuplicates: true }),
+  track: getSet('artist_track', { idName: 'track_id', ignoreDuplicates: true })
+}
+compare(artistTrackIds.artist, artistIds, 'artist_track', 'artist_id')
+compare(artistTrackIds.track, trackIds, 'artist_track', 'track_id')
+
+const individualTrackIds = {
+  individual: getSet('individual_track', { idName: 'individual_id', ignoreDuplicates: true }),
+  track: getSet('individual_track', { idName: 'track_id', ignoreDuplicates: true })
+}
+compare(individualTrackIds.individual, individualIds, 'individual_track', 'individual_id')
+compare(individualTrackIds.track, trackIds, 'individual_track', 'track_id')
+
+const trackReleaseIds = {
+  release: getSet('track_release', { idName: 'release_id', ignoreDuplicates: true }),
+  track: getSet('track_release', { idName: 'track_id', ignoreDuplicates: true })
+}
+compare(trackReleaseIds.release, releaseIds, 'track_release', 'release_id')
+compare(trackReleaseIds.track, trackIds, 'track_release', 'track_id')
+
 // Check that all instances of basic are included in relation as propName.
 // For example, check that all instances of 'artists' are included in 'at' as 'artistId'.
 dump.included = function (basic, relation, propName) {
@@ -57,7 +99,6 @@ assert.ok(dump.included('tracks', 'track_release', 'track_id'))
 assert.ok(dump.included('releases', 'track_release', 'release_id'))
 
 // TODO: Make sure that all artist IDs that appear in artist_track actually exist in artists, etc.
-// TODO: Make sure that all _ids are unique
 // TODO: Make sure that all required fields are present in every entry (including "credits", yeah? even if empty)
 // TODO: Make sure that there are no duplicate link entries (Elvis on "Love Me Tender" exists twice should be an error)
 // TODO: Check that all fields that should be strings are strings and all fields that should be arrays of strings are arrays of strings
