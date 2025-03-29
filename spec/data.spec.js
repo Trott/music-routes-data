@@ -184,11 +184,7 @@ describe('data', function () {
 
     beforeEach(function () {
       outputDir = path.join(__dirname, '..', 'tmp')
-      try {
-        fs.rmSync(outputDir, { recursive: true })
-      } catch (e) {
-        // ignore
-      }
+      fs.rmSync(outputDir, { recursive: true, force: true })
       fs.mkdirSync(outputDir)
     })
 

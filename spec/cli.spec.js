@@ -13,11 +13,7 @@ describe('cli', function () {
 
   beforeEach(function () {
     argv = { _: [], inputDir, outputDir }
-    try {
-      fs.rmSync(outputDir, { recursive: true })
-    } catch (e) {
-      // ignore
-    }
+    fs.rmSync(outputDir, { recursive: true, force: true })
     fs.mkdirSync(outputDir)
     spyOn(cli, 'exit')
     spyOn(cli, 'error')
