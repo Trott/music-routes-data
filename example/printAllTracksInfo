@@ -10,7 +10,6 @@ data.releases = require('../data/releases.json');
 
 // Load relation data
 data.at = require('../data/artist_track.json');
-data.ia = require('../data/individual_artist.json');
 data.it = require('../data/individual_track.json');
 data.tr = require('../data/track_release.json');
 

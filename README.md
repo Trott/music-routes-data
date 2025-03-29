@@ -6,19 +6,18 @@ Music Routes Data: What musicians played on which tracks?
 Schema
 ======
 
-Data is stored in eight JSON files in the `data` directory.
+Data is stored in JSON files in the `data` directory.
 
-Four of the files contain basic data:
+These files contain basic data:
 
 * `tracks.json` contains the `names` and unique `id` string for a track.
 * `releases.json` contains the `names` and unique `id` string for a release.
 * `artists.json` contains the `names` and unique `id` string for an artist.
 * `individuals.json` contains the `names` and unique `id` string for an individual.
 
-Four of the files describe relationships between the basic data and sometimes include extra data relevant to the relationship:
+These files describe relationships between the basic data and sometimes include extra data relevant to the relationship:
 
 * `artist_track.json` contains `artistId` and `trackId` pairs where a track is attributed to an artist.
-* `individual_artist.json` contains `individualId` and `artistId` pairs where an individual is a member of an artist.
 * `individual_track.json` contains `individualId` and `trackId` pairs where the individual performed on the track. There is also an optional `credits` array that explains the person's role on the track (e.g., `["vocals","guitar"]`).
 * `track_release.json` contains `trackId` and `releaseId` pairs where a track appears on a release.
 
