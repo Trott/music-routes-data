@@ -46,7 +46,6 @@ dump.included = function (basic, relation, propName) {
   return dump[basic].every(related);
 };
 
-//TODO: Correct/expand data so that all of these are true.
 // All artists should have tracks.
 assert.ok(dump.included("artists", "artist_track", "artist_id"));
 // All tracks should have artists.
