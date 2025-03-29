@@ -103,3 +103,4 @@ assert.ok(dump.included('releases', 'track_release', 'release_id'))
 // TODO: Check that all fields that should be strings are strings and all fields that should be arrays of strings are arrays of strings
 // TODO: Check for extra fields that we don't know about. Only _id, names, credits, etc. should be in there. No weird things.
 // TODO: Make sure that all entries are connected into a single graph. No dangling nodes.
+// The algorithm for this is to do a breadth-first search (BFS) from the first node and see if we can reach all other nodes.
