@@ -1,63 +1,60 @@
 #!/usr/bin/env node
 
-var assert = require("assert");
-var Data = require("../lib/Data");
+const assert = require('assert')
+const path = require('path')
+const Data = require('../lib/Data')
 
-var data = new Data();
+const data = new Data()
 
-var rv;
-
-rv = data.read(__dirname + "/../data");
+const rv = data.read(path.join(__dirname, '/../data'))
 if (rv.status === data.StatusEnum.ERROR) {
-  console.error(rv.message || "Unknown error");
-  process.exit(1);
+  console.error(rv.message || 'Unknown error')
+  process.exit(1)
 }
 
-var dump = {}; // local copy of all collections
+const dump = {} // local copy of all collections
 
-collections = ["tracks", "artists", "releases", "individuals", "artist_track", "individual_track", "track_release"];
+const collections = ['tracks', 'artists', 'releases', 'individuals', 'artist_track', 'individual_track', 'track_release']
 
-collections.forEach(function(collection) {
-  var rv = data.search({collection: collection});
-  assert.ok(rv.status === data.StatusEnum.OK, "Could not retrieve contents of collection " + collection);
-  assert.ok(rv.results.length > 0, "Collection " + collection + " has no entries");
-  dump[collection] = rv.results;
-});
+collections.forEach(function (collection) {
+  const rv = data.search({ collection })
+  assert.ok(rv.status === data.StatusEnum.OK, 'Could not retrieve contents of collection ' + collection)
+  assert.ok(rv.results.length > 0, 'Collection ' + collection + ' has no entries')
+  dump[collection] = rv.results
+})
 
 // Check that all instances of basic are included in relation as propName.
-// For example, all instances of 'artists' included in 'at' as 'artistId'
+// For example, check that all instances of 'artists' are included in 'at' as 'artistId'.
 dump.included = function (basic, relation, propName) {
-
-  var related = function (basicValue) {
-
-    var _idInRelatedTable = function (relationValue) {
-      return relationValue[propName] === basicValue._id;
-    };
-
-    var rv = dump[relation].some(_idInRelatedTable);
-
-    if (! rv) {
-      console.log("`" + basic + "` contains _id " + basicValue._id + " but it is not found in `" + relation + "` as `" + propName + "`");
+  const related = function (basicValue) {
+    const _idInRelatedTable = function (relationValue) {
+      return relationValue[propName] === basicValue._id
     }
 
-    return rv;
-  };
+    const rv = dump[relation].some(_idInRelatedTable)
 
-  return dump[basic].every(related);
-};
+    if (!rv) {
+      console.log('`' + basic + '` contains _id ' + basicValue._id + ' but it is not found in `' + relation + '` as `' + propName + '`')
+    }
+
+    return rv
+  }
+
+  return dump[basic].every(related)
+}
 
 // All artists should have tracks.
-assert.ok(dump.included("artists", "artist_track", "artist_id"));
+assert.ok(dump.included('artists', 'artist_track', 'artist_id'))
 // All tracks should have artists.
-assert.ok(dump.included("tracks", "artist_track", "track_id"));
+assert.ok(dump.included('tracks', 'artist_track', 'track_id'))
 // All individuals are associated with at least one track.
-assert.ok(dump.included("individuals", "individual_track", "individual_id"));
+assert.ok(dump.included('individuals', 'individual_track', 'individual_id'))
 // All tracks are associated with at least one individual.
-assert.ok(dump.included("tracks", "individual_track", "track_id"));
+assert.ok(dump.included('tracks', 'individual_track', 'track_id'))
 // All tracks are on at least one release.
-assert.ok(dump.included("tracks", "track_release", "track_id"));
+assert.ok(dump.included('tracks', 'track_release', 'track_id'))
 // All releases have at least one track.
-assert.ok(dump.included("releases", "track_release", "release_id"));
+assert.ok(dump.included('releases', 'track_release', 'release_id'))
 
 // TODO: Make sure that all artist IDs that appear in artist_track actually exist in artists, etc.
 // TODO: Make sure that all _ids are unique
