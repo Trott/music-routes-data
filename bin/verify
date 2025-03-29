@@ -98,7 +98,6 @@ assert.ok(dump.included('tracks', 'track_release', 'track_id'))
 // All releases have at least one track.
 assert.ok(dump.included('releases', 'track_release', 'release_id'))
 
-// TODO: Make sure that all artist IDs that appear in artist_track actually exist in artists, etc.
 // TODO: Make sure that all required fields are present in every entry (including "credits", yeah? even if empty)
 // TODO: Make sure that there are no duplicate link entries (Elvis on "Love Me Tender" exists twice should be an error)
 // TODO: Check that all fields that should be strings are strings and all fields that should be arrays of strings are arrays of strings
