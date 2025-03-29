@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var cli = require("../lib/cli");
-var argv = require('minimist')(process.argv.slice(2));
+const cli = require('../lib/cli')
+const argv = require('minimist')(process.argv.slice(2))
 
-cli.argv(argv);
+cli.argv(argv)
