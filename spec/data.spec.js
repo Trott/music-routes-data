@@ -73,13 +73,13 @@ describe('data', function () {
 
     it('should generate an _id if _id is not specified', function () {
       const rv = data.create('tracks', { names: ['Autumn Sweater'] })
-      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '3', names: ['Autumn Sweater'] })
+      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: 'Autumn Sweater', names: ['Autumn Sweater'] })
       expect(rv.status).toEqual(data.StatusEnum.OK)
     })
 
     it('should generate an _id string if empty string is provided', function () {
       const rv = data.create('tracks', { _id: '', names: ['Quiet Village'] })
-      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '3', names: ['Quiet Village'] })
+      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: 'Quiet Village', names: ['Quiet Village'] })
       expect(rv.status).toEqual(data.StatusEnum.OK)
     })
 
