@@ -168,5 +168,12 @@ describe('cli', function () {
       expect(cli.error).not.toHaveBeenCalled()
       expect(cli.dir).toHaveBeenCalledWith([{ _id: '13483', names: ['Fanstume [singular] 2024'] }])
     })
+
+    it('should be case insensitive', function () {
+      argv._ = ['search', 'individuals', 'elvis presley']
+      cli.argv(argv)
+      expect(cli.error).not.toHaveBeenCalled()
+      expect(cli.dir).toHaveBeenCalledWith([{ _id: '1', names: ['Elvis Presley'] }])
+    })
   })
 })
