@@ -26,7 +26,7 @@ describe('cli', function () {
       cli.argv(argv)
       const data = new Data()
       data.read(outputDir)
-      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '3', names: ['Dis Here'] })
+      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: 'Dis Here', names: ['Dis Here'] })
     })
 
     it('should return help file text if command is not recognized', function () {
@@ -59,7 +59,7 @@ describe('cli', function () {
       const data = new Data()
       data.read(outputDir)
       const tracks = data.search({ collection: 'tracks' }).results
-      expect(tracks).toContain({ _id: '3', names: ['Original Faubus Fables'] })
+      expect(tracks).toContain({ _id: 'Original Faubus Fables', names: ['Original Faubus Fables'] })
       expect(tracks.length).toBe(3)
     })
 
@@ -76,7 +76,7 @@ describe('cli', function () {
       const data = new Data()
       data.read(outputDir)
       const artists = data.search({ collection: 'artists' }).results
-      expect(artists).toContain({ _id: '2', names: ['Palace Family Steak House'] })
+      expect(artists).toContain({ _id: 'Palace Family Steak House', names: ['Palace Family Steak House'] })
       expect(artists.length).toBe(2)
     })
 
