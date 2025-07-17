@@ -1,3 +1,11 @@
+# [5.1.0](https://github.com/Trott/music-routes-data/compare/v5.0.1...v5.1.0) (2025-07-17)
+
+
+### Features
+
+* CLI search is case insensitive ([61c4a0d](https://github.com/Trott/music-routes-data/commit/61c4a0de44087b9380e412e9030b30d1b2e79f7b))
+* update identifiers for individuals to be strings ([fd36fb9](https://github.com/Trott/music-routes-data/commit/fd36fb91e5b38a266a2075796dc31e6409679ca2))
+
 ## [5.0.1](https://github.com/Trott/music-routes-data/compare/v5.0.0...v5.0.1) (2025-07-03)
 
 
