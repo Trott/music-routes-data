@@ -44,6 +44,16 @@ const artistIds = getSet('artists')
 const releaseIds = getSet('releases')
 const individualIds = getSet('individuals')
 
+// All IDs are strings but must not contain colons or slashes because the visualizer
+// uses IDs as directory names.
+const validateIds = (idsSet) => {
+  assert.ok(idsSet.values().every((id) => typeof id === 'string' && !id.includes(':') && !id.includes('/')), 'Invalid ID found')
+}
+validateIds(trackIds)
+validateIds(artistIds)
+validateIds(individualIds)
+validateIds(releaseIds)
+
 const artistTrackIds = {
   artist: getSet('artist_track', { idName: 'artist_id', ignoreDuplicates: true }),
   track: getSet('artist_track', { idName: 'track_id', ignoreDuplicates: true })
