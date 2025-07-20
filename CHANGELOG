@@ -1,3 +1,10 @@
+## [5.1.1](https://github.com/Trott/music-routes-data/compare/v5.1.0...v5.1.1) (2025-07-20)
+
+
+### Bug Fixes
+
+* do not use colons or slashes in IDs ([749e2b4](https://github.com/Trott/music-routes-data/commit/749e2b499649a80a30112de89c179b3ea086af20))
+
 # [5.1.0](https://github.com/Trott/music-routes-data/compare/v5.0.1...v5.1.0) (2025-07-17)
 
 
