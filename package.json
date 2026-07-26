@@ -29,8 +29,8 @@
     "Trott"
   ],
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.2",
-    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/git": "^11.0.1",
     "c8": "12.0",
     "jasmine": "6.3",
     "semantic-release": "^25.0.1",
