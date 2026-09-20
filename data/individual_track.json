@@ -257426,5 +257426,42 @@
   {
     "individual_id": "Joey Dosik",
     "track_id": "13484"
+  },
+  {
+    "individual_id": "Jeanie Schroder",
+    "track_id": "13485",
+    "credits": [
+      "sousaphone",
+      "acoustic bass",
+      "vocals"
+    ]
+  },
+  {
+    "individual_id": "Nick Urata",
+    "track_id": "13485",
+    "credits": [
+      "vocals",
+      "guitar",
+      "piano",
+      "theremin"
+    ]
+  },
+  {
+    "individual_id": "Tom Hagerman",
+    "track_id": "13485",
+    "credits": [
+      "violin",
+      "accordion",
+      "piano"
+    ]
+  },
+  {
+    "individual_id": "Shawn King",
+    "track_id": "13485",
+    "credits": [
+      "drums",
+      "percussion",
+      "trumpet"
+    ]
   }
 ]
