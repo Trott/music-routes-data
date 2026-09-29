@@ -5784,7 +5784,10 @@
   },
   {
     "individual_id": "Tony Lash",
-    "track_id": "13"
+    "track_id": "13",
+    "credits": [
+      "drums"
+    ]
   },
   {
     "individual_id": "Alex Laipenieks",
@@ -6244,10 +6247,6 @@
   },
   {
     "individual_id": "Sam Coomes",
-    "track_id": "13"
-  },
-  {
-    "individual_id": "Sam Coomes",
     "track_id": "14"
   },
   {
@@ -6256,11 +6255,19 @@
   },
   {
     "individual_id": "Neil Gust",
-    "track_id": "13"
+    "track_id": "13",
+    "credits": [
+      "background vocals"
+    ]
   },
   {
     "individual_id": "Elliott Smith",
-    "track_id": "13"
+    "track_id": "13",
+    "credits": [
+      "vocals",
+      "guitar",
+      "bass"
+    ]
   },
   {
     "individual_id": "Janet Weiss",
@@ -257462,6 +257469,196 @@
       "drums",
       "percussion",
       "trumpet"
+    ]
+  },
+  {
+    "individual_id": "Adam Theis",
+    "track_id": "13486",
+    "credits": [
+      "trumpet",
+      "trombone",
+      "keyboard"
+    ]
+  },
+  {
+    "individual_id": "Olivia Ruff",
+    "track_id": "13486",
+    "credits": [
+      "vocals"
+    ]
+  },
+  {
+    "individual_id": "Teddy Kumpel",
+    "track_id": "13486",
+    "credits": [
+      "guitar"
+    ]
+  },
+  {
+    "individual_id": "Jamie Moore",
+    "track_id": "13486",
+    "credits": [
+      "drums"
+    ]
+  },
+  {
+    "individual_id": "Adam Theis",
+    "track_id": "13487",
+    "credits": [
+      "trumpet",
+      "trombone",
+      "tuba",
+      "synthesizer",
+      "synth bass"
+    ]
+  },
+  {
+    "individual_id": "Katy Stephan",
+    "track_id": "13487",
+    "credits": [
+      "vocals"
+    ]
+  },
+  {
+    "individual_id": "Solas B Lalgee",
+    "track_id": "13487",
+    "credits": [
+      "vocals"
+    ]
+  },
+  {
+    "individual_id": "Matt Wong",
+    "track_id": "13487",
+    "credits": [
+      "piano"
+    ]
+  },
+  {
+    "individual_id": "Darian Gray",
+    "track_id": "13487",
+    "credits": [
+      "drums"
+    ]
+  },
+  {
+    "individual_id": "Adam Theis",
+    "track_id": "13488",
+    "credits": [
+      "trumpet",
+      "trombone",
+      "tuba",
+      "bass",
+      "synthesizer"
+    ]
+  },
+  {
+    "individual_id": "Moorea Dickason",
+    "track_id": "13488",
+    "credits": [
+      "vocals"
+    ]
+  },
+  {
+    "individual_id": "Joe Cohen",
+    "track_id": "13488",
+    "credits": [
+      "saxophone (solo)"
+    ]
+  },
+  {
+    "individual_id": "Andrew Levin",
+    "track_id": "13488",
+    "credits": [
+      "guitar",
+      "guitar (solo)"
+    ]
+  },
+  {
+    "individual_id": "Henry Plumb",
+    "track_id": "13488",
+    "credits": [
+      "drums"
+    ]
+  },
+  {
+    "individual_id": "Tony Lash",
+    "track_id": "13489",
+    "credits": [
+      "drums"
+    ]
+  },
+  {
+    "individual_id": "Neil Gust",
+    "track_id": "13489",
+    "credits": [
+      "vocals",
+      "slide guitar"
+    ]
+  },
+  {
+    "individual_id": "Sam Coomes",
+    "track_id": "13489",
+    "credits": [
+      "electric piano"
+    ]
+  },
+  {
+    "individual_id": "Tony Lash",
+    "track_id": "13490",
+    "credits": [
+      "drums"
+    ]
+  },
+  {
+    "individual_id": "Elliott Smith",
+    "track_id": "13490",
+    "credits": [
+      "vocals",
+      "guitar",
+      "electric piano"
+    ]
+  },
+  {
+    "individual_id": "Neil Gust",
+    "track_id": "13490",
+    "credits": [
+      "acoustic guitar"
+    ]
+  },
+  {
+    "individual_id": "Sam Coomes",
+    "track_id": "13490",
+    "credits": [
+      "bass"
+    ]
+  },
+  {
+    "individual_id": "Tony Lash",
+    "track_id": "13491",
+    "credits": [
+      "drums"
+    ]
+  },
+  {
+    "individual_id": "Elliott Smith",
+    "track_id": "13491",
+    "credits": [
+      "vocals",
+      "guitar"
+    ]
+  },
+  {
+    "individual_id": "Sam Coomes",
+    "track_id": "13491",
+    "credits": [
+      "slide guitar"
+    ]
+  },
+  {
+    "individual_id": "Aaron Day",
+    "track_id": "13",
+    "credits": [
+      "vocals"
     ]
   }
 ]
