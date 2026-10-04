@@ -257719,5 +257719,54 @@
     "credits": [
       "background vocals"
     ]
+  },
+  {
+    "individual_id": "Tom Waits",
+    "track_id": "13493",
+    "credits": [
+      "vocals"
+    ]
+  },
+  {
+    "individual_id": "Larry Taylor",
+    "track_id": "13493",
+    "credits": [
+      "upright bass"
+    ]
+  },
+  {
+    "individual_id": "David Phillips",
+    "track_id": "13493",
+    "credits": [
+      "pedal steel guitar"
+    ]
+  },
+  {
+    "individual_id": "Stephen Pride",
+    "track_id": "13494",
+    "credits": [
+      "guitar"
+    ]
+  },
+  {
+    "individual_id": "Conor Thompson",
+    "track_id": "13494",
+    "credits": [
+      "bass"
+    ]
+  },
+  {
+    "individual_id": "Cory Snavely",
+    "track_id": "13494",
+    "credits": [
+      "drums"
+    ]
+  },
+  {
+    "individual_id": "David Phillips",
+    "track_id": "13494",
+    "credits": [
+      "pedal steel guitar"
+    ]
   }
 ]
