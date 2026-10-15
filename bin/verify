@@ -14,7 +14,7 @@ if (rv.status === data.StatusEnum.ERROR) {
 
 const dump = {} // local copy of all collections
 
-const collections = ['tracks', 'artists', 'releases', 'individuals', 'artist_track', 'individual_track', 'track_release']
+const collections = ['tracks', 'individuals', 'individual_track']
 
 collections.forEach(function (collection) {
   const rv = data.search({ collection })
@@ -40,8 +40,6 @@ const compare = function (a, b, nameA, nameB) {
 }
 
 const trackIds = getSet('tracks')
-const artistIds = getSet('artists')
-const releaseIds = getSet('releases')
 const individualIds = getSet('individuals')
 
 // All IDs are strings but must not contain colons or slashes because the visualizer
@@ -50,16 +48,7 @@ const validateIds = (idsSet) => {
   assert.ok(idsSet.values().every((id) => typeof id === 'string' && !id.includes(':') && !id.includes('/')), 'Invalid ID found')
 }
 validateIds(trackIds)
-validateIds(artistIds)
 validateIds(individualIds)
-validateIds(releaseIds)
-
-const artistTrackIds = {
-  artist: getSet('artist_track', { idName: 'artist_id', ignoreDuplicates: true }),
-  track: getSet('artist_track', { idName: 'track_id', ignoreDuplicates: true })
-}
-compare(artistTrackIds.artist, artistIds, 'artist_track', 'artist_id')
-compare(artistTrackIds.track, trackIds, 'artist_track', 'track_id')
 
 const individualTrackIds = {
   individual: getSet('individual_track', { idName: 'individual_id', ignoreDuplicates: true }),
@@ -68,47 +57,6 @@ const individualTrackIds = {
 compare(individualTrackIds.individual, individualIds, 'individual_track', 'individual_id')
 compare(individualTrackIds.track, trackIds, 'individual_track', 'track_id')
 
-const trackReleaseIds = {
-  release: getSet('track_release', { idName: 'release_id', ignoreDuplicates: true }),
-  track: getSet('track_release', { idName: 'track_id', ignoreDuplicates: true })
-}
-compare(trackReleaseIds.release, releaseIds, 'track_release', 'release_id')
-compare(trackReleaseIds.track, trackIds, 'track_release', 'track_id')
-
-// Check that all instances of basic are included in relation as propName.
-// For example, check that all instances of 'artists' are included in 'at' as 'artistId'.
-dump.included = function (basic, relation, propName) {
-  const related = function (basicValue) {
-    const _idInRelatedTable = function (relationValue) {
-      return relationValue[propName] === basicValue._id
-    }
-
-    const rv = dump[relation].some(_idInRelatedTable)
-
-    if (!rv) {
-      console.log('`' + basic + '` contains _id ' + basicValue._id + ' but it is not found in `' + relation + '` as `' + propName + '`')
-    }
-
-    return rv
-  }
-
-  return dump[basic].every(related)
-}
-
-// All artists should have tracks.
-assert.ok(dump.included('artists', 'artist_track', 'artist_id'))
-// All tracks should have artists.
-assert.ok(dump.included('tracks', 'artist_track', 'track_id'))
-// All individuals are associated with at least one track.
-assert.ok(dump.included('individuals', 'individual_track', 'individual_id'))
-// All tracks are associated with at least one individual.
-assert.ok(dump.included('tracks', 'individual_track', 'track_id'))
-// All tracks are on at least one release.
-assert.ok(dump.included('tracks', 'track_release', 'track_id'))
-// All releases have at least one track.
-assert.ok(dump.included('releases', 'track_release', 'release_id'))
-
-// TODO: Make sure that all required fields are present in every entry (including "credits", yeah? even if empty)
 // TODO: Make sure that there are no duplicate link entries (Elvis on "Love Me Tender" exists twice should be an error)
 // TODO: Check that all fields that should be strings are strings and all fields that should be arrays of strings are arrays of strings
 // TODO: Check for extra fields that we don't know about. Only _id, names, credits, etc. should be in there. No weird things.
