@@ -4,14 +4,10 @@ var data = {};
 
 // Load basic info.
 data.tracks = require('../data/tracks.json');
-data.artists = require('../data/artists.json');
 data.individuals = require('../data/individuals.json');
-data.releases = require('../data/releases.json');
 
 // Load relation data
-data.at = require('../data/artist_track.json');
 data.it = require('../data/individual_track.json');
-data.tr = require('../data/track_release.json');
 
 data.printTrackInfo = function (track) {
   console.log('Track ID: ' + track._id);
@@ -20,22 +16,11 @@ data.printTrackInfo = function (track) {
     console.log('\tTitle: ' + title);
   });
 
-  data.printRelatedInfoForTrack({
-    track_id: track._id,
-    relatedInfo: 'artists',
-    relatedField: 'names',
-    relationData: 'at',
-    relationDataId: 'artist_id',
-    label: 'Artist',
+  track.artists.forEach(function (artist) {
+    artist.names.forEach(function (name) { console.log('\tArtist: ' + name); });
   });
-
-  data.printRelatedInfoForTrack({
-    track_id: track._id,
-    relatedInfo: 'releases',
-    relatedField: 'names',
-    relationData: 'tr',
-    relationDataId: 'release_id',
-    label: 'Release',
+  track.releases.forEach(function (release) {
+    release.names.forEach(function (name) { console.log('\tRelease: ' + name); });
   });
 
   data.printRelatedInfoForTrack({

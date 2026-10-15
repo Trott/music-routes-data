@@ -8,18 +8,59 @@ Schema
 
 Data is stored in JSON files in the `data` directory.
 
-These files contain basic data:
+The graph has three collections:
 
-* `tracks.json` contains the `names` and unique `id` string for a track.
-* `releases.json` contains the `names` and unique `id` string for a release.
-* `artists.json` contains the `names` and unique `id` string for an artist.
-* `individuals.json` contains the `names` and unique `id` string for an individual.
+* `tracks.json`: recordings, identified by a unique `_id` string.
+* `individuals.json`: people, each with a unique `_id` string and a `names` array.
+* `individual_track.json`: performance relationships with `individual_id` and
+  `track_id` strings, plus an optional `credits` array (for example,
+  `["vocals", "guitar"]`).
 
-These files describe relationships between the basic data and sometimes include extra data relevant to the relationship:
+Every track has this structure:
 
-* `artist_track.json` contains `artistId` and `trackId` pairs where a track is attributed to an artist.
-* `individual_track.json` contains `individualId` and `trackId` pairs where the individual performed on the track. There is also an optional `credits` array that explains the person's role on the track (e.g., `["vocals","guitar"]`).
-* `track_release.json` contains `trackId` and `releaseId` pairs where a track appears on a release.
+```json
+{
+  "_id": "36",
+  "names": ["Under Pressure"],
+  "artists": [
+    { "names": ["Queen"] },
+    { "names": ["David Bowie"] }
+  ],
+  "releases": [
+    { "names": ["The Best Of 1980/1987"] },
+    { "names": ["80s Hits"] }
+  ]
+}
+```
+
+`artists` and `releases` are required arrays with at least one entry. Each entry
+has a required, non-empty `names` array containing non-empty strings. Additional
+names are aliases for that same artist or release; separate entries represent
+separate artists or releases. These metadata objects have no IDs.
+
+`bin/verify` validates this requirement when loading the data, in addition to
+checking IDs and performance relationships. The data library also rejects invalid
+track metadata on creation, reading, and writing. `npm test` runs the tests and
+validates the full dataset.
+
+Migration from version 5
+========================
+
+This is a breaking schema change. The `artists`, `releases`, `artist_track`, and
+`track_release` collections have been removed, including their JSON files and
+support in the data library and CLI. Artist and release names (including aliases)
+are embedded directly in each associated track. Track IDs, individual IDs, and
+performance relationships are unchanged.
+
+Consumers should read `track.artists` and `track.releases` instead of joining the
+removed collections. Artist and release metadata is now local to a track;
+corrections affecting multiple tracks must update each occurrence. Recordings
+with the same title still have distinct track IDs when they are different
+performances, such as studio, demo, and live versions.
+
+For CLI usage, see [the command help](doc/cli/help.txt). Adding a track now requires
+JSON metadata containing both arrays. Adding individuals and linking people to
+tracks continue to work as before.
 
 License
 =======

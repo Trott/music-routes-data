@@ -4,6 +4,7 @@ const fs = require('fs')
 const path = require('path')
 
 const Data = require('../lib/Data')
+const metadata = { artists: [{ names: ['Elvis Presley'] }], releases: [{ names: ['Sunrise'] }] }
 
 describe('data constructor', function () {
   it('should begin with no data', function () {
@@ -18,8 +19,8 @@ describe('data constructor', function () {
       const data = new Data()
       data.read(dataDir)
       const tracks = data.search({ collection: 'tracks' }).results
-      expect(tracks).toContain({ _id: '1', names: ["That's All Right"] })
-      expect(tracks).toContain({ _id: '2', names: ['Blue Moon of Kentucky'] })
+      expect(tracks).toContain({ ...metadata, _id: '1', names: ["That's All Right"] })
+      expect(tracks).toContain({ ...metadata, _id: '2', names: ['Blue Moon of Kentucky'] })
       expect(tracks.length).toBe(2)
     })
 
@@ -50,75 +51,75 @@ describe('data', function () {
   describe('create(collection, entry)', function () {
     it('should add a track to the track collection', function () {
       const initialLength = data.search({ collection: 'tracks' }).results.length
-      data.create('tracks', { _id: '3', names: ['If I Needed Someone'] })
+      data.create('tracks', { ...metadata, _id: '3', names: ['If I Needed Someone'] })
       const tracks = data.search({ collection: 'tracks' }).results
       expect(tracks.length).toBe(initialLength + 1)
-      expect(tracks).toContain({ _id: '3', names: ['If I Needed Someone'] })
+      expect(tracks).toContain({ ...metadata, _id: '3', names: ['If I Needed Someone'] })
     })
 
     it('should return OK status code if track is added', function () {
-      const rv = data.create('tracks', { _id: '3', names: ["Let's Go Away For A While"] })
+      const rv = data.create('tracks', { ...metadata, _id: '3', names: ["Let's Go Away For A While"] })
       expect(rv.status).toEqual(data.StatusEnum.OK)
     })
 
     it('should return ERROR if _id matches another track', function () {
-      const rv = data.create('tracks', { _id: '2', names: ['Someone Keeps Moving My Chair'] })
+      const rv = data.create('tracks', { ...metadata, _id: '2', names: ['Someone Keeps Moving My Chair'] })
       expect(rv.status).toEqual(data.StatusEnum.ERROR)
     })
 
     it('should not change the tracks collection if _id matches another track', function () {
-      data.create('tracks', { _id: '2', names: ['The Night They Drove Old Dixie Down'] })
-      expect(data.search({ collection: 'tracks' }).results).not.toContain({ _id: '3', names: ['The Night They Drove Old Dixie Down'] })
+      data.create('tracks', { ...metadata, _id: '2', names: ['The Night They Drove Old Dixie Down'] })
+      expect(data.search({ collection: 'tracks' }).results).not.toContain({ ...metadata, _id: '3', names: ['The Night They Drove Old Dixie Down'] })
     })
 
     it('should generate an _id if _id is not specified', function () {
-      const rv = data.create('tracks', { names: ['Autumn Sweater'] })
-      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: 'Autumn Sweater', names: ['Autumn Sweater'] })
+      const rv = data.create('tracks', { ...metadata, names: ['Autumn Sweater'] })
+      expect(data.search({ collection: 'tracks' }).results).toContain({ ...metadata, _id: 'Autumn Sweater', names: ['Autumn Sweater'] })
       expect(rv.status).toEqual(data.StatusEnum.OK)
     })
 
     it('should generate an _id string if empty string is provided', function () {
-      const rv = data.create('tracks', { _id: '', names: ['Quiet Village'] })
-      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: 'Quiet Village', names: ['Quiet Village'] })
+      const rv = data.create('tracks', { ...metadata, _id: '', names: ['Quiet Village'] })
+      expect(data.search({ collection: 'tracks' }).results).toContain({ ...metadata, _id: 'Quiet Village', names: ['Quiet Village'] })
       expect(rv.status).toEqual(data.StatusEnum.OK)
     })
 
     it('should return ERROR and not update tracks collection if names array is not provided', function () {
       const before = data.search({ collection: 'tracks' }).results
-      const rv = data.create('tracks', { _id: '3' })
+      const rv = data.create('tracks', { ...metadata, _id: '3' })
       expect(rv.status).toEqual(data.StatusEnum.ERROR)
       expect(data.search({ collection: 'tracks' }).results).toEqual(before)
     })
 
     it('should return ERROR and not update tracks collection if names property is provided but not an array', function () {
       const before = data.search({ collection: 'tracks' }).results
-      const rv = data.create('tracks', { _id: '3', names: 'The Battle Of Who Could Care Less' })
+      const rv = data.create('tracks', { ...metadata, _id: '3', names: 'The Battle Of Who Could Care Less' })
       expect(rv.status).toEqual(data.StatusEnum.ERROR)
       expect(data.search({ collection: 'tracks' }).results).toEqual(before)
     })
 
-    it('should discard properties other than _id and names', function () {
-      const rv = data.create('tracks', { _id: '3', names: ['Uh, Zoom Zip'], releases: ['Ruby Vroom'] })
+    it('should discard unknown properties while preserving track metadata', function () {
+      const rv = data.create('tracks', { ...metadata, _id: '3', names: ['Uh, Zoom Zip'], unknown: ['discard me'] })
       expect(rv.status).toEqual(data.StatusEnum.OK)
-      expect(data.search({ collection: 'tracks' }).results).toContain({ _id: '3', names: ['Uh, Zoom Zip'] })
+      expect(data.search({ collection: 'tracks' }).results).toContain({ ...metadata, _id: '3', names: ['Uh, Zoom Zip'] })
     })
 
     it('should return ERROR and not change collection if _id is not a string', function () {
       const before = data.search({ collection: 'tracks' }).results
-      const rv = data.create('tracks', { _id: true, names: ["Don't Think Twice, It's Alright"] })
+      const rv = data.create('tracks', { ...metadata, _id: true, names: ["Don't Think Twice, It's Alright"] })
       expect(rv.status).toEqual(data.StatusEnum.ERROR)
       expect(data.search({ collection: 'tracks' }).results).toEqual(before)
     })
 
     it('should return ERROR and not change collection with a names array where one or more elements are not strings', function () {
       const before = data.search({ collection: 'tracks' }).results
-      const rv = data.create('tracks', { _id: '3', names: [true, 'True'] })
+      const rv = data.create('tracks', { ...metadata, _id: '3', names: [true, 'True'] })
       expect(rv.status).toEqual(data.StatusEnum.ERROR)
       expect(data.search({ collection: 'tracks' }).results).toEqual(before)
     })
 
     it('should return ERROR if collection does not exist', function () {
-      const newTrack = { _id: '3', names: ["All The Things You Could Be By Now If Sigmund Freud's Wife Were Your Mother"] }
+      const newTrack = { ...metadata, _id: '3', names: ["All The Things You Could Be By Now If Sigmund Freud's Wife Were Your Mother"] }
       const rv = data.create('invalid collection', newTrack)
       expect(rv.status).toEqual(data.StatusEnum.ERROR)
     })
@@ -160,7 +161,7 @@ describe('data', function () {
 
     it('should return a cloned array, not a reference to the internal results', function () {
       const before = data.search({ collection: 'tracks' }).results
-      data.create('tracks', { _id: '3', names: ['Flesh, Blood, and Bone'] })
+      data.create('tracks', { ...metadata, _id: '3', names: ['Flesh, Blood, and Bone'] })
       expect(data.search({ collection: 'tracks' }).results).not.toEqual(before)
     })
 
@@ -196,7 +197,7 @@ describe('data', function () {
     })
 
     it('should reflect a newly-created track in the output', function () {
-      const newTrack = { _id: '3', names: ['Count It Higher'] }
+      const newTrack = { ...metadata, _id: '3', names: ['Count It Higher'] }
       data.create('tracks', newTrack)
       data.write(outputDir)
       const newData = new Data()

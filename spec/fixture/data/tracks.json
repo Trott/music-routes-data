@@ -1,10 +1,42 @@
 [
   {
-    "_id":"1",
-    "names":["That's All Right"]
+    "_id": "1",
+    "names": [
+      "That's All Right"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Elvis Presley"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Sunrise"
+        ]
+      }
+    ]
   },
   {
-    "_id":"2",
-    "names":["Blue Moon of Kentucky"]
+    "_id": "2",
+    "names": [
+      "Blue Moon of Kentucky"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Elvis Presley"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Sunrise"
+        ]
+      }
+    ]
   }
 ]

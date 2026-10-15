@@ -6,14 +6,20 @@ Description:
 
 Commands:
 
-  add <collection> <name>
-    add an entry for name with id to the collection
+  add individuals <name>
+    add an individual with an ID derived from the name
+
+  add tracks <name> <metadata-json>
+    add a track with required, non-empty artists and releases arrays
+    example: add tracks "Song" '{"artists":[{"names":["Artist"]}],"releases":[{"names":["Album"]}]}'
+    metadata may include an explicit _id; otherwise the track name is used
 
   link <collection1> <id1> <collection2> <id2>
-    link two items in different collections
+    link an individual and a track (use singular individual and track)
 
   search <collection> <name>
     return JSON for all entries in collection that have the specified name
+    searchable collections: tracks, individuals
 
 Options:
 
