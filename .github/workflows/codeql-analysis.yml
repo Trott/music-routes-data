@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: '0 7 * * 5'
 
+permissions:
+  contents: read # Check out the repository.
+  security-events: write # Upload CodeQL analysis results.
+
 jobs:
   CodeQL-Build:
 
