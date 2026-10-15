@@ -5,8 +5,8 @@ on:
       - main
 
 permissions:
-  id-token: write
-  contents: write
+  id-token: write # Authenticate to npm using trusted publishing.
+  contents: write # Push release commits and tags.
 
 jobs:
   release:
