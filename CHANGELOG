@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/Trott/music-routes-data/compare/v5.1.5...v6.0.0) (2026-10-15)
+
+
+### epic
+
+* move unnecessary collections to metadata ([efcdffd](https://github.com/Trott/music-routes-data/commit/efcdffdc90a91804d1f759d3a1e8230b83109398))
+
+
+### BREAKING CHANGES
+
+* artist and release data is now metadata on tracks, not standalone collections
+
 ## [5.1.5](https://github.com/Trott/music-routes-data/compare/v5.1.4...v5.1.5) (2026-10-04)
 
 
