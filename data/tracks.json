@@ -269724,5 +269724,545 @@
         ]
       }
     ]
+  },
+  {
+    "_id": "13503",
+    "names": [
+      "You Rang?"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13504",
+    "names": [
+      "Self-Satisfied"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13505",
+    "names": [
+      "Agora"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13506",
+    "names": [
+      "Dot Dot, Dot"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13507",
+    "names": [
+      "Moi Non Plus"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13508",
+    "names": [
+      "Liver"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13509",
+    "names": [
+      "The Footman's Eyes Get Crossed"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13510",
+    "names": [
+      "Where Are My Victims?"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13511",
+    "names": [
+      "Disco Volante"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13512",
+    "names": [
+      "Kaiser in Borneo"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13513",
+    "names": [
+      "The Saint"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13514",
+    "names": [
+      "The Violent Death of Dutch Schultz"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13515",
+    "names": [
+      "Thunderball"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13516",
+    "names": [
+      "White Zombie"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13517",
+    "names": [
+      "The Slaves of Vesuvius"
+    ],
+    "artists": [
+      {
+        "names": [
+          "John Zorn"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Locus Solus"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13518",
+    "names": [
+      "Hot Seat"
+    ],
+    "artists": [
+      {
+        "names": [
+          "The Golden Palominos"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "The Golden Palominos"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13519",
+    "names": [
+      "Monday Night"
+    ],
+    "artists": [
+      {
+        "names": [
+          "The Golden Palominos"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "The Golden Palominos"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13520",
+    "names": [
+      "Crowning Roar"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Ambitious Lovers"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Envy"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13521",
+    "names": [
+      "My Competition"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Ambitious Lovers"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Envy"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13522",
+    "names": [
+      "Old Ladies Reading the Bible"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Hotter Heads Prevail"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13523",
+    "names": [
+      "Have You Ever Sold Out?"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Hotter Heads Prevail"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13524",
+    "names": [
+      "Help Yourself"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Hotter Heads Prevail"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13525",
+    "names": [
+      "I Can't Feel a Thing"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Hotter Heads Prevail"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13526",
+    "names": [
+      "Faith No Less"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Hotter Heads Prevail"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13527",
+    "names": [
+      "Wake the Prisoner"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Hotter Heads Prevail"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13528",
+    "names": [
+      "Bounce Your Head"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Hotter Heads Prevail"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13529",
+    "names": [
+      "The Revolution's Over"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Hotter Heads Prevail"
+        ]
+      }
+    ]
   }
 ]
