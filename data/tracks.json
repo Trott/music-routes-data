@@ -269599,5 +269599,130 @@
         ]
       }
     ]
+  },
+  {
+    "_id": "13497",
+    "names": [
+      "Shake It and Break It"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Collisionville"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Stones, Keys, Flat Ninths, & Salvage"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13498",
+    "names": [
+      "Society Sally"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Jesse Malin"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Outsiders"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13499",
+    "names": [
+      "You Know It's Dark When Atheists Start to Pray"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Jesse Malin"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Outsiders"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13500",
+    "names": [
+      "If I Should Fall from Grace with God"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Jesse Malin"
+        ]
+      },
+      {
+        "names": [
+          "Eugene Hütz"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "If I Should Fall from Grace with God"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13501",
+    "names": [
+      "Broken Radio"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Jesse Malin"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Glitter in the Gutter"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13502",
+    "names": [
+      "Broken Radio '22"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Jesse Malin"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Glitter in the Gutter (2022 Reissue)"
+        ]
+      }
+    ]
   }
 ]
