@@ -270264,5 +270264,80 @@
         ]
       }
     ]
+  },
+  {
+    "_id": "13530",
+    "names": [
+      "Searching for Captain Save a Hoe"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Fantastic Negrito"
+        ]
+      },
+      {
+        "names": [
+          "E-40"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Have You Lost Your Mind Yet?"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13531",
+    "names": [
+      "Undefeated Eyes"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Fantastic Negrito"
+        ]
+      },
+      {
+        "names": [
+          "Sting"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Undefeated Eyes"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13532",
+    "names": [
+      "Cannonball"
+    ],
+    "artists": [
+      {
+        "names": [
+          "ZZ Ward"
+        ]
+      },
+      {
+        "names": [
+          "Fantastic Negrito"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "The Storm"
+        ]
+      }
+    ]
   }
 ]
