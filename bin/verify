@@ -1,61 +1,94 @@
 #!/usr/bin/env node
 
-const assert = require('assert')
-const path = require('path')
-const Data = require('../lib/Data')
+const assert = require("assert");
+const path = require("path");
+const Data = require("../lib/Data");
 
-const data = new Data()
+const data = new Data();
 
-const rv = data.read(path.join(__dirname, '/../data'))
+const rv = data.read(path.join(__dirname, "/../data"));
 if (rv.status === data.StatusEnum.ERROR) {
-  console.error(rv.message || 'Unknown error')
-  process.exit(1)
+  console.error(rv.message || "Unknown error");
+  process.exit(1);
 }
 
-const dump = {} // local copy of all collections
+const dump = {}; // local copy of all collections
 
-const collections = ['tracks', 'individuals', 'individual_track']
+const collections = ["tracks", "individuals", "individual_track"];
 
 collections.forEach(function (collection) {
-  const rv = data.search({ collection })
-  assert.ok(rv.status === data.StatusEnum.OK, 'Could not retrieve contents of collection ' + collection)
-  assert.ok(rv.results.length > 0, 'Collection ' + collection + ' has no entries')
-  dump[collection] = rv.results
-})
+  const rv = data.search({ collection });
+  assert.ok(
+    rv.status === data.StatusEnum.OK,
+    "Could not retrieve contents of collection " + collection,
+  );
+  assert.ok(
+    rv.results.length > 0,
+    "Collection " + collection + " has no entries",
+  );
+  dump[collection] = rv.results;
+});
 
 const getSet = function (collectionName, options = {}) {
-  const idName = options.idName || '_id'
-  const ignoreDuplicates = options.ignoreDuplicates || false
-  const myArray = dump[collectionName].map((item) => item[idName])
-  const mySet = new Set(myArray)
+  const idName = options.idName || "_id";
+  const ignoreDuplicates = options.ignoreDuplicates || false;
+  const myArray = dump[collectionName].map((item) => item[idName]);
+  const mySet = new Set(myArray);
   if (!ignoreDuplicates) {
-    assert.strictEqual(mySet.size, myArray.length, `Duplicate IDs found in ${collectionName} collection`)
+    assert.strictEqual(
+      mySet.size,
+      myArray.length,
+      `Duplicate IDs found in ${collectionName} collection`,
+    );
   }
-  return mySet
-}
+  return mySet;
+};
 
 const compare = function (a, b, nameA, nameB) {
-  const diff = a.symmetricDifference(b)
-  assert.strictEqual(diff.size, 0, `The ${nameA} and ${nameB} collections have different IDs: ${Array.from(diff).join(', ')}`)
-}
+  const diff = a.symmetricDifference(b);
+  assert.strictEqual(
+    diff.size,
+    0,
+    `The ${nameA} and ${nameB} collections have different IDs: ${Array.from(diff).join(", ")}`,
+  );
+};
 
-const trackIds = getSet('tracks')
-const individualIds = getSet('individuals')
+const trackIds = getSet("tracks");
+const individualIds = getSet("individuals");
 
 // All IDs are strings but must not contain colons or slashes because the visualizer
 // uses IDs as directory names.
 const validateIds = (idsSet) => {
-  assert.ok(idsSet.values().every((id) => typeof id === 'string' && !id.includes(':') && !id.includes('/')), 'Invalid ID found')
-}
-validateIds(trackIds)
-validateIds(individualIds)
+  assert.ok(
+    idsSet
+      .values()
+      .every(
+        (id) =>
+          typeof id === "string" && !id.includes(":") && !id.includes("/"),
+      ),
+    "Invalid ID found",
+  );
+};
+validateIds(trackIds);
+validateIds(individualIds);
 
 const individualTrackIds = {
-  individual: getSet('individual_track', { idName: 'individual_id', ignoreDuplicates: true }),
-  track: getSet('individual_track', { idName: 'track_id', ignoreDuplicates: true })
-}
-compare(individualTrackIds.individual, individualIds, 'individual_track', 'individual_id')
-compare(individualTrackIds.track, trackIds, 'individual_track', 'track_id')
+  individual: getSet("individual_track", {
+    idName: "individual_id",
+    ignoreDuplicates: true,
+  }),
+  track: getSet("individual_track", {
+    idName: "track_id",
+    ignoreDuplicates: true,
+  }),
+};
+compare(
+  individualTrackIds.individual,
+  individualIds,
+  "individual_track",
+  "individual_id",
+);
+compare(individualTrackIds.track, trackIds, "individual_track", "track_id");
 
 // TODO: Make sure that there are no duplicate link entries (Elvis on "Love Me Tender" exists twice should be an error)
 // TODO: Check that all fields that should be strings are strings and all fields that should be arrays of strings are arrays of strings
