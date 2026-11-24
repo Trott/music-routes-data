@@ -270339,5 +270339,65 @@
         ]
       }
     ]
+  },
+  {
+    "_id": "13533",
+    "names": [
+      "Hero's Theme"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Kev Choice"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "88 Steps To Eternity"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13534",
+    "names": [
+      "Tú y Yo (I Love You)"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Manny Martinez Y Su Nuevo Azabache"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Evolution"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "13535",
+    "names": [
+      "Song for Che"
+    ],
+    "artists": [
+      {
+        "names": [
+          "Charlie Haden"
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "names": [
+          "Liberation Music Orchestra"
+        ]
+      }
+    ]
   }
 ]
