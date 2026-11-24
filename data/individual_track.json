@@ -258781,5 +258781,35 @@
     "credits": [
       "percussion"
     ]
+  },
+  {
+    "individual_id": "Stephen Pride",
+    "track_id": "13536",
+    "credits": [
+      "guitar",
+      "pedal steel guitar",
+      "lead vocals"
+    ]
+  },
+  {
+    "individual_id": "Conor Thompson",
+    "track_id": "13536",
+    "credits": [
+      "bass"
+    ]
+  },
+  {
+    "individual_id": "Cory Snavely",
+    "track_id": "13536",
+    "credits": [
+      "drums"
+    ]
+  },
+  {
+    "individual_id": "Josh Wirtschafter",
+    "track_id": "13536",
+    "credits": [
+      "violin"
+    ]
   }
 ]
